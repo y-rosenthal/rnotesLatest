@@ -1,0 +1,140 @@
+# This _quarto.yml file uses several extra files (listed below) that
+# aren't part of the standard _quarto.yml file.
+# My other quarto projects also use the same files. 
+# Therefore I used a -v001 extension on the filenames so that 
+# if I modify these files, I should also modify the extension. 
+# That gives me a quick and easy way to make sure that I also 
+# update other book projects that I have with the latest versions
+# of these files.
+#
+#   yrChapterNumber-v001.sh 
+#   yrBuildQuarto-v001.sh
+#   yrNocacheHeaders-v001.html
+#   yrstuff-v001.js
+#   yrStyles-main-v001.css
+
+project:
+  type: book
+  output-dir: _book
+  pre-render: copy_quartoYml_to_bookFolder-v001.R
+  resources:
+    - _quarto.yml
+    - yrNocacheHeaders-v001.html
+    - yrstuff-v001.js
+
+book:
+  title: "r notes (latest version)"
+  author: "Y. Rosenthal"
+  navbar:
+    left:
+      - text: "(click here for fall24 version of this website)"
+        href: https://y-rosenthal.github.io/rnotes-fall24/
+  search: 
+    location: sidebar
+  #  date: "10/31/2023"
+  chapters:
+    - index.qmd
+    - 000100-a-installingAndUsingR-v011-afterClass.qmd # yrChapterNumber 1
+    - 000100-b-variables_intDivision_remainder_ls_rm-v011-afterClass.qmd # yrChapterNumber 2
+    - 000150-orderOfOperationsInR-v002.qmd # yrChapterNumber 3
+    - 000300-usingSomeBuiltinFunctions-v028.qmd # yrChapterNumber 4
+    - 000350-b_b-userDefinedFunctions-v060.qmd # yrChapterNumber 5
+    - 000350-c_h-introToTheDebugger-v060.qmd # yrChapterNumber 6
+    - 000350-d_d-modesOfData_numeric_logical_character-v060.qmd # yrChapterNumber 7
+    - 000350-e_e-NA_is.na_na.rm-v060.qmd # yrChapterNumber 8
+    - 000350-f_f-indexingWithPositiveNumbers-v060.qmd # yrChapterNumber 9
+    - 000350-g_g-indexingWithNegativeNumbers-v060.qmd # yrChapterNumber 10
+    - 000350-h_c-IntroToLogicalVectorsAndOperators_ifelseFunction-v060.qmd # yrChapterNumber 11
+    - 000350-j_j-indexingWithLogicalValues_notOperator-v060.qmd # yrChapterNumber 12a
+    - 000350-j_j_b-indexingWithLogicalValues_notOperator-v060.qmd # yrChapterNumber 12b
+    - 000350-j_j_c-indexingWithLogicalValues_notOperator-v060.qmd # yrChapterNumber 12c
+    - 000350-k_k-characterValues_cat_nchar_paste_paste0-v060.qmd # yrChapterNumber 13
+    - 000350-l_i-usingCatToDebugYourCode-v060.qmd # yrChapterNumber 14
+    - 000350-m_l-parallelVectors-v060.qmd # yrChapterNumber 15
+    - 000350-o-in_intersect_setdiff_usingNotIn-v060.qmd # yrChapterNumber 16
+    - 000350-p-localVariables_globalVariables-v060.qmd # yrChapterNumber 17
+    - 000380-logicalOperators_and_or_not-v013-withAnswers-afterBerenClass.qmd # yrChapterNumber 18
+    - 000390-sciNotation_roundoffError_v005.qmd # yrChapterNumber 19
+    - 000400-sciNotation_roundoffError_accessingVectorPositions-v000.qmd # yrChapterNumber 20
+    - 000410-implicitAndExplicitConversions-v025.qmd # yrChapterNumber 21
+    - 000415-a-lists-v035.qmd # yrChapterNumber 22
+    - 000415-c2-lists-v035.qmd # yrChapterNumber 23
+    - 000415-d-lists-v036.qmd # yrChapterNumber 24
+    - 000415-e-lists-v035.qmd # yrChapterNumber 25
+    - 000430-lapply-v031-afterWilf.qmd # yrChapterNumber 26
+    - 000495-attributres_attr_names_matrix_factor_dataframe-v010.qmd # yrChapterNumber 27
+    - 000700-matrices-v015.qmd # yrChapterNumber 28
+    - 000800-factors-v010.qmd # yrChapterNumber 29
+    - 000850-introToDataframes-v0019-afterBeren.qmd # yrChapterNumber 30
+    - 000875-cbind_rbind-v002.qmd # yrChapterNumber 31
+    - 000900-if_ifElse_if_elseif_else_nestedStatements-v019.qmd # yrChapterNumber 32
+    - 001000-whileLoops-v027-afterWilfClass25.qmd # yrChapterNumber 33
+    - 001020-forLoops_sleep_strsplit-v017-maybeChanged.qmd # yrChapterNumber 34
+    - part: 000354-quartoBook_part_morePracticeQuestions.qmd
+      chapters:
+        - 000555-midtermQuestionsToStudy.qmd # yrChapterNumber 35
+        - 000600-HW-vectorsFunctionsRecyclingrule-v004.qmd # yrChapterNumber 36
+        - 99900-qstns-10-vectors-v035-ANSWERS.qmd # yrChapterNumber 37
+        - 99900-qstns-40-assortedTopics-v035-ANSWERS.qmd # yrChapterNumber 38
+        - 99900-qstns-20-dataframes-v035-ANSWERS.qmd # yrChapterNumber 39
+        - 99900-qstns-30-userDefinedFunctions-v035-ANSWERS.qmd # yrChapterNumber 40
+        - 000450-additionalPracticeProblems-WITH_ANSWERS-v005.qmd # yrChapterNumber 41
+        - 000460-listQuestions-WITH_ANSWERS-v004.qmd # yrChapterNumber 42
+        - 001100-assignment-loops-v001-SOLUTIONS-v002-ONLY_QUESTIONS_4-9.qmd # yrChapterNumber 43
+        - 99950-qstns-moreQuestions-v001.qmd # yrChapterNumber 44
+        - 001035-qstns-loopsReadcode-v001.qmd # yrChapterNumber 45
+  # TODO: fix these files
+  #     - 000750-matrixQuestions-v002.qmd
+  #     - 008888-additionalQuestions-v003.qmd
+  appendices:
+    - 000110-RStudioHotkeys-v001.qmd # yrChapterNumber A
+    - 000350-n-doNotUseParenthesesWhenTheyAreClearlyNotNecessary-v060.qmd # yrChapterNumber B
+    - 000365-matchingBraces_indentation-v001.qmd # yrChapterNumber C
+    - 0200200-rstudioFolding-v033.qmd # yrChapterNumber D
+execute:
+  error: true
+  warning: true
+format:
+  html:
+    theme: cosmo
+    toc-expand: true
+    fontsize: 80%
+    number-depth: 3
+    include-in-header:
+      - file: yrNocacheHeaders-v001.html
+      - text: |
+          <script src="yrstuff-v001.js"></script>
+    css: yrStyles-main-v001.css
+    include-after-body:
+      text: |
+        <script>
+        const titles = document.querySelectorAll('.title');
+
+        titles.forEach(title => {
+          if (title.textContent.trim().startsWith('Appendix')) {
+            const chapterNumber = title.querySelector('yrChapterNumber');
+            if (chapterNumber) {
+              chapterNumber.classList.add('yrAppendixChapterNumber');
+            }
+          }
+        });
+        </script>
+  #  pdf:
+  #    documentclass: scrreprt
+  #    fontsize: 9px
+  docx: default
+editor: source
+#000430-lapply-v031-afterWilf.qmd
+#000450-additionalPracticeProblems-WITH_ANSWERS-v005.qmd
+#000460-listQuestions-v002-addedANonListQuestion-move it to the appropriate file.qmd
+#000460-listQuestions-WITH_ANSWERS-v001.qmd
+#000495-attributres_attr_names_matrix_factor_dataframe-v010.qmd
+#000555-midtermQuestionsToStudy.qmd
+#000600-HW-vectorsFunctionsRecyclingrule-v003.qmd
+#000600-HW-vectorsFunctionsRecyclingrule-v004.qmd
+#000700-matrices-v015.qmd
+#000750-matrixQuestions-v002.qmd
+#000800-factors-v009.qmd
+#000850-introToDataframes-v0019-afterBeren.qmd
+#000875-SKIPPED2022-cbind_rbind-v002.qmd
+#000900-if_ifElse_if_elseif_else_nestedStatements-v019.qmd

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>35&nbsp; 35.  while loops – r notes (latest version)</title>
+<title>38&nbsp; 38.  while loops – r notes (latest version)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -143,7 +143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./001000-whileLoops-v027-afterWilfClass25.html"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title"><yrchapternumber>35. </yrchapternumber> while loops</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./001000-whileLoops-v027-afterWilfClass25.html"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title"><yrchapternumber>38. </yrchapternumber> while loops</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,200 +189,218 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000300-usingSomeBuiltinFunctions-v028.html" class="sidebar-item-text sidebar-link">
+  <a href="./000300-usingSomeBuiltinFunctions-v028-a.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><yrchapternumber>4. </yrchapternumber> Using some built-in functions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./000300-usingSomeBuiltinFunctions-v028-b.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> Intro to R vectors</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000300-usingSomeBuiltinFunctions-v028-c.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>6. </yrchapternumber> The recycling rule and more ...</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000300-usingSomeBuiltinFunctions-v028-d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><yrchapternumber>7. </yrchapternumber> More function stuff - rep, sort, seq, colon operator</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./000350-b_b-userDefinedFunctions-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> User defined functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><yrchapternumber>8. </yrchapternumber> User defined functions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-c_h-introToTheDebugger-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>6. </yrchapternumber> deubugger   (also known as the "browser")</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><yrchapternumber>9. </yrchapternumber> debugger   (also known as the "browser")</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-d_d-modesOfData_numeric_logical_character-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><yrchapternumber>7. </yrchapternumber> modes of data: "numeric","logical","character",etc.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><yrchapternumber>10. </yrchapternumber> modes of data: "numeric","logical","character",etc.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-e_e-NA_is.na_na.rm-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><yrchapternumber>8. </yrchapternumber> NA &nbsp;&nbsp; is.na() &nbsp;&nbsp; na.rm argument</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><yrchapternumber>11. </yrchapternumber> NA &nbsp;&nbsp; is.na() &nbsp;&nbsp; na.rm argument</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-f_f-indexingWithPositiveNumbers-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><yrchapternumber>9. </yrchapternumber> Indexing with positive numbers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><yrchapternumber>12. </yrchapternumber> Indexing with positive numbers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-g_g-indexingWithNegativeNumbers-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><yrchapternumber>10. </yrchapternumber> Indexing with NEGATIVE numbers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><yrchapternumber>13. </yrchapternumber> Indexing with NEGATIVE numbers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-h_c-IntroToLogicalVectorsAndOperators_ifelseFunction-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><yrchapternumber>11. </yrchapternumber> Logical vectors, relational (AKA logical) operators, ifelse</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><yrchapternumber>14. </yrchapternumber> Logical vectors, relational (AKA logical) operators, ifelse</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-j_j-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><yrchapternumber>12. </yrchapternumber> Indexing with logicals, e.g. someVector [ c(TRUE, FALSE, TRUE) ]</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><yrchapternumber>15. </yrchapternumber> Indexing with logicals, e.g. someVector [ c(TRUE, FALSE, TRUE) ]</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-j_j_b-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><yrchapternumber>13. </yrchapternumber> Automatic (or "implicit") conversions - numeric to logical - logical to numeric</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><yrchapternumber>16. </yrchapternumber> Automatic (or "implicit") conversions - numeric to logical - logical to numeric</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-j_j_c-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><yrchapternumber>14. </yrchapternumber> (a) EXCLAMATION POINT (i.e the "not" operator)  (b) is.na( LOGICAL_VECTOR )</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title"><yrchapternumber>17. </yrchapternumber> (a) EXCLAMATION POINT (i.e the "not" operator)  (b) is.na( LOGICAL_VECTOR )</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-k_k-characterValues_cat_nchar_paste_paste0-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><yrchapternumber>15. </yrchapternumber> "character" values (also known as "strings"), cat(), nchar(), paste(), paste0()</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title"><yrchapternumber>18. </yrchapternumber> "character" values (also known as "strings"), cat(), nchar(), paste(), paste0()</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-l_i-usingCatToDebugYourCode-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><yrchapternumber>16. </yrchapternumber> Using cat to help debug your code.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title"><yrchapternumber>19. </yrchapternumber> Using cat to help debug your code.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-m_l-parallelVectors-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title"><yrchapternumber>17. </yrchapternumber> Parallel vectors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title"><yrchapternumber>20. </yrchapternumber> Parallel vectors</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-o-in_intersect_setdiff_usingNotIn-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title"><yrchapternumber>18. </yrchapternumber> %in%</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title"><yrchapternumber>21. </yrchapternumber> %in%</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-p-localVariables_globalVariables-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title"><yrchapternumber>19. </yrchapternumber> "GLOBAL VARIABLES" vs "LOCAL VARIABLES"</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title"><yrchapternumber>22. </yrchapternumber> "LOCAL VARIABLES" vs "GLOBAL VARIABLES"</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000380-logicalOperators_and_or_not-v013-withAnswers-afterBerenClass.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title"><yrchapternumber>20. </yrchapternumber> logical operators &nbsp;&nbsp; ! (not) &nbsp;&nbsp; &amp; (and) &nbsp;&nbsp; | (or)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title"><yrchapternumber>23. </yrchapternumber> logical operators &nbsp;&nbsp; ! (not) &nbsp;&nbsp; &amp; (and) &nbsp;&nbsp; | (or)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000390-sciNotation_roundoffError_v005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title"><yrchapternumber>21. </yrchapternumber> scientific notation *~(longer version)~*</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title"><yrchapternumber>24. </yrchapternumber> scientific notation *~(longer version)~*</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000400-sciNotation_roundoffError_accessingVectorPositions-v000.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title"><yrchapternumber>22. </yrchapternumber> scientific notation *~(abbridged version)~*</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title"><yrchapternumber>25. </yrchapternumber> scientific notation *~(abbridged version)~*</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000410-implicitAndExplicitConversions-v025.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title"><yrchapternumber>23. </yrchapternumber> implicit and explicit conversions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title"><yrchapternumber>26. </yrchapternumber> implicit and explicit conversions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-a-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title"><yrchapternumber>24. </yrchapternumber> intro to "lists" - i.e. collections of any R objects</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title"><yrchapternumber>27. </yrchapternumber> intro to "lists" - i.e. collections of any R objects</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-c2-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title"><yrchapternumber>25. </yrchapternumber> [[double-brackets]]</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title"><yrchapternumber>28. </yrchapternumber> [[double-brackets]]</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-d-lists-v036.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title"><yrchapternumber>26. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title"><yrchapternumber>29. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-e-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title"><yrchapternumber>27. </yrchapternumber> NAMED LISTS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title"><yrchapternumber>30. </yrchapternumber> NAMED LISTS</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000430-lapply-v031-afterWilf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title"><yrchapternumber>28. </yrchapternumber> lapply ( SOME_LIST , SOME_FUNCTION )</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title"><yrchapternumber>31. </yrchapternumber> lapply ( SOME_LIST , SOME_FUNCTION )</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000495-attributres_attr_names_matrix_factor_dataframe-v010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title"><yrchapternumber>29. </yrchapternumber> attributes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title"><yrchapternumber>32. </yrchapternumber> attributes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000700-matrices-v015.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title"><yrchapternumber>30. </yrchapternumber> matrices</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title"><yrchapternumber>33. </yrchapternumber> matrices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000800-factors-v010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title"><yrchapternumber>31. </yrchapternumber> factors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title"><yrchapternumber>34. </yrchapternumber> factors</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000850-introToDataframes-v0019-afterBeren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title"><yrchapternumber>32. </yrchapternumber> dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title"><yrchapternumber>35. </yrchapternumber> dataframes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000875-cbind_rbind-v002.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title"><yrchapternumber>33. </yrchapternumber> cbind and rbind (to combine dataframes)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber>36. </yrchapternumber> cbind and rbind (to combine dataframes)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000900-if_ifElse_if_elseif_else_nestedStatements-v019.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title"><yrchapternumber>34. </yrchapternumber> "if / else if / else"  constructs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber>37. </yrchapternumber> "if / else if / else"  constructs</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001000-whileLoops-v027-afterWilfClass25.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title"><yrchapternumber>35. </yrchapternumber> while loops</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title"><yrchapternumber>38. </yrchapternumber> while loops</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001020-forLoops_sleep_strsplit-v017-maybeChanged.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber>36. </yrchapternumber> for loops</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title"><yrchapternumber>39. </yrchapternumber> for loops</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -397,67 +415,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000555-midtermQuestionsToStudy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber>37. </yrchapternumber> FINAL EXAM (2023) - Questions to study (ie. everything)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title"><yrchapternumber>40. </yrchapternumber> FINAL EXAM (2023) - Questions to study (ie. everything)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000600-HW-vectorsFunctionsRecyclingrule-v004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title"><yrchapternumber>38. </yrchapternumber> Practice Questions - TOPIC: Vectors1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title"><yrchapternumber>41. </yrchapternumber> Practice Questions - TOPIC: Vectors1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-10-vectors-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title"><yrchapternumber>39. </yrchapternumber> Practice Questions - TOPIC: Vectors2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title"><yrchapternumber>42. </yrchapternumber> Practice Questions - TOPIC: Vectors2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-40-assortedTopics-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title"><yrchapternumber>40. </yrchapternumber> Practice Questions - TOPIC: Assorted Topics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title"><yrchapternumber>43. </yrchapternumber> Practice Questions - TOPIC: Assorted Topics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-20-dataframes-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title"><yrchapternumber>41. </yrchapternumber> Practice Questions - TOPIC: Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title"><yrchapternumber>44. </yrchapternumber> Practice Questions - TOPIC: Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-30-userDefinedFunctions-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title"><yrchapternumber>42. </yrchapternumber> Practice Questions - TOPIC: User Defined Functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title"><yrchapternumber>45. </yrchapternumber> Practice Questions - TOPIC: User Defined Functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000450-additionalPracticeProblems-WITH_ANSWERS-v005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title"><yrchapternumber>43. </yrchapternumber> Practice Questions - TOPICS: Parallel Vectors, &amp;, |, scientific notation, etc.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title"><yrchapternumber>46. </yrchapternumber> Practice Questions - TOPICS: Parallel Vectors, &amp;, |, scientific notation, etc.</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000460-listQuestions-WITH_ANSWERS-v004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title"><yrchapternumber>44. </yrchapternumber> Practice Questions - TOPIC: Lists and Dataframes.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title"><yrchapternumber>47. </yrchapternumber> Practice Questions - TOPIC: Lists and Dataframes.</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001100-assignment-loops-v001-SOLUTIONS-v002-ONLY_QUESTIONS_4-9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title"><yrchapternumber>45. </yrchapternumber> Practice Questions - TOPIC: loops (writing code)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title"><yrchapternumber>48. </yrchapternumber> Practice Questions - TOPIC: loops (writing code)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99950-qstns-moreQuestions-v001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title"><yrchapternumber>46. </yrchapternumber> Practice Questions - TOPICS: Dataframes, &amp; | !</span></span></a>
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title"><yrchapternumber>49. </yrchapternumber> Practice Questions - TOPICS: Dataframes, &amp; | !</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001035-qstns-loopsReadcode-v001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title"><yrchapternumber>47. </yrchapternumber> Practice Questions - TOPICS: cat, loops (reading code)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title"><yrchapternumber>50. </yrchapternumber> Practice Questions - TOPICS: cat, loops (reading code)</span></span></a>
   </div>
 </li>
       </ul>
@@ -507,45 +525,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-the-factorial-of-a-number" id="toc-what-is-the-factorial-of-a-number" class="nav-link active" data-scroll-target="#what-is-the-factorial-of-a-number"><span class="header-section-number">35.1</span> What is the “factorial” of a number?</a>
+  <li><a href="#what-is-the-factorial-of-a-number" id="toc-what-is-the-factorial-of-a-number" class="nav-link active" data-scroll-target="#what-is-the-factorial-of-a-number"><span class="header-section-number">38.1</span> What is the “factorial” of a number?</a>
   <ul class="collapse">
-  <li><a href="#factorial-is-not-defined-for-negative-numbers" id="toc-factorial-is-not-defined-for-negative-numbers" class="nav-link" data-scroll-target="#factorial-is-not-defined-for-negative-numbers"><span class="header-section-number">35.1.1</span> factorial is not defined for negative numbers</a></li>
-  <li><a href="#factorial0-and-factorial1-are-both-1" id="toc-factorial0-and-factorial1-are-both-1" class="nav-link" data-scroll-target="#factorial0-and-factorial1-are-both-1"><span class="header-section-number">35.1.2</span> factorial(0) and factorial(1) are both 1</a></li>
+  <li><a href="#factorial-is-not-defined-for-negative-numbers" id="toc-factorial-is-not-defined-for-negative-numbers" class="nav-link" data-scroll-target="#factorial-is-not-defined-for-negative-numbers"><span class="header-section-number">38.1.1</span> factorial is not defined for negative numbers</a></li>
+  <li><a href="#factorial0-and-factorial1-are-both-1" id="toc-factorial0-and-factorial1-are-both-1" class="nav-link" data-scroll-target="#factorial0-and-factorial1-are-both-1"><span class="header-section-number">38.1.2</span> factorial(0) and factorial(1) are both 1</a></li>
   </ul></li>
-  <li><a href="#lets-rewrite-the-factorial-function---well-use-a-while-loop." id="toc-lets-rewrite-the-factorial-function---well-use-a-while-loop." class="nav-link" data-scroll-target="#lets-rewrite-the-factorial-function---well-use-a-while-loop."><span class="header-section-number">35.2</span> Let’s rewrite the factorial function - we’ll use a while loop.</a>
+  <li><a href="#lets-rewrite-the-factorial-function---well-use-a-while-loop." id="toc-lets-rewrite-the-factorial-function---well-use-a-while-loop." class="nav-link" data-scroll-target="#lets-rewrite-the-factorial-function---well-use-a-while-loop."><span class="header-section-number">38.2</span> Let’s rewrite the factorial function - we’ll use a while loop.</a>
   <ul class="collapse">
-  <li><a href="#explanation-of-the-code" id="toc-explanation-of-the-code" class="nav-link" data-scroll-target="#explanation-of-the-code"><span class="header-section-number">35.2.1</span> Explanation of the code</a></li>
-  <li><a href="#how-the-while-loop-works" id="toc-how-the-while-loop-works" class="nav-link" data-scroll-target="#how-the-while-loop-works"><span class="header-section-number">35.2.2</span> How the while loop works</a></li>
+  <li><a href="#explanation-of-the-code" id="toc-explanation-of-the-code" class="nav-link" data-scroll-target="#explanation-of-the-code"><span class="header-section-number">38.2.1</span> Explanation of the code</a></li>
+  <li><a href="#how-the-while-loop-works" id="toc-how-the-while-loop-works" class="nav-link" data-scroll-target="#how-the-while-loop-works"><span class="header-section-number">38.2.2</span> How the while loop works</a></li>
   </ul></li>
-  <li><a href="#terminology-iteration-iterate" id="toc-terminology-iteration-iterate" class="nav-link" data-scroll-target="#terminology-iteration-iterate"><span class="header-section-number">35.3</span> Terminology: “iteration” , “iterate”</a></li>
-  <li><a href="#using-the-debugger-to-understand-the-code" id="toc-using-the-debugger-to-understand-the-code" class="nav-link" data-scroll-target="#using-the-debugger-to-understand-the-code"><span class="header-section-number">35.4</span> Using the debugger to understand the code</a></li>
-  <li><a href="#things-to-keep-in-mind-when-writing-while-loops" id="toc-things-to-keep-in-mind-when-writing-while-loops" class="nav-link" data-scroll-target="#things-to-keep-in-mind-when-writing-while-loops"><span class="header-section-number">35.5</span> Things to keep in mind when writing while loops</a></li>
-  <li><a href="#infinite-loop---press-the-stop-button-andor-esc-key" id="toc-infinite-loop---press-the-stop-button-andor-esc-key" class="nav-link" data-scroll-target="#infinite-loop---press-the-stop-button-andor-esc-key"><span class="header-section-number">35.6</span> Infinite loop - press the STOP button (and/or ESC key)</a></li>
-  <li><a href="#practice-with-finding-errors-in-loops" id="toc-practice-with-finding-errors-in-loops" class="nav-link" data-scroll-target="#practice-with-finding-errors-in-loops"><span class="header-section-number">35.7</span> Practice with finding errors in loops</a></li>
-  <li><a href="#another-example-is.primenum" id="toc-another-example-is.primenum" class="nav-link" data-scroll-target="#another-example-is.primenum"><span class="header-section-number">35.8</span> Another example: is.prime(num)</a></li>
-  <li><a href="#more-practice-finding-errors-in-loops" id="toc-more-practice-finding-errors-in-loops" class="nav-link" data-scroll-target="#more-practice-finding-errors-in-loops"><span class="header-section-number">35.9</span> More practice finding errors in loops</a></li>
-  <li><a href="#there-are-many-ways-to-write-the-same-function" id="toc-there-are-many-ways-to-write-the-same-function" class="nav-link" data-scroll-target="#there-are-many-ways-to-write-the-same-function"><span class="header-section-number">35.10</span> There are MANY ways to write the same function</a></li>
-  <li><a href="#another-example---divisorsnum" id="toc-another-example---divisorsnum" class="nav-link" data-scroll-target="#another-example---divisorsnum"><span class="header-section-number">35.11</span> another example - divisors(num)</a></li>
-  <li><a href="#more-efficient-version" id="toc-more-efficient-version" class="nav-link" data-scroll-target="#more-efficient-version"><span class="header-section-number">35.12</span> more efficient version</a></li>
-  <li><a href="#more-practice---mysumnums-blastoffseconds" id="toc-more-practice---mysumnums-blastoffseconds" class="nav-link" data-scroll-target="#more-practice---mysumnums-blastoffseconds"><span class="header-section-number">35.13</span> More practice - mysum(NUMS) &nbsp;&nbsp;&nbsp;&nbsp; blastoff(SECONDS)</a></li>
-  <li><a href="#random-numbers-runif" id="toc-random-numbers-runif" class="nav-link" data-scroll-target="#random-numbers-runif"><span class="header-section-number">35.14</span> Random numbers : runif()</a></li>
-  <li><a href="#random-numbers-sample" id="toc-random-numbers-sample" class="nav-link" data-scroll-target="#random-numbers-sample"><span class="header-section-number">35.15</span> Random numbers : sample()</a></li>
-  <li><a href="#another-exmaple---guessinggame" id="toc-another-exmaple---guessinggame" class="nav-link" data-scroll-target="#another-exmaple---guessinggame"><span class="header-section-number">35.16</span> Another exmaple - guessingGame()</a></li>
-  <li><a href="#another-example---fibonacci-sequence" id="toc-another-example---fibonacci-sequence" class="nav-link" data-scroll-target="#another-example---fibonacci-sequence"><span class="header-section-number">35.17</span> Another example - Fibonacci sequence</a></li>
-  <li><a href="#another-example---primesuptomaxnum" id="toc-another-example---primesuptomaxnum" class="nav-link" data-scroll-target="#another-example---primesuptomaxnum"><span class="header-section-number">35.18</span> another example - primesUpTo(maxNum)</a></li>
-  <li><a href="#another-example---firstnprimes-n" id="toc-another-example---firstnprimes-n" class="nav-link" data-scroll-target="#another-example---firstnprimes-n"><span class="header-section-number">35.19</span> another example - firstNPrimes ( N )</a></li>
-  <li><a href="#another-example---flightsbeforereturning-itineraray" id="toc-another-example---flightsbeforereturning-itineraray" class="nav-link" data-scroll-target="#another-example---flightsbeforereturning-itineraray"><span class="header-section-number">35.20</span> Another example - flightsBeforeReturning() , itineraray()</a></li>
-  <li><a href="#using-lapply-and-sapply-to-call-a-function-multiple-times" id="toc-using-lapply-and-sapply-to-call-a-function-multiple-times" class="nav-link" data-scroll-target="#using-lapply-and-sapply-to-call-a-function-multiple-times"><span class="header-section-number">35.21</span> Using lapply and sapply to call a function multiple times</a>
+  <li><a href="#terminology-iteration-iterate" id="toc-terminology-iteration-iterate" class="nav-link" data-scroll-target="#terminology-iteration-iterate"><span class="header-section-number">38.3</span> Terminology: “iteration” , “iterate”</a></li>
+  <li><a href="#using-the-debugger-to-understand-the-code" id="toc-using-the-debugger-to-understand-the-code" class="nav-link" data-scroll-target="#using-the-debugger-to-understand-the-code"><span class="header-section-number">38.4</span> Using the debugger to understand the code</a></li>
+  <li><a href="#things-to-keep-in-mind-when-writing-while-loops" id="toc-things-to-keep-in-mind-when-writing-while-loops" class="nav-link" data-scroll-target="#things-to-keep-in-mind-when-writing-while-loops"><span class="header-section-number">38.5</span> Things to keep in mind when writing while loops</a></li>
+  <li><a href="#infinite-loop---press-the-stop-button-andor-esc-key" id="toc-infinite-loop---press-the-stop-button-andor-esc-key" class="nav-link" data-scroll-target="#infinite-loop---press-the-stop-button-andor-esc-key"><span class="header-section-number">38.6</span> Infinite loop - press the STOP button (and/or ESC key)</a></li>
+  <li><a href="#practice-with-finding-errors-in-loops" id="toc-practice-with-finding-errors-in-loops" class="nav-link" data-scroll-target="#practice-with-finding-errors-in-loops"><span class="header-section-number">38.7</span> Practice with finding errors in loops</a></li>
+  <li><a href="#another-example-is.primenum" id="toc-another-example-is.primenum" class="nav-link" data-scroll-target="#another-example-is.primenum"><span class="header-section-number">38.8</span> Another example: is.prime(num)</a></li>
+  <li><a href="#more-practice-finding-errors-in-loops" id="toc-more-practice-finding-errors-in-loops" class="nav-link" data-scroll-target="#more-practice-finding-errors-in-loops"><span class="header-section-number">38.9</span> More practice finding errors in loops</a></li>
+  <li><a href="#there-are-many-ways-to-write-the-same-function" id="toc-there-are-many-ways-to-write-the-same-function" class="nav-link" data-scroll-target="#there-are-many-ways-to-write-the-same-function"><span class="header-section-number">38.10</span> There are MANY ways to write the same function</a></li>
+  <li><a href="#another-example---divisorsnum" id="toc-another-example---divisorsnum" class="nav-link" data-scroll-target="#another-example---divisorsnum"><span class="header-section-number">38.11</span> another example - divisors(num)</a></li>
+  <li><a href="#more-efficient-version" id="toc-more-efficient-version" class="nav-link" data-scroll-target="#more-efficient-version"><span class="header-section-number">38.12</span> more efficient version</a></li>
+  <li><a href="#more-practice---mysumnums-blastoffseconds" id="toc-more-practice---mysumnums-blastoffseconds" class="nav-link" data-scroll-target="#more-practice---mysumnums-blastoffseconds"><span class="header-section-number">38.13</span> More practice - mysum(NUMS) &nbsp;&nbsp;&nbsp;&nbsp; blastoff(SECONDS)</a></li>
+  <li><a href="#random-numbers-runif" id="toc-random-numbers-runif" class="nav-link" data-scroll-target="#random-numbers-runif"><span class="header-section-number">38.14</span> Random numbers : runif()</a></li>
+  <li><a href="#random-numbers-sample" id="toc-random-numbers-sample" class="nav-link" data-scroll-target="#random-numbers-sample"><span class="header-section-number">38.15</span> Random numbers : sample()</a></li>
+  <li><a href="#another-exmaple---guessinggame" id="toc-another-exmaple---guessinggame" class="nav-link" data-scroll-target="#another-exmaple---guessinggame"><span class="header-section-number">38.16</span> Another exmaple - guessingGame()</a></li>
+  <li><a href="#another-example---fibonacci-sequence" id="toc-another-example---fibonacci-sequence" class="nav-link" data-scroll-target="#another-example---fibonacci-sequence"><span class="header-section-number">38.17</span> Another example - Fibonacci sequence</a></li>
+  <li><a href="#another-example---primesuptomaxnum" id="toc-another-example---primesuptomaxnum" class="nav-link" data-scroll-target="#another-example---primesuptomaxnum"><span class="header-section-number">38.18</span> another example - primesUpTo(maxNum)</a></li>
+  <li><a href="#another-example---firstnprimes-n" id="toc-another-example---firstnprimes-n" class="nav-link" data-scroll-target="#another-example---firstnprimes-n"><span class="header-section-number">38.19</span> another example - firstNPrimes ( N )</a></li>
+  <li><a href="#another-example---flightsbeforereturning-itineraray" id="toc-another-example---flightsbeforereturning-itineraray" class="nav-link" data-scroll-target="#another-example---flightsbeforereturning-itineraray"><span class="header-section-number">38.20</span> Another example - flightsBeforeReturning() , itineraray()</a></li>
+  <li><a href="#using-lapply-and-sapply-to-call-a-function-multiple-times" id="toc-using-lapply-and-sapply-to-call-a-function-multiple-times" class="nav-link" data-scroll-target="#using-lapply-and-sapply-to-call-a-function-multiple-times"><span class="header-section-number">38.21</span> Using lapply and sapply to call a function multiple times</a>
   <ul class="collapse">
-  <li><a href="#sapply-is-similar-to-lapply" id="toc-sapply-is-similar-to-lapply" class="nav-link" data-scroll-target="#sapply-is-similar-to-lapply"><span class="header-section-number">35.21.1</span> sapply is similar to lapply</a></li>
-  <li><a href="#sapply---returns-vector-matrix-or-list" id="toc-sapply---returns-vector-matrix-or-list" class="nav-link" data-scroll-target="#sapply---returns-vector-matrix-or-list"><span class="header-section-number">35.21.2</span> sapply - returns vector, matrix or list</a></li>
+  <li><a href="#sapply-is-similar-to-lapply" id="toc-sapply-is-similar-to-lapply" class="nav-link" data-scroll-target="#sapply-is-similar-to-lapply"><span class="header-section-number">38.21.1</span> sapply is similar to lapply</a></li>
+  <li><a href="#sapply---returns-vector-matrix-or-list" id="toc-sapply---returns-vector-matrix-or-list" class="nav-link" data-scroll-target="#sapply---returns-vector-matrix-or-list"><span class="header-section-number">38.21.2</span> sapply - returns vector, matrix or list</a></li>
   </ul></li>
-  <li><a href="#example-combining-techniques---loops-lapplysapply-named-lists" id="toc-example-combining-techniques---loops-lapplysapply-named-lists" class="nav-link" data-scroll-target="#example-combining-techniques---loops-lapplysapply-named-lists"><span class="header-section-number">35.22</span> Example: Combining techniques - loops, lapply/sapply, named lists</a></li>
-  <li><a href="#nested-loops" id="toc-nested-loops" class="nav-link" data-scroll-target="#nested-loops"><span class="header-section-number">35.23</span> NESTED LOOPS</a></li>
-  <li><a href="#example---primesupto-with-nested-loops" id="toc-example---primesupto-with-nested-loops" class="nav-link" data-scroll-target="#example---primesupto-with-nested-loops"><span class="header-section-number">35.24</span> example - primesUpTo() with nested loops</a></li>
-  <li><a href="#example---firstnprimes-with-nested-loops" id="toc-example---firstnprimes-with-nested-loops" class="nav-link" data-scroll-target="#example---firstnprimes-with-nested-loops"><span class="header-section-number">35.25</span> example - firstNPrimes() with nested loops</a></li>
-  <li><a href="#more-practice---drawing-shapes-with-numbers" id="toc-more-practice---drawing-shapes-with-numbers" class="nav-link" data-scroll-target="#more-practice---drawing-shapes-with-numbers"><span class="header-section-number">35.26</span> More practice - drawing shapes with numbers</a></li>
-  <li><a href="#other-ways-to-do-something-over-and-over" id="toc-other-ways-to-do-something-over-and-over" class="nav-link" data-scroll-target="#other-ways-to-do-something-over-and-over"><span class="header-section-number">35.27</span> Other ways to do something over and over …</a></li>
+  <li><a href="#example-combining-techniques---loops-lapplysapply-named-lists" id="toc-example-combining-techniques---loops-lapplysapply-named-lists" class="nav-link" data-scroll-target="#example-combining-techniques---loops-lapplysapply-named-lists"><span class="header-section-number">38.22</span> Example: Combining techniques - loops, lapply/sapply, named lists</a></li>
+  <li><a href="#nested-loops" id="toc-nested-loops" class="nav-link" data-scroll-target="#nested-loops"><span class="header-section-number">38.23</span> NESTED LOOPS</a></li>
+  <li><a href="#example---primesupto-with-nested-loops" id="toc-example---primesupto-with-nested-loops" class="nav-link" data-scroll-target="#example---primesupto-with-nested-loops"><span class="header-section-number">38.24</span> example - primesUpTo() with nested loops</a></li>
+  <li><a href="#example---firstnprimes-with-nested-loops" id="toc-example---firstnprimes-with-nested-loops" class="nav-link" data-scroll-target="#example---firstnprimes-with-nested-loops"><span class="header-section-number">38.25</span> example - firstNPrimes() with nested loops</a></li>
+  <li><a href="#more-practice---drawing-shapes-with-numbers" id="toc-more-practice---drawing-shapes-with-numbers" class="nav-link" data-scroll-target="#more-practice---drawing-shapes-with-numbers"><span class="header-section-number">38.26</span> More practice - drawing shapes with numbers</a></li>
+  <li><a href="#other-ways-to-do-something-over-and-over" id="toc-other-ways-to-do-something-over-and-over" class="nav-link" data-scroll-target="#other-ways-to-do-something-over-and-over"><span class="header-section-number">38.27</span> Other ways to do something over and over …</a></li>
   </ul>
 </nav>
     </div>
@@ -554,7 +572,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title"><yrchapternumber>35. </yrchapternumber> while loops</span></h1>
+<h1 class="title"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title"><yrchapternumber>38. </yrchapternumber> while loops</span></h1>
 </div>
 
 
@@ -572,8 +590,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>A “while loop” in R is one of several ways to get R to do something over and over again (we’ll discuss other ways later). A relatively straight forward example of code that could be written with a “while loop” is the factorial function (see below). Now, since R has a built-in version of the factorial function, you don’t actually have to write the factorial function yourself. However, it will be instructive to reproduce this function with our own code that uses a while loop - which we do below. In order to understand the example code below, let’s first understand what a factorial is.</p>
-<section id="what-is-the-factorial-of-a-number" class="level2" data-number="35.1">
-<h2 data-number="35.1" class="anchored" data-anchor-id="what-is-the-factorial-of-a-number"><span class="header-section-number">35.1</span> What is the “factorial” of a number?</h2>
+<section id="what-is-the-factorial-of-a-number" class="level2" data-number="38.1">
+<h2 data-number="38.1" class="anchored" data-anchor-id="what-is-the-factorial-of-a-number"><span class="header-section-number">38.1</span> What is the “factorial” of a number?</h2>
 <p>In math, the factorial of a number is the product of that number and all the positive whole numbers below it. For example:<br>
 The factorial of 5 is: 5 × 4 × 3 × 2 × 1 = 120<br>
 Mathematicians write factorials using an exclamation point.<br>
@@ -589,8 +607,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 <pre><code>[1] 120</code></pre>
 </div>
 </div>
-<section id="factorial-is-not-defined-for-negative-numbers" class="level3" data-number="35.1.1">
-<h3 data-number="35.1.1" class="anchored" data-anchor-id="factorial-is-not-defined-for-negative-numbers"><span class="header-section-number">35.1.1</span> factorial is not defined for negative numbers</h3>
+<section id="factorial-is-not-defined-for-negative-numbers" class="level3" data-number="38.1.1">
+<h3 data-number="38.1.1" class="anchored" data-anchor-id="factorial-is-not-defined-for-negative-numbers"><span class="header-section-number">38.1.1</span> factorial is not defined for negative numbers</h3>
 <p>The concept of a factorial is not defined for negative numbers. When given a negative number, R’s factorial function returns NaN (i.e.&nbsp;R’s special value meaning “not a number”)</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">factorial</span>(<span class="sc">-</span><span class="dv">1</span>)  <span class="co"># NaN</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -599,8 +617,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 </div>
 </div>
 </section>
-<section id="factorial0-and-factorial1-are-both-1" class="level3" data-number="35.1.2">
-<h3 data-number="35.1.2" class="anchored" data-anchor-id="factorial0-and-factorial1-are-both-1"><span class="header-section-number">35.1.2</span> factorial(0) and factorial(1) are both 1</h3>
+<section id="factorial0-and-factorial1-are-both-1" class="level3" data-number="38.1.2">
+<h3 data-number="38.1.2" class="anchored" data-anchor-id="factorial0-and-factorial1-are-both-1"><span class="header-section-number">38.1.2</span> factorial(0) and factorial(1) are both 1</h3>
 <p>The factorial of 0 and the factorial of 1 are both defined to be 1.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">factorial</span>(<span class="dv">0</span>)  <span class="co"># defined by mathematicians to be 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -615,8 +633,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 <p><em>To learn more about factorials, see this page:</em> <em><a href="https://www.mathsisfun.com/numbers/factorial.html" target="_blank">https://www.mathsisfun.com/numbers/factorial.html</a></em></p>
 </section>
 </section>
-<section id="lets-rewrite-the-factorial-function---well-use-a-while-loop." class="level2" data-number="35.2">
-<h2 data-number="35.2" class="anchored" data-anchor-id="lets-rewrite-the-factorial-function---well-use-a-while-loop."><span class="header-section-number">35.2</span> Let’s rewrite the factorial function - we’ll use a while loop.</h2>
+<section id="lets-rewrite-the-factorial-function---well-use-a-while-loop." class="level2" data-number="38.2">
+<h2 data-number="38.2" class="anchored" data-anchor-id="lets-rewrite-the-factorial-function---well-use-a-while-loop."><span class="header-section-number">38.2</span> Let’s rewrite the factorial function - we’ll use a while loop.</h2>
 <p>Let’s write a function called myFactorial that reproduces the results of R’s builtin factorial function that was shown above.</p>
 <p>The code introduces a new concept - the “while loop”. We’ll explain all of the code below, but first let’s see the full definition of the function and make sure that it works:</p>
 <div class="cell">
@@ -674,8 +692,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 <pre><code>[1] NaN</code></pre>
 </div>
 </div>
-<section id="explanation-of-the-code" class="level3" data-number="35.2.1">
-<h3 data-number="35.2.1" class="anchored" data-anchor-id="explanation-of-the-code"><span class="header-section-number">35.2.1</span> Explanation of the code</h3>
+<section id="explanation-of-the-code" class="level3" data-number="38.2.1">
+<h3 data-number="38.2.1" class="anchored" data-anchor-id="explanation-of-the-code"><span class="header-section-number">38.2.1</span> Explanation of the code</h3>
 <p>Let’s go through the myFactorial function in detail. Portions of the code are highlighted with numbers and explained below.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-15"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-15-1"><a href="#annotated-cell-15-1"></a>myFactorial <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
@@ -722,8 +740,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 </div>
 </div>
 </section>
-<section id="how-the-while-loop-works" class="level3" data-number="35.2.2">
-<h3 data-number="35.2.2" class="anchored" data-anchor-id="how-the-while-loop-works"><span class="header-section-number">35.2.2</span> How the while loop works</h3>
+<section id="how-the-while-loop-works" class="level3" data-number="38.2.2">
+<h3 data-number="38.2.2" class="anchored" data-anchor-id="how-the-while-loop-works"><span class="header-section-number">38.2.2</span> How the while loop works</h3>
 <p>A while loop looks similar to an if, except that a while loop starts with the word “while” and an if starts with the word “if”.</p>
 <ul>
 <li><p>Similar to an “if”, a “while” has a logical condition in parentheses followed by some code in {curly braces}. (The code in the {curly braces} is called the “body” of the while loop.)</p></li>
@@ -735,17 +753,17 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 </ul>
 </section>
 </section>
-<section id="terminology-iteration-iterate" class="level2" data-number="35.3">
-<h2 data-number="35.3" class="anchored" data-anchor-id="terminology-iteration-iterate"><span class="header-section-number">35.3</span> Terminology: “iteration” , “iterate”</h2>
+<section id="terminology-iteration-iterate" class="level2" data-number="38.3">
+<h2 data-number="38.3" class="anchored" data-anchor-id="terminology-iteration-iterate"><span class="header-section-number">38.3</span> Terminology: “iteration” , “iterate”</h2>
 <p>As a while loop executes, the code in the “body” of the while loop may be executed (i.e.&nbsp;run) several times. Each time the code of the body is executed is known as a single “iteration” of the while loop. In general we say that the while loop “iterates over” the code in the body of the loop.</p>
 </section>
-<section id="using-the-debugger-to-understand-the-code" class="level2" data-number="35.4">
-<h2 data-number="35.4" class="anchored" data-anchor-id="using-the-debugger-to-understand-the-code"><span class="header-section-number">35.4</span> Using the debugger to understand the code</h2>
+<section id="using-the-debugger-to-understand-the-code" class="level2" data-number="38.4">
+<h2 data-number="38.4" class="anchored" data-anchor-id="using-the-debugger-to-understand-the-code"><span class="header-section-number">38.4</span> Using the debugger to understand the code</h2>
 <p>It is often helpful to use R’s debugger to help understand the code for a loop. Information about how to use R’s debugger is above in the <a href="./000350-c_h-introToTheDebugger-v060.html" target="_blank">debugger</a> section.</p>
 <p>As a quick refresher - to use the debugger, you should first run the code shown above that defines the function myFactorial. Then type the command <code>debugonce(myFactorial)</code> and finally call the function, e.g.&nbsp;<code>myFactorial(5)</code>. At that point the debugger should start. To see how the code works, you can repeatedly press the “next” button (or type n). Every time you do so, the code will advance one line. You can use this technique to see what “path” the code takes through ifs and loops. You should pay attention to how the values of the variables in the “Environment” pane change as the code is executed. Tracing through code in this way is one of the best ways to understand how the code works.</p>
 </section>
-<section id="things-to-keep-in-mind-when-writing-while-loops" class="level2" data-number="35.5">
-<h2 data-number="35.5" class="anchored" data-anchor-id="things-to-keep-in-mind-when-writing-while-loops"><span class="header-section-number">35.5</span> Things to keep in mind when writing while loops</h2>
+<section id="things-to-keep-in-mind-when-writing-while-loops" class="level2" data-number="38.5">
+<h2 data-number="38.5" class="anchored" data-anchor-id="things-to-keep-in-mind-when-writing-while-loops"><span class="header-section-number">38.5</span> Things to keep in mind when writing while loops</h2>
 <p>When writing while loops, keep the following in mind:</p>
 <ol type="1">
 <li><p>The condition, which appears in the parentheses, should depend on at least one variable.</p>
@@ -758,8 +776,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 <p>In this example, the line : num &lt;- num - 1 changes the value of num by subtracting one from it. If this happens enough times, the value of num will eventually become 1, thus making the condition FALSE.</p></li>
 </ol>
 </section>
-<section id="infinite-loop---press-the-stop-button-andor-esc-key" class="level2" data-number="35.6">
-<h2 data-number="35.6" class="anchored" data-anchor-id="infinite-loop---press-the-stop-button-andor-esc-key"><span class="header-section-number">35.6</span> Infinite loop - press the STOP button (and/or ESC key)</h2>
+<section id="infinite-loop---press-the-stop-button-andor-esc-key" class="level2" data-number="38.6">
+<h2 data-number="38.6" class="anchored" data-anchor-id="infinite-loop---press-the-stop-button-andor-esc-key"><span class="header-section-number">38.6</span> Infinite loop - press the STOP button (and/or ESC key)</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="do">#########################################################################</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
@@ -883,8 +901,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 <span id="cb32-49"><a href="#cb32-49" aria-hidden="true" tabindex="-1"></a><span class="co"># anotherBadFunction() # another infinite loop -</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="practice-with-finding-errors-in-loops" class="level2" data-number="35.7">
-<h2 data-number="35.7" class="anchored" data-anchor-id="practice-with-finding-errors-in-loops"><span class="header-section-number">35.7</span> Practice with finding errors in loops</h2>
+<section id="practice-with-finding-errors-in-loops" class="level2" data-number="38.7">
+<h2 data-number="38.7" class="anchored" data-anchor-id="practice-with-finding-errors-in-loops"><span class="header-section-number">38.7</span> Practice with finding errors in loops</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The following is the same exact code as above, without all the </span></span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="co"># comments. There are many different subtle errors that can pop up</span></span>
@@ -942,8 +960,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 </div>
 </div>
 </section>
-<section id="another-example-is.primenum" class="level2" data-number="35.8">
-<h2 data-number="35.8" class="anchored" data-anchor-id="another-example-is.primenum"><span class="header-section-number">35.8</span> Another example: is.prime(num)</h2>
+<section id="another-example-is.primenum" class="level2" data-number="38.8">
+<h2 data-number="38.8" class="anchored" data-anchor-id="another-example-is.primenum"><span class="header-section-number">38.8</span> Another example: is.prime(num)</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------</span></span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Another example ...</span></span>
@@ -1078,8 +1096,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 </div>
 </div>
 </section>
-<section id="more-practice-finding-errors-in-loops" class="level2" data-number="35.9">
-<h2 data-number="35.9" class="anchored" data-anchor-id="more-practice-finding-errors-in-loops"><span class="header-section-number">35.9</span> More practice finding errors in loops</h2>
+<section id="more-practice-finding-errors-in-loops" class="level2" data-number="38.9">
+<h2 data-number="38.9" class="anchored" data-anchor-id="more-practice-finding-errors-in-loops"><span class="header-section-number">38.9</span> More practice finding errors in loops</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The following is the same function again, this time without the comments.</span></span>
 <span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
@@ -1128,8 +1146,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 </div>
 </div>
 </section>
-<section id="there-are-many-ways-to-write-the-same-function" class="level2" data-number="35.10">
-<h2 data-number="35.10" class="anchored" data-anchor-id="there-are-many-ways-to-write-the-same-function"><span class="header-section-number">35.10</span> There are MANY ways to write the same function</h2>
+<section id="there-are-many-ways-to-write-the-same-function" class="level2" data-number="38.10">
+<h2 data-number="38.10" class="anchored" data-anchor-id="there-are-many-ways-to-write-the-same-function"><span class="header-section-number">38.10</span> There are MANY ways to write the same function</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------</span></span>
 <span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Another way to write the same function.</span></span>
@@ -1172,8 +1190,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 <span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a><span class="co">#all(sapply(1:100,is.prime) == sapply(1:100,is.prime2))   # TRUE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="another-example---divisorsnum" class="level2" data-number="35.11">
-<h2 data-number="35.11" class="anchored" data-anchor-id="another-example---divisorsnum"><span class="header-section-number">35.11</span> another example - divisors(num)</h2>
+<section id="another-example---divisorsnum" class="level2" data-number="38.11">
+<h2 data-number="38.11" class="anchored" data-anchor-id="another-example---divisorsnum"><span class="header-section-number">38.11</span> another example - divisors(num)</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------------------</span></span>
 <span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Write a function to find all divisors of a number</span></span>
@@ -1225,8 +1243,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 <span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a><span class="co">#divisors(67867970)  # This will take a few seconds.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="more-efficient-version" class="level2" data-number="35.12">
-<h2 data-number="35.12" class="anchored" data-anchor-id="more-efficient-version"><span class="header-section-number">35.12</span> more efficient version</h2>
+<section id="more-efficient-version" class="level2" data-number="38.12">
+<h2 data-number="38.12" class="anchored" data-anchor-id="more-efficient-version"><span class="header-section-number">38.12</span> more efficient version</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb78"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="co">#-------------------------------------</span></span>
 <span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a><span class="co"># a more efficient version</span></span>
@@ -1297,8 +1315,8 @@ However, 5! is NOT valid R code. Rather, R has a builtin function, <code>factori
 <span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a><span class="co">#all ( divisors.faster(15485864) == divisors(15485864) )  # TRUE if all nums are the same</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="more-practice---mysumnums-blastoffseconds" class="level2" data-number="35.13">
-<h2 data-number="35.13" class="anchored" data-anchor-id="more-practice---mysumnums-blastoffseconds"><span class="header-section-number">35.13</span> More practice - mysum(NUMS) &nbsp;&nbsp;&nbsp;&nbsp; blastoff(SECONDS)</h2>
+<section id="more-practice---mysumnums-blastoffseconds" class="level2" data-number="38.13">
+<h2 data-number="38.13" class="anchored" data-anchor-id="more-practice---mysumnums-blastoffseconds"><span class="header-section-number">38.13</span> More practice - mysum(NUMS) &nbsp;&nbsp;&nbsp;&nbsp; blastoff(SECONDS)</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="do">###############################################################################</span></span>
 <span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The next two "QUESTIONS" (i.e. to write the "mysum" and "blastoff" functions)</span></span>
@@ -1441,8 +1459,8 @@ BLASTOFF!!!</code></pre>
 <span id="cb111-2"><a href="#cb111-2" aria-hidden="true" tabindex="-1"></a><span class="co">#countdown(0)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="random-numbers-runif" class="level2" data-number="35.14">
-<h2 data-number="35.14" class="anchored" data-anchor-id="random-numbers-runif"><span class="header-section-number">35.14</span> Random numbers : runif()</h2>
+<section id="random-numbers-runif" class="level2" data-number="38.14">
+<h2 data-number="38.14" class="anchored" data-anchor-id="random-numbers-runif"><span class="header-section-number">38.14</span> Random numbers : runif()</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="do">####################################################################</span></span>
 <span id="cb112-2"><a href="#cb112-2" aria-hidden="true" tabindex="-1"></a><span class="do">####################################################################</span></span>
@@ -1477,31 +1495,31 @@ BLASTOFF!!!</code></pre>
 <span id="cb112-31"><a href="#cb112-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb112-32"><a href="#cb112-32" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>)   <span class="co"># one random number between 0 and 1  (not including 0.0 or 1.0)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.5955975</code></pre>
+<pre><code>[1] 0.6833707</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">1</span>)   <span class="co"># another random number between 0 and 1  (not including 0.0 or 1.0)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.6974013</code></pre>
+<pre><code>[1] 0.266135</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb116"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">3</span>)   <span class="co"># three random numbers between 0 and 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.08113108 0.80810731 0.20745448</code></pre>
+<pre><code>[1] 0.2124564 0.1827707 0.2820673</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">3</span>, <span class="at">min=</span><span class="dv">0</span>, <span class="at">max=</span><span class="dv">100</span>)   <span class="co"># three random numbers between 0 and 100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 19.26440 38.41008 45.59523</code></pre>
+<pre><code>[1] 31.46236 28.16885 13.70620</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb120"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href="#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">3</span>, <span class="at">min=</span><span class="dv">500</span>, <span class="at">max=</span><span class="dv">505</span>)   <span class="co"># three random numbers between 500 and 505</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 502.9197 502.5152 504.1375</code></pre>
+<pre><code>[1] 500.6905 501.5657 503.6284</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb122"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb122-1"><a href="#cb122-1" aria-hidden="true" tabindex="-1"></a><span class="fu">trunc</span>(<span class="fu">runif</span>(<span class="dv">25</span>, <span class="at">min=</span><span class="dv">1</span>, <span class="at">max=</span><span class="dv">11</span>))   <span class="co"># 25 random whole numbers between 1 and 10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1]  9  9  8  4 10  6  7  2  1  8  4  7  9  2  4 10  7  4  5 10  2  8  1  7  4</code></pre>
+<pre><code> [1]  1 10 10  3  3  1  6 10 10  6  7  7  2  5  6  2  6  7  8  3  9  1  7  7  4</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb124"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb124-1"><a href="#cb124-1" aria-hidden="true" tabindex="-1"></a><span class="fu">trunc</span>(<span class="fu">runif</span>(<span class="dv">25</span>, <span class="at">min=</span><span class="dv">1</span>, <span class="at">max=</span><span class="dv">11</span>))   <span class="co"># another 25 random whole numbers between 1 and 10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1]  1  5  5 10  8  7  1  2  6  3  8  4  9  7  1  7  5  5  6  9  9  7  1  3  4</code></pre>
+<pre><code> [1] 10  8  7  6  7  6  5  7  3  7  8 10  8  1  1  2  2  2  7  4 10  8  8  4  7</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb126"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb126-1"><a href="#cb126-1" aria-hidden="true" tabindex="-1"></a><span class="co">#-----------------------------</span></span>
 <span id="cb126-2"><a href="#cb126-2" aria-hidden="true" tabindex="-1"></a><span class="co"># set.seed(SOME_WHOLE_NUMBER)</span></span>
@@ -1566,8 +1584,8 @@ BLASTOFF!!!</code></pre>
 </div>
 </div>
 </section>
-<section id="random-numbers-sample" class="level2" data-number="35.15">
-<h2 data-number="35.15" class="anchored" data-anchor-id="random-numbers-sample"><span class="header-section-number">35.15</span> Random numbers : sample()</h2>
+<section id="random-numbers-sample" class="level2" data-number="38.15">
+<h2 data-number="38.15" class="anchored" data-anchor-id="random-numbers-sample"><span class="header-section-number">38.15</span> Random numbers : sample()</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb152"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb152-1"><a href="#cb152-1" aria-hidden="true" tabindex="-1"></a><span class="co">#-----------------------------------------------------------------------------</span></span>
 <span id="cb152-2"><a href="#cb152-2" aria-hidden="true" tabindex="-1"></a><span class="co"># sample  </span></span>
@@ -1650,8 +1668,8 @@ BLASTOFF!!!</code></pre>
 </div>
 </div>
 </section>
-<section id="another-exmaple---guessinggame" class="level2" data-number="35.16">
-<h2 data-number="35.16" class="anchored" data-anchor-id="another-exmaple---guessinggame"><span class="header-section-number">35.16</span> Another exmaple - guessingGame()</h2>
+<section id="another-exmaple---guessinggame" class="level2" data-number="38.16">
+<h2 data-number="38.16" class="anchored" data-anchor-id="another-exmaple---guessinggame"><span class="header-section-number">38.16</span> Another exmaple - guessingGame()</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb184"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb184-1"><a href="#cb184-1" aria-hidden="true" tabindex="-1"></a><span class="co">#-------------------------------------------------------------------------</span></span>
 <span id="cb184-2"><a href="#cb184-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Write a guessing game function</span></span>
@@ -1742,8 +1760,8 @@ BLASTOFF!!!</code></pre>
 <span id="cb184-87"><a href="#cb184-87" aria-hidden="true" tabindex="-1"></a><span class="co">#guessingGame()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="another-example---fibonacci-sequence" class="level2" data-number="35.17">
-<h2 data-number="35.17" class="anchored" data-anchor-id="another-example---fibonacci-sequence"><span class="header-section-number">35.17</span> Another example - Fibonacci sequence</h2>
+<section id="another-example---fibonacci-sequence" class="level2" data-number="38.17">
+<h2 data-number="38.17" class="anchored" data-anchor-id="another-example---fibonacci-sequence"><span class="header-section-number">38.17</span> Another example - Fibonacci sequence</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb185"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb185-1"><a href="#cb185-1" aria-hidden="true" tabindex="-1"></a><span class="co">#-------------------------------------</span></span>
 <span id="cb185-2"><a href="#cb185-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Another example - Fibonacci sequence</span></span>
@@ -1856,8 +1874,8 @@ BLASTOFF!!!</code></pre>
 </div>
 </div>
 </section>
-<section id="another-example---primesuptomaxnum" class="level2" data-number="35.18">
-<h2 data-number="35.18" class="anchored" data-anchor-id="another-example---primesuptomaxnum"><span class="header-section-number">35.18</span> another example - primesUpTo(maxNum)</h2>
+<section id="another-example---primesuptomaxnum" class="level2" data-number="38.18">
+<h2 data-number="38.18" class="anchored" data-anchor-id="another-example---primesuptomaxnum"><span class="header-section-number">38.18</span> another example - primesUpTo(maxNum)</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb197"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb197-1"><a href="#cb197-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>())  <span class="co"># start over ...</span></span>
 <span id="cb197-2"><a href="#cb197-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -1934,8 +1952,8 @@ BLASTOFF!!!</code></pre>
 </div>
 </div>
 </section>
-<section id="another-example---firstnprimes-n" class="level2" data-number="35.19">
-<h2 data-number="35.19" class="anchored" data-anchor-id="another-example---firstnprimes-n"><span class="header-section-number">35.19</span> another example - firstNPrimes ( N )</h2>
+<section id="another-example---firstnprimes-n" class="level2" data-number="38.19">
+<h2 data-number="38.19" class="anchored" data-anchor-id="another-example---firstnprimes-n"><span class="header-section-number">38.19</span> another example - firstNPrimes ( N )</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb203"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb203-1"><a href="#cb203-1" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------------------</span></span>
 <span id="cb203-2"><a href="#cb203-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Get first n primes</span></span>
@@ -1997,8 +2015,8 @@ BLASTOFF!!!</code></pre>
 </div>
 </div>
 </section>
-<section id="another-example---flightsbeforereturning-itineraray" class="level2" data-number="35.20">
-<h2 data-number="35.20" class="anchored" data-anchor-id="another-example---flightsbeforereturning-itineraray"><span class="header-section-number">35.20</span> Another example - flightsBeforeReturning() , itineraray()</h2>
+<section id="another-example---flightsbeforereturning-itineraray" class="level2" data-number="38.20">
+<h2 data-number="38.20" class="anchored" data-anchor-id="another-example---flightsbeforereturning-itineraray"><span class="header-section-number">38.20</span> Another example - flightsBeforeReturning() , itineraray()</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb213"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb213-1"><a href="#cb213-1" aria-hidden="true" tabindex="-1"></a><span class="do">#############################################################.</span></span>
 <span id="cb213-2"><a href="#cb213-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The following example is interesting but doesn't add any new </span></span>
@@ -2163,8 +2181,8 @@ BLASTOFF!!!</code></pre>
 </div>
 </div>
 </section>
-<section id="using-lapply-and-sapply-to-call-a-function-multiple-times" class="level2" data-number="35.21">
-<h2 data-number="35.21" class="anchored" data-anchor-id="using-lapply-and-sapply-to-call-a-function-multiple-times"><span class="header-section-number">35.21</span> Using lapply and sapply to call a function multiple times</h2>
+<section id="using-lapply-and-sapply-to-call-a-function-multiple-times" class="level2" data-number="38.21">
+<h2 data-number="38.21" class="anchored" data-anchor-id="using-lapply-and-sapply-to-call-a-function-multiple-times"><span class="header-section-number">38.21</span> Using lapply and sapply to call a function multiple times</h2>
 <p>Suppose we wanted to get multiple factorials and put them in a vector. We could do so by putting the code for a while loop inside the body of another while loop (i.e.&nbsp;this is called a nested loop). We will explore how to do that in the next section. However, nested loops can be confusing, especially for new programmers.</p>
 <p>For now, a simpler way to get the factorials of each value in a numeric vector is to use the <a href="http://127.0.0.1:5500/_book/000430-lapply-v031-afterWilf.html">lapply</a> function. <em>(For a review of lapply see <a href="http://127.0.0.1:5500/_book/000430-lapply-v031-afterWilf.html">this section</a>.</em></p>
 <div class="cell">
@@ -2178,8 +2196,8 @@ BLASTOFF!!!</code></pre>
 <pre><code>Error: object 'myFactorial' not found</code></pre>
 </div>
 </div>
-<section id="sapply-is-similar-to-lapply" class="level3" data-number="35.21.1">
-<h3 data-number="35.21.1" class="anchored" data-anchor-id="sapply-is-similar-to-lapply"><span class="header-section-number">35.21.1</span> sapply is similar to lapply</h3>
+<section id="sapply-is-similar-to-lapply" class="level3" data-number="38.21.1">
+<h3 data-number="38.21.1" class="anchored" data-anchor-id="sapply-is-similar-to-lapply"><span class="header-section-number">38.21.1</span> sapply is similar to lapply</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb249"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb249-1"><a href="#cb249-1" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------------------------------------------------------</span></span>
 <span id="cb249-2"><a href="#cb249-2" aria-hidden="true" tabindex="-1"></a><span class="co"># sapply</span></span>
@@ -2233,8 +2251,8 @@ BLASTOFF!!!</code></pre>
 </div>
 </div>
 </section>
-<section id="sapply---returns-vector-matrix-or-list" class="level3" data-number="35.21.2">
-<h3 data-number="35.21.2" class="anchored" data-anchor-id="sapply---returns-vector-matrix-or-list"><span class="header-section-number">35.21.2</span> sapply - returns vector, matrix or list</h3>
+<section id="sapply---returns-vector-matrix-or-list" class="level3" data-number="38.21.2">
+<h3 data-number="38.21.2" class="anchored" data-anchor-id="sapply---returns-vector-matrix-or-list"><span class="header-section-number">38.21.2</span> sapply - returns vector, matrix or list</h3>
 <p>As mentioned above, depending on the return values from the function calls, sapply might return a vector, a matrix or a list.</p>
 <ul>
 <li><p>As shown above with the myFactorial function, when all function calls return a single value, sapply returns a vector.</p></li>
@@ -2346,8 +2364,8 @@ BLASTOFF!!!</code></pre>
 </div>
 </section>
 </section>
-<section id="example-combining-techniques---loops-lapplysapply-named-lists" class="level2" data-number="35.22">
-<h2 data-number="35.22" class="anchored" data-anchor-id="example-combining-techniques---loops-lapplysapply-named-lists"><span class="header-section-number">35.22</span> Example: Combining techniques - loops, lapply/sapply, named lists</h2>
+<section id="example-combining-techniques---loops-lapplysapply-named-lists" class="level2" data-number="38.22">
+<h2 data-number="38.22" class="anchored" data-anchor-id="example-combining-techniques---loops-lapplysapply-named-lists"><span class="header-section-number">38.22</span> Example: Combining techniques - loops, lapply/sapply, named lists</h2>
 <p>The following examples show how to use lapply and sapply with the is.prime function.</p>
 <p>The following gets the first 20 numbers and checks if they are prime. It’s relatively easy to see which number is prime and which is not as the results are in order - 1st answer is TRUE or FALSE for 1, 2nd answer is TRUE or FALSE for 2, etc.</p>
 <div class="cell">
@@ -2542,8 +2560,8 @@ FALSE </code></pre>
 <span id="cb293-2"><a href="#cb293-2" aria-hidden="true" tabindex="-1"></a><span class="co"># FALSE </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="nested-loops" class="level2" data-number="35.23">
-<h2 data-number="35.23" class="anchored" data-anchor-id="nested-loops"><span class="header-section-number">35.23</span> NESTED LOOPS</h2>
+<section id="nested-loops" class="level2" data-number="38.23">
+<h2 data-number="38.23" class="anchored" data-anchor-id="nested-loops"><span class="header-section-number">38.23</span> NESTED LOOPS</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb294"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb294-1"><a href="#cb294-1" aria-hidden="true" tabindex="-1"></a><span class="do">#####################################################################</span></span>
 <span id="cb294-2"><a href="#cb294-2" aria-hidden="true" tabindex="-1"></a><span class="do">#####################################################################</span></span>
@@ -2615,8 +2633,8 @@ OUTER LOOP (before inner loop): outer= 3
 </div>
 </div>
 </section>
-<section id="example---primesupto-with-nested-loops" class="level2" data-number="35.24">
-<h2 data-number="35.24" class="anchored" data-anchor-id="example---primesupto-with-nested-loops"><span class="header-section-number">35.24</span> example - primesUpTo() with nested loops</h2>
+<section id="example---primesupto-with-nested-loops" class="level2" data-number="38.24">
+<h2 data-number="38.24" class="anchored" data-anchor-id="example---primesupto-with-nested-loops"><span class="header-section-number">38.24</span> example - primesUpTo() with nested loops</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb298"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb298-1"><a href="#cb298-1" aria-hidden="true" tabindex="-1"></a><span class="do">###############################################################################</span></span>
 <span id="cb298-2"><a href="#cb298-2" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
@@ -2755,8 +2773,8 @@ OUTER LOOP (before inner loop): outer= 3
 </div>
 </div>
 </section>
-<section id="example---firstnprimes-with-nested-loops" class="level2" data-number="35.25">
-<h2 data-number="35.25" class="anchored" data-anchor-id="example---firstnprimes-with-nested-loops"><span class="header-section-number">35.25</span> example - firstNPrimes() with nested loops</h2>
+<section id="example---firstnprimes-with-nested-loops" class="level2" data-number="38.25">
+<h2 data-number="38.25" class="anchored" data-anchor-id="example---firstnprimes-with-nested-loops"><span class="header-section-number">38.25</span> example - firstNPrimes() with nested loops</h2>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -3578,8 +3596,8 @@ Note
 </div>
 </div>
 </section>
-<section id="more-practice---drawing-shapes-with-numbers" class="level2" data-number="35.26">
-<h2 data-number="35.26" class="anchored" data-anchor-id="more-practice---drawing-shapes-with-numbers"><span class="header-section-number">35.26</span> More practice - drawing shapes with numbers</h2>
+<section id="more-practice---drawing-shapes-with-numbers" class="level2" data-number="38.26">
+<h2 data-number="38.26" class="anchored" data-anchor-id="more-practice---drawing-shapes-with-numbers"><span class="header-section-number">38.26</span> More practice - drawing shapes with numbers</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb340"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb340-1"><a href="#cb340-1" aria-hidden="true" tabindex="-1"></a><span class="do">#####################################################################.</span></span>
 <span id="cb340-2"><a href="#cb340-2" aria-hidden="true" tabindex="-1"></a><span class="co"># SOME "TOY" FUNCTIONS</span></span>
@@ -3989,8 +4007,8 @@ xxxx</code></pre>
 </div>
 </div>
 </section>
-<section id="other-ways-to-do-something-over-and-over" class="level2" data-number="35.27">
-<h2 data-number="35.27" class="anchored" data-anchor-id="other-ways-to-do-something-over-and-over"><span class="header-section-number">35.27</span> Other ways to do something over and over …</h2>
+<section id="other-ways-to-do-something-over-and-over" class="level2" data-number="38.27">
+<h2 data-number="38.27" class="anchored" data-anchor-id="other-ways-to-do-something-over-and-over"><span class="header-section-number">38.27</span> Other ways to do something over and over …</h2>
 <p>In R there are a few ways to do something over and over again … Often it is possible to recreate the same effect as a while loop by using one of these other approaches.</p>
 <ol type="1">
 <li>Vector arithmetic automaticlly performs the same operation over and over to each item in the vector. For example:</li>
@@ -4422,13 +4440,13 @@ xxxx</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./000900-if_ifElse_if_elseif_else_nestedStatements-v019.html" class="pagination-link" aria-label="<yrChapterNumber>34. </yrChapterNumber> &quot;if / else if / else&quot;  constructs">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title"><yrchapternumber>34. </yrchapternumber> “if / else if / else” constructs</span></span>
+      <a href="./000900-if_ifElse_if_elseif_else_nestedStatements-v019.html" class="pagination-link" aria-label="<yrChapterNumber>37. </yrChapterNumber> &quot;if / else if / else&quot;  constructs">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber>37. </yrchapternumber> “if / else if / else” constructs</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./001020-forLoops_sleep_strsplit-v017-maybeChanged.html" class="pagination-link" aria-label="<yrChapterNumber>36. </yrChapterNumber> for loops">
-        <span class="nav-page-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber>36. </yrchapternumber> for loops</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./001020-forLoops_sleep_strsplit-v017-maybeChanged.html" class="pagination-link" aria-label="<yrChapterNumber>39. </yrChapterNumber> for loops">
+        <span class="nav-page-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title"><yrchapternumber>39. </yrchapternumber> for loops</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

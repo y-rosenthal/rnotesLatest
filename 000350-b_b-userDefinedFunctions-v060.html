@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; 5.  User defined functions – r notes (latest version)</title>
+<title>8&nbsp; 8.  User defined functions – r notes (latest version)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./000350-c_h-introToTheDebugger-v060.html" rel="next">
-<link href="./000300-usingSomeBuiltinFunctions-v028.html" rel="prev">
+<link href="./000300-usingSomeBuiltinFunctions-v028-d.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -143,7 +143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000350-b_b-userDefinedFunctions-v060.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> User defined functions</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000350-b_b-userDefinedFunctions-v060.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><yrchapternumber>8. </yrchapternumber> User defined functions</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,200 +189,218 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000300-usingSomeBuiltinFunctions-v028.html" class="sidebar-item-text sidebar-link">
+  <a href="./000300-usingSomeBuiltinFunctions-v028-a.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><yrchapternumber>4. </yrchapternumber> Using some built-in functions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./000300-usingSomeBuiltinFunctions-v028-b.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> Intro to R vectors</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000300-usingSomeBuiltinFunctions-v028-c.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>6. </yrchapternumber> The recycling rule and more ...</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000300-usingSomeBuiltinFunctions-v028-d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><yrchapternumber>7. </yrchapternumber> More function stuff - rep, sort, seq, colon operator</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./000350-b_b-userDefinedFunctions-v060.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> User defined functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><yrchapternumber>8. </yrchapternumber> User defined functions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-c_h-introToTheDebugger-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>6. </yrchapternumber> deubugger   (also known as the "browser")</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><yrchapternumber>9. </yrchapternumber> debugger   (also known as the "browser")</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-d_d-modesOfData_numeric_logical_character-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><yrchapternumber>7. </yrchapternumber> modes of data: "numeric","logical","character",etc.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><yrchapternumber>10. </yrchapternumber> modes of data: "numeric","logical","character",etc.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-e_e-NA_is.na_na.rm-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><yrchapternumber>8. </yrchapternumber> NA &nbsp;&nbsp; is.na() &nbsp;&nbsp; na.rm argument</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><yrchapternumber>11. </yrchapternumber> NA &nbsp;&nbsp; is.na() &nbsp;&nbsp; na.rm argument</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-f_f-indexingWithPositiveNumbers-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><yrchapternumber>9. </yrchapternumber> Indexing with positive numbers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><yrchapternumber>12. </yrchapternumber> Indexing with positive numbers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-g_g-indexingWithNegativeNumbers-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><yrchapternumber>10. </yrchapternumber> Indexing with NEGATIVE numbers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><yrchapternumber>13. </yrchapternumber> Indexing with NEGATIVE numbers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-h_c-IntroToLogicalVectorsAndOperators_ifelseFunction-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><yrchapternumber>11. </yrchapternumber> Logical vectors, relational (AKA logical) operators, ifelse</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><yrchapternumber>14. </yrchapternumber> Logical vectors, relational (AKA logical) operators, ifelse</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-j_j-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><yrchapternumber>12. </yrchapternumber> Indexing with logicals, e.g. someVector [ c(TRUE, FALSE, TRUE) ]</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><yrchapternumber>15. </yrchapternumber> Indexing with logicals, e.g. someVector [ c(TRUE, FALSE, TRUE) ]</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-j_j_b-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><yrchapternumber>13. </yrchapternumber> Automatic (or "implicit") conversions - numeric to logical - logical to numeric</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><yrchapternumber>16. </yrchapternumber> Automatic (or "implicit") conversions - numeric to logical - logical to numeric</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-j_j_c-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><yrchapternumber>14. </yrchapternumber> (a) EXCLAMATION POINT (i.e the "not" operator)  (b) is.na( LOGICAL_VECTOR )</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title"><yrchapternumber>17. </yrchapternumber> (a) EXCLAMATION POINT (i.e the "not" operator)  (b) is.na( LOGICAL_VECTOR )</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-k_k-characterValues_cat_nchar_paste_paste0-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><yrchapternumber>15. </yrchapternumber> "character" values (also known as "strings"), cat(), nchar(), paste(), paste0()</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title"><yrchapternumber>18. </yrchapternumber> "character" values (also known as "strings"), cat(), nchar(), paste(), paste0()</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-l_i-usingCatToDebugYourCode-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><yrchapternumber>16. </yrchapternumber> Using cat to help debug your code.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title"><yrchapternumber>19. </yrchapternumber> Using cat to help debug your code.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-m_l-parallelVectors-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title"><yrchapternumber>17. </yrchapternumber> Parallel vectors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title"><yrchapternumber>20. </yrchapternumber> Parallel vectors</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-o-in_intersect_setdiff_usingNotIn-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title"><yrchapternumber>18. </yrchapternumber> %in%</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title"><yrchapternumber>21. </yrchapternumber> %in%</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-p-localVariables_globalVariables-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title"><yrchapternumber>19. </yrchapternumber> "GLOBAL VARIABLES" vs "LOCAL VARIABLES"</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title"><yrchapternumber>22. </yrchapternumber> "LOCAL VARIABLES" vs "GLOBAL VARIABLES"</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000380-logicalOperators_and_or_not-v013-withAnswers-afterBerenClass.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title"><yrchapternumber>20. </yrchapternumber> logical operators &nbsp;&nbsp; ! (not) &nbsp;&nbsp; &amp; (and) &nbsp;&nbsp; | (or)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title"><yrchapternumber>23. </yrchapternumber> logical operators &nbsp;&nbsp; ! (not) &nbsp;&nbsp; &amp; (and) &nbsp;&nbsp; | (or)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000390-sciNotation_roundoffError_v005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title"><yrchapternumber>21. </yrchapternumber> scientific notation *~(longer version)~*</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title"><yrchapternumber>24. </yrchapternumber> scientific notation *~(longer version)~*</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000400-sciNotation_roundoffError_accessingVectorPositions-v000.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title"><yrchapternumber>22. </yrchapternumber> scientific notation *~(abbridged version)~*</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title"><yrchapternumber>25. </yrchapternumber> scientific notation *~(abbridged version)~*</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000410-implicitAndExplicitConversions-v025.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title"><yrchapternumber>23. </yrchapternumber> implicit and explicit conversions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title"><yrchapternumber>26. </yrchapternumber> implicit and explicit conversions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-a-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title"><yrchapternumber>24. </yrchapternumber> intro to "lists" - i.e. collections of any R objects</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title"><yrchapternumber>27. </yrchapternumber> intro to "lists" - i.e. collections of any R objects</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-c2-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title"><yrchapternumber>25. </yrchapternumber> [[double-brackets]]</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title"><yrchapternumber>28. </yrchapternumber> [[double-brackets]]</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-d-lists-v036.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title"><yrchapternumber>26. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title"><yrchapternumber>29. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-e-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title"><yrchapternumber>27. </yrchapternumber> NAMED LISTS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title"><yrchapternumber>30. </yrchapternumber> NAMED LISTS</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000430-lapply-v031-afterWilf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title"><yrchapternumber>28. </yrchapternumber> lapply ( SOME_LIST , SOME_FUNCTION )</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title"><yrchapternumber>31. </yrchapternumber> lapply ( SOME_LIST , SOME_FUNCTION )</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000495-attributres_attr_names_matrix_factor_dataframe-v010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title"><yrchapternumber>29. </yrchapternumber> attributes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title"><yrchapternumber>32. </yrchapternumber> attributes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000700-matrices-v015.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title"><yrchapternumber>30. </yrchapternumber> matrices</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title"><yrchapternumber>33. </yrchapternumber> matrices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000800-factors-v010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title"><yrchapternumber>31. </yrchapternumber> factors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title"><yrchapternumber>34. </yrchapternumber> factors</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000850-introToDataframes-v0019-afterBeren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title"><yrchapternumber>32. </yrchapternumber> dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title"><yrchapternumber>35. </yrchapternumber> dataframes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000875-cbind_rbind-v002.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title"><yrchapternumber>33. </yrchapternumber> cbind and rbind (to combine dataframes)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber>36. </yrchapternumber> cbind and rbind (to combine dataframes)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000900-if_ifElse_if_elseif_else_nestedStatements-v019.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title"><yrchapternumber>34. </yrchapternumber> "if / else if / else"  constructs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber>37. </yrchapternumber> "if / else if / else"  constructs</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001000-whileLoops-v027-afterWilfClass25.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title"><yrchapternumber>35. </yrchapternumber> while loops</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title"><yrchapternumber>38. </yrchapternumber> while loops</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001020-forLoops_sleep_strsplit-v017-maybeChanged.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber>36. </yrchapternumber> for loops</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title"><yrchapternumber>39. </yrchapternumber> for loops</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -397,67 +415,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000555-midtermQuestionsToStudy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber>37. </yrchapternumber> FINAL EXAM (2023) - Questions to study (ie. everything)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title"><yrchapternumber>40. </yrchapternumber> FINAL EXAM (2023) - Questions to study (ie. everything)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000600-HW-vectorsFunctionsRecyclingrule-v004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title"><yrchapternumber>38. </yrchapternumber> Practice Questions - TOPIC: Vectors1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title"><yrchapternumber>41. </yrchapternumber> Practice Questions - TOPIC: Vectors1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-10-vectors-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title"><yrchapternumber>39. </yrchapternumber> Practice Questions - TOPIC: Vectors2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title"><yrchapternumber>42. </yrchapternumber> Practice Questions - TOPIC: Vectors2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-40-assortedTopics-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title"><yrchapternumber>40. </yrchapternumber> Practice Questions - TOPIC: Assorted Topics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title"><yrchapternumber>43. </yrchapternumber> Practice Questions - TOPIC: Assorted Topics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-20-dataframes-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title"><yrchapternumber>41. </yrchapternumber> Practice Questions - TOPIC: Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title"><yrchapternumber>44. </yrchapternumber> Practice Questions - TOPIC: Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-30-userDefinedFunctions-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title"><yrchapternumber>42. </yrchapternumber> Practice Questions - TOPIC: User Defined Functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title"><yrchapternumber>45. </yrchapternumber> Practice Questions - TOPIC: User Defined Functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000450-additionalPracticeProblems-WITH_ANSWERS-v005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title"><yrchapternumber>43. </yrchapternumber> Practice Questions - TOPICS: Parallel Vectors, &amp;, |, scientific notation, etc.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title"><yrchapternumber>46. </yrchapternumber> Practice Questions - TOPICS: Parallel Vectors, &amp;, |, scientific notation, etc.</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000460-listQuestions-WITH_ANSWERS-v004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title"><yrchapternumber>44. </yrchapternumber> Practice Questions - TOPIC: Lists and Dataframes.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title"><yrchapternumber>47. </yrchapternumber> Practice Questions - TOPIC: Lists and Dataframes.</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001100-assignment-loops-v001-SOLUTIONS-v002-ONLY_QUESTIONS_4-9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title"><yrchapternumber>45. </yrchapternumber> Practice Questions - TOPIC: loops (writing code)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title"><yrchapternumber>48. </yrchapternumber> Practice Questions - TOPIC: loops (writing code)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99950-qstns-moreQuestions-v001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title"><yrchapternumber>46. </yrchapternumber> Practice Questions - TOPICS: Dataframes, &amp; | !</span></span></a>
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title"><yrchapternumber>49. </yrchapternumber> Practice Questions - TOPICS: Dataframes, &amp; | !</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001035-qstns-loopsReadcode-v001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title"><yrchapternumber>47. </yrchapternumber> Practice Questions - TOPICS: cat, loops (reading code)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title"><yrchapternumber>50. </yrchapternumber> Practice Questions - TOPICS: cat, loops (reading code)</span></span></a>
   </div>
 </li>
       </ul>
@@ -507,23 +525,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#type-function-definitions-in-the-script-window" id="toc-type-function-definitions-in-the-script-window" class="nav-link active" data-scroll-target="#type-function-definitions-in-the-script-window"><span class="header-section-number">5.1</span> Type function definitions in the SCRIPT window</a></li>
-  <li><a href="#run-the-definition-before-using-the-function" id="toc-run-the-definition-before-using-the-function" class="nav-link" data-scroll-target="#run-the-definition-before-using-the-function"><span class="header-section-number">5.2</span> Run the definition before using the function</a></li>
-  <li><a href="#local-variables" id="toc-local-variables" class="nav-link" data-scroll-target="#local-variables"><span class="header-section-number">5.3</span> “Local” variables</a></li>
-  <li><a href="#last-value-of-the-function-is-returned" id="toc-last-value-of-the-function-is-returned" class="nav-link" data-scroll-target="#last-value-of-the-function-is-returned"><span class="header-section-number">5.4</span> Last value of the function is returned</a></li>
-  <li><a href="#dont-return-an-assignment-statement" id="toc-dont-return-an-assignment-statement" class="nav-link" data-scroll-target="#dont-return-an-assignment-statement"><span class="header-section-number">5.5</span> Don’t return an assignment statement</a></li>
-  <li><a href="#invisible-return-values" id="toc-invisible-return-values" class="nav-link" data-scroll-target="#invisible-return-values"><span class="header-section-number">5.6</span> “invisible” return values</a></li>
-  <li><a href="#dont-pass-too-many-arguments" id="toc-dont-pass-too-many-arguments" class="nav-link" data-scroll-target="#dont-pass-too-many-arguments"><span class="header-section-number">5.7</span> don’t pass too many arguments</a></li>
-  <li><a href="#function-name-without-parentheses-shows-definition-code" id="toc-function-name-without-parentheses-shows-definition-code" class="nav-link" data-scroll-target="#function-name-without-parentheses-shows-definition-code"><span class="header-section-number">5.8</span> Function name without parentheses() shows definition code</a></li>
-  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice"><span class="header-section-number">5.9</span> — Practice —</a></li>
-  <li><a href="#default-argument-values" id="toc-default-argument-values" class="nav-link" data-scroll-target="#default-argument-values"><span class="header-section-number">5.10</span> Default argument values</a></li>
-  <li><a href="#practice-1" id="toc-practice-1" class="nav-link" data-scroll-target="#practice-1"><span class="header-section-number">5.11</span> — Practice —</a></li>
-  <li><a href="#calculations-in-middle-of-a-function-definition-are-not-displayed" id="toc-calculations-in-middle-of-a-function-definition-are-not-displayed" class="nav-link" data-scroll-target="#calculations-in-middle-of-a-function-definition-are-not-displayed"><span class="header-section-number">5.12</span> Calculations in middle of a function definition are NOT displayed</a></li>
-  <li><a href="#practice-2" id="toc-practice-2" class="nav-link" data-scroll-target="#practice-2"><span class="header-section-number">5.13</span> — Practice —</a>
+  <li><a href="#type-function-definitions-in-the-script-window" id="toc-type-function-definitions-in-the-script-window" class="nav-link active" data-scroll-target="#type-function-definitions-in-the-script-window"><span class="header-section-number">8.1</span> Type function definitions in the SCRIPT window</a></li>
+  <li><a href="#run-the-definition-before-using-the-function" id="toc-run-the-definition-before-using-the-function" class="nav-link" data-scroll-target="#run-the-definition-before-using-the-function"><span class="header-section-number">8.2</span> Run the definition before using the function</a></li>
+  <li><a href="#local-variables" id="toc-local-variables" class="nav-link" data-scroll-target="#local-variables"><span class="header-section-number">8.3</span> “Local” variables</a></li>
+  <li><a href="#last-value-of-the-function-is-returned" id="toc-last-value-of-the-function-is-returned" class="nav-link" data-scroll-target="#last-value-of-the-function-is-returned"><span class="header-section-number">8.4</span> Last value of the function is returned</a></li>
+  <li><a href="#dont-return-an-assignment-statement" id="toc-dont-return-an-assignment-statement" class="nav-link" data-scroll-target="#dont-return-an-assignment-statement"><span class="header-section-number">8.5</span> Don’t return an assignment statement</a></li>
+  <li><a href="#invisible-return-values" id="toc-invisible-return-values" class="nav-link" data-scroll-target="#invisible-return-values"><span class="header-section-number">8.6</span> “invisible” return values</a></li>
+  <li><a href="#dont-pass-too-many-arguments" id="toc-dont-pass-too-many-arguments" class="nav-link" data-scroll-target="#dont-pass-too-many-arguments"><span class="header-section-number">8.7</span> don’t pass too many arguments</a></li>
+  <li><a href="#function-name-without-parentheses-shows-definition-code" id="toc-function-name-without-parentheses-shows-definition-code" class="nav-link" data-scroll-target="#function-name-without-parentheses-shows-definition-code"><span class="header-section-number">8.8</span> Function name without parentheses() shows definition code</a></li>
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice"><span class="header-section-number">8.9</span> — Practice —</a></li>
+  <li><a href="#default-argument-values" id="toc-default-argument-values" class="nav-link" data-scroll-target="#default-argument-values"><span class="header-section-number">8.10</span> Default argument values</a></li>
+  <li><a href="#practice-1" id="toc-practice-1" class="nav-link" data-scroll-target="#practice-1"><span class="header-section-number">8.11</span> — Practice —</a></li>
+  <li><a href="#calculations-in-middle-of-a-function-definition-are-not-displayed" id="toc-calculations-in-middle-of-a-function-definition-are-not-displayed" class="nav-link" data-scroll-target="#calculations-in-middle-of-a-function-definition-are-not-displayed"><span class="header-section-number">8.12</span> Calculations in middle of a function definition are NOT displayed</a></li>
+  <li><a href="#practice-2" id="toc-practice-2" class="nav-link" data-scroll-target="#practice-2"><span class="header-section-number">8.13</span> — Practice —</a>
   <ul class="collapse">
-  <li><a href="#question---use-the-gpa-function-to-calculate-joes-gpa" id="toc-question---use-the-gpa-function-to-calculate-joes-gpa" class="nav-link" data-scroll-target="#question---use-the-gpa-function-to-calculate-joes-gpa"><span class="header-section-number">5.13.1</span> Question - use the gpa function to calculate Joe’s GPA</a></li>
-  <li><a href="#question---use-weightedavg-function-to-help-implement-a-new-gpa2-function" id="toc-question---use-weightedavg-function-to-help-implement-a-new-gpa2-function" class="nav-link" data-scroll-target="#question---use-weightedavg-function-to-help-implement-a-new-gpa2-function"><span class="header-section-number">5.13.2</span> Question - use weightedAvg function to help implement a new gpa2 function</a></li>
-  <li><a href="#question---use-the-new-gpa2-function-to-calculate-joes-gpa" id="toc-question---use-the-new-gpa2-function-to-calculate-joes-gpa" class="nav-link" data-scroll-target="#question---use-the-new-gpa2-function-to-calculate-joes-gpa"><span class="header-section-number">5.13.3</span> Question - use the new gpa2 function to calculate Joe’s GPA</a></li>
+  <li><a href="#question---use-the-gpa-function-to-calculate-joes-gpa" id="toc-question---use-the-gpa-function-to-calculate-joes-gpa" class="nav-link" data-scroll-target="#question---use-the-gpa-function-to-calculate-joes-gpa"><span class="header-section-number">8.13.1</span> Question - use the gpa function to calculate Joe’s GPA</a></li>
+  <li><a href="#question---use-weightedavg-function-to-help-implement-a-new-gpa2-function" id="toc-question---use-weightedavg-function-to-help-implement-a-new-gpa2-function" class="nav-link" data-scroll-target="#question---use-weightedavg-function-to-help-implement-a-new-gpa2-function"><span class="header-section-number">8.13.2</span> Question - use weightedAvg function to help implement a new gpa2 function</a></li>
+  <li><a href="#question---use-the-new-gpa2-function-to-calculate-joes-gpa" id="toc-question---use-the-new-gpa2-function-to-calculate-joes-gpa" class="nav-link" data-scroll-target="#question---use-the-new-gpa2-function-to-calculate-joes-gpa"><span class="header-section-number">8.13.3</span> Question - use the new gpa2 function to calculate Joe’s GPA</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -533,7 +551,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> User defined functions</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><yrchapternumber>8. </yrchapternumber> User defined functions</span></h1>
 </div>
 
 
@@ -578,8 +596,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------------------------.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="type-function-definitions-in-the-script-window" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="type-function-definitions-in-the-script-window"><span class="header-section-number">5.1</span> Type function definitions in the SCRIPT window</h2>
+<section id="type-function-definitions-in-the-script-window" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="type-function-definitions-in-the-script-window"><span class="header-section-number">8.1</span> Type function definitions in the SCRIPT window</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># YOU SHOULD TYPE FUNCTION DEFINITIONS IN THE SCRIPT WINDOW ####</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (NOT IN THE CONSOLE WINDOW)</span></span>
@@ -617,8 +635,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------------------------------------------------------------</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="run-the-definition-before-using-the-function" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="run-the-definition-before-using-the-function"><span class="header-section-number">5.2</span> Run the definition before using the function</h2>
+<section id="run-the-definition-before-using-the-function" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="run-the-definition-before-using-the-function"><span class="header-section-number">8.2</span> Run the definition before using the function</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------------------------.</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># USING YOUR NEW FUNCTION</span></span>
@@ -709,8 +727,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="co"># doubleIt:              2  4  6 10 10 10 10 10 10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="local-variables" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="local-variables"><span class="header-section-number">5.3</span> “Local” variables</h2>
+<section id="local-variables" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="local-variables"><span class="header-section-number">8.3</span> “Local” variables</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="do">##################################################################.</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
@@ -822,8 +840,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We will return to discuss these issues more in depth a little later.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="last-value-of-the-function-is-returned" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="last-value-of-the-function-is-returned"><span class="header-section-number">5.4</span> Last value of the function is returned</h2>
+<section id="last-value-of-the-function-is-returned" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="last-value-of-the-function-is-returned"><span class="header-section-number">8.4</span> Last value of the function is returned</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="do">#######################################################################.</span></span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="co"># If you don't write the word "return" then</span></span>
@@ -856,8 +874,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="dont-return-an-assignment-statement" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="dont-return-an-assignment-statement"><span class="header-section-number">5.5</span> Don’t return an assignment statement</h2>
+<section id="dont-return-an-assignment-statement" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="dont-return-an-assignment-statement"><span class="header-section-number">8.5</span> Don’t return an assignment statement</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># BE CAREFUL - don't return the value of an assignment statement ####</span></span>
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
@@ -910,8 +928,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 -->
 </section>
-<section id="invisible-return-values" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="invisible-return-values"><span class="header-section-number">5.6</span> “invisible” return values</h2>
+<section id="invisible-return-values" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="invisible-return-values"><span class="header-section-number">8.6</span> “invisible” return values</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------------------------------------------.</span></span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Note about "invisible" return values ####</span></span>
@@ -939,8 +957,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a><span class="co"># that needs to be displayed.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="dont-pass-too-many-arguments" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="dont-pass-too-many-arguments"><span class="header-section-number">5.7</span> don’t pass too many arguments</h2>
+<section id="dont-pass-too-many-arguments" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="dont-pass-too-many-arguments"><span class="header-section-number">8.7</span> don’t pass too many arguments</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------.</span></span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Be careful - don't pass too many arguments  ####</span></span>
@@ -963,8 +981,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="function-name-without-parentheses-shows-definition-code" class="level2" data-number="5.8">
-<h2 data-number="5.8" class="anchored" data-anchor-id="function-name-without-parentheses-shows-definition-code"><span class="header-section-number">5.8</span> Function name without parentheses() shows definition code</h2>
+<section id="function-name-without-parentheses-shows-definition-code" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="function-name-without-parentheses-shows-definition-code"><span class="header-section-number">8.8</span> Function name without parentheses() shows definition code</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="do">##############################################################################.</span></span>
 <span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="co"># A function's name without any parentheses, shows the definition of the function. ####</span></span>
@@ -976,12 +994,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 {
     return(2 * nums)
 }
-&lt;bytecode: 0x60e9e88676e8&gt;</code></pre>
+&lt;bytecode: 0x571b2595c600&gt;</code></pre>
 </div>
 </div>
 </section>
-<section id="practice" class="level2" data-number="5.9">
-<h2 data-number="5.9" class="anchored" data-anchor-id="practice"><span class="header-section-number">5.9</span> — Practice —</h2>
+<section id="practice" class="level2" data-number="8.9">
+<h2 data-number="8.9" class="anchored" data-anchor-id="practice"><span class="header-section-number">8.9</span> — Practice —</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="do">#############################################################################.</span></span>
 <span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION - part (a)   ####</span></span>
@@ -1136,8 +1154,8 @@ click here for answer
 </div>
 </div>
 </section>
-<section id="default-argument-values" class="level2" data-number="5.10">
-<h2 data-number="5.10" class="anchored" data-anchor-id="default-argument-values"><span class="header-section-number">5.10</span> Default argument values</h2>
+<section id="default-argument-values" class="level2" data-number="8.10">
+<h2 data-number="8.10" class="anchored" data-anchor-id="default-argument-values"><span class="header-section-number">8.10</span> Default argument values</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="do">###########################################################################.</span></span>
 <span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
@@ -1160,83 +1178,79 @@ click here for answer
 <span id="cb67-19"><a href="#cb67-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>( pi <span class="sc">*</span> radius<span class="sc">^</span><span class="dv">2</span> <span class="sc">*</span> height )</span>
 <span id="cb67-20"><a href="#cb67-20" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb67-21"><a href="#cb67-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb67-22"><a href="#cb67-22" aria-hidden="true" tabindex="-1"></a><span class="fu">volume2</span>(<span class="dv">1</span>,<span class="dv">5</span>)      <span class="co"># volume of a cylinder with radius = 1 and height = 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in volume2(1, 5): could not find function "volume2"</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>(<span class="dv">1</span>,<span class="dv">5</span>)      <span class="co"># volume of a cylinder with radius = 1 and height = 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb67-22"><a href="#cb67-22" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>(<span class="dv">1</span>,<span class="dv">5</span>)      <span class="co"># volume of a cylinder with radius = 1 and height = 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 15.70796</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>(<span class="dv">2</span>)        <span class="co"># volume of a cylinder with radius = 2 and height = 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>(<span class="dv">2</span>)        <span class="co"># volume of a cylinder with radius = 2 and height = 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 12.56637</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>()         <span class="co"># volume of a cylinder with radius = 0.5 and height = 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>()         <span class="co"># volume of a cylinder with radius = 0.5 and height = 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.7853982</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>(<span class="fl">0.5</span>, <span class="dv">1</span>)   <span class="co"># same thing</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>(<span class="fl">0.5</span>, <span class="dv">1</span>)   <span class="co"># same thing</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.7853982</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>(<span class="at">radius=</span><span class="fl">0.5</span>, <span class="at">height=</span><span class="dv">1</span>)   <span class="co"># same thing</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>(<span class="at">radius=</span><span class="fl">0.5</span>, <span class="at">height=</span><span class="dv">1</span>)   <span class="co"># same thing</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.7853982</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>( <span class="at">height =</span> <span class="dv">6</span>)   <span class="co"># radius is 0.5  height is 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="fu">volumeOfCylinder</span>( <span class="at">height =</span> <span class="dv">6</span>)   <span class="co"># radius is 0.5  height is 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 4.712389</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that you can refer to the other arguemnts when defining the </span></span>
-<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a><span class="co"># default values. This is shown in the following QUESTION/ANSWER.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that you can refer to the other arguemnts when defining the </span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a><span class="co"># default values. This is shown in the following QUESTION/ANSWER.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="practice-1" class="level2" data-number="5.11">
-<h2 data-number="5.11" class="anchored" data-anchor-id="practice-1"><span class="header-section-number">5.11</span> — Practice —</h2>
+<section id="practice-1" class="level2" data-number="8.11">
+<h2 data-number="8.11" class="anchored" data-anchor-id="practice-1"><span class="header-section-number">8.11</span> — Practice —</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="do">##################################################.</span></span>
-<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION - part (c)   ####</span></span>
-<span id="cb82-3"><a href="#cb82-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb82-4"><a href="#cb82-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the weightedAvg function described in the previous question</span></span>
-<span id="cb82-5"><a href="#cb82-5" aria-hidden="true" tabindex="-1"></a><span class="co"># so that if a value for weights is not supplied in the function call</span></span>
-<span id="cb82-6"><a href="#cb82-6" aria-hidden="true" tabindex="-1"></a><span class="co"># then equal weight should be given to each grade.</span></span>
-<span id="cb82-7"><a href="#cb82-7" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb82-8"><a href="#cb82-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Call the function weightedAvg_newVersion so that it doesn't </span></span>
-<span id="cb82-9"><a href="#cb82-9" aria-hidden="true" tabindex="-1"></a><span class="co"># replace the original weightedAvg function</span></span>
-<span id="cb82-10"><a href="#cb82-10" aria-hidden="true" tabindex="-1"></a><span class="do">##################################################.</span></span>
-<span id="cb82-11"><a href="#cb82-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb82-12"><a href="#cb82-12" aria-hidden="true" tabindex="-1"></a><span class="co"># ANSWER </span></span>
-<span id="cb82-13"><a href="#cb82-13" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb82-14"><a href="#cb82-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Notice the default value of weights argument that appears on the first line.</span></span>
-<span id="cb82-15"><a href="#cb82-15" aria-hidden="true" tabindex="-1"></a><span class="co"># It is set so that the weight is evenly distributed among the grades.</span></span>
-<span id="cb82-16"><a href="#cb82-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb82-17"><a href="#cb82-17" aria-hidden="true" tabindex="-1"></a>weightedAvg_newVersion <span class="ot">=</span> <span class="cf">function</span> (grades, <span class="at">weights=</span><span class="dv">1</span><span class="sc">/</span><span class="fu">length</span>(grades)){     <span class="co"># ANSWER</span></span>
-<span id="cb82-18"><a href="#cb82-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>( <span class="fu">sum</span>(grades <span class="sc">*</span> weights) )     <span class="co"># ANSWER</span></span>
-<span id="cb82-19"><a href="#cb82-19" aria-hidden="true" tabindex="-1"></a>}     <span class="co"># ANSWER</span></span>
-<span id="cb82-20"><a href="#cb82-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb82-21"><a href="#cb82-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb82-22"><a href="#cb82-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Using the new function - with the default weights</span></span>
-<span id="cb82-23"><a href="#cb82-23" aria-hidden="true" tabindex="-1"></a><span class="fu">weightedAvg_newVersion</span>(<span class="fu">c</span>(<span class="dv">80</span>,<span class="dv">90</span>,<span class="dv">100</span>))     <span class="co"># ANSWER</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="do">##################################################.</span></span>
+<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION - part (c)   ####</span></span>
+<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb80-4"><a href="#cb80-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the weightedAvg function described in the previous question</span></span>
+<span id="cb80-5"><a href="#cb80-5" aria-hidden="true" tabindex="-1"></a><span class="co"># so that if a value for weights is not supplied in the function call</span></span>
+<span id="cb80-6"><a href="#cb80-6" aria-hidden="true" tabindex="-1"></a><span class="co"># then equal weight should be given to each grade.</span></span>
+<span id="cb80-7"><a href="#cb80-7" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb80-8"><a href="#cb80-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Call the function weightedAvg_newVersion so that it doesn't </span></span>
+<span id="cb80-9"><a href="#cb80-9" aria-hidden="true" tabindex="-1"></a><span class="co"># replace the original weightedAvg function</span></span>
+<span id="cb80-10"><a href="#cb80-10" aria-hidden="true" tabindex="-1"></a><span class="do">##################################################.</span></span>
+<span id="cb80-11"><a href="#cb80-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-12"><a href="#cb80-12" aria-hidden="true" tabindex="-1"></a><span class="co"># ANSWER </span></span>
+<span id="cb80-13"><a href="#cb80-13" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb80-14"><a href="#cb80-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Notice the default value of weights argument that appears on the first line.</span></span>
+<span id="cb80-15"><a href="#cb80-15" aria-hidden="true" tabindex="-1"></a><span class="co"># It is set so that the weight is evenly distributed among the grades.</span></span>
+<span id="cb80-16"><a href="#cb80-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-17"><a href="#cb80-17" aria-hidden="true" tabindex="-1"></a>weightedAvg_newVersion <span class="ot">=</span> <span class="cf">function</span> (grades, <span class="at">weights=</span><span class="dv">1</span><span class="sc">/</span><span class="fu">length</span>(grades)){     <span class="co"># ANSWER</span></span>
+<span id="cb80-18"><a href="#cb80-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>( <span class="fu">sum</span>(grades <span class="sc">*</span> weights) )     <span class="co"># ANSWER</span></span>
+<span id="cb80-19"><a href="#cb80-19" aria-hidden="true" tabindex="-1"></a>}     <span class="co"># ANSWER</span></span>
+<span id="cb80-20"><a href="#cb80-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-21"><a href="#cb80-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb80-22"><a href="#cb80-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Using the new function - with the default weights</span></span>
+<span id="cb80-23"><a href="#cb80-23" aria-hidden="true" tabindex="-1"></a><span class="fu">weightedAvg_newVersion</span>(<span class="fu">c</span>(<span class="dv">80</span>,<span class="dv">90</span>,<span class="dv">100</span>))     <span class="co"># ANSWER</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 90</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using the new function by specifying our own weights</span></span>
-<span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a><span class="fu">weightedAvg_newVersion</span>(<span class="fu">c</span>(<span class="dv">80</span>,<span class="dv">90</span>,<span class="dv">100</span>), <span class="fu">c</span>(<span class="fl">0.25</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>))     <span class="co"># ANSWER</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using the new function by specifying our own weights</span></span>
+<span id="cb82-2"><a href="#cb82-2" aria-hidden="true" tabindex="-1"></a><span class="fu">weightedAvg_newVersion</span>(<span class="fu">c</span>(<span class="dv">80</span>,<span class="dv">90</span>,<span class="dv">100</span>), <span class="fu">c</span>(<span class="fl">0.25</span>, <span class="fl">0.25</span>, <span class="fl">0.5</span>))     <span class="co"># ANSWER</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 92.5</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="fu">weightedAvg_newVersion</span>(<span class="fu">c</span>(<span class="dv">80</span>,<span class="dv">90</span>,<span class="dv">100</span>), <span class="dv">1</span><span class="sc">/</span><span class="dv">3</span>)     <span class="co"># ANSWER</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">weightedAvg_newVersion</span>(<span class="fu">c</span>(<span class="dv">80</span>,<span class="dv">90</span>,<span class="dv">100</span>), <span class="dv">1</span><span class="sc">/</span><span class="dv">3</span>)     <span class="co"># ANSWER</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 90</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The original function required that you specify all the arguments</span></span>
-<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The following call to the original function will generate the following errror:</span></span>
-<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a><span class="co">#      Error in weightedAvg(c(80, 90, 100)) : </span></span>
-<span id="cb88-5"><a href="#cb88-5" aria-hidden="true" tabindex="-1"></a><span class="co">#        argument "weights" is missing, with no default</span></span>
-<span id="cb88-6"><a href="#cb88-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb88-7"><a href="#cb88-7" aria-hidden="true" tabindex="-1"></a><span class="fu">weightedAvg</span>(<span class="fu">c</span>(<span class="dv">80</span>,<span class="dv">90</span>,<span class="dv">100</span>))   <span class="co"># ERROR - missing argument</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The original function required that you specify all the arguments</span></span>
+<span id="cb86-2"><a href="#cb86-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The following call to the original function will generate the following errror:</span></span>
+<span id="cb86-3"><a href="#cb86-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb86-4"><a href="#cb86-4" aria-hidden="true" tabindex="-1"></a><span class="co">#      Error in weightedAvg(c(80, 90, 100)) : </span></span>
+<span id="cb86-5"><a href="#cb86-5" aria-hidden="true" tabindex="-1"></a><span class="co">#        argument "weights" is missing, with no default</span></span>
+<span id="cb86-6"><a href="#cb86-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb86-7"><a href="#cb86-7" aria-hidden="true" tabindex="-1"></a><span class="fu">weightedAvg</span>(<span class="fu">c</span>(<span class="dv">80</span>,<span class="dv">90</span>,<span class="dv">100</span>))   <span class="co"># ERROR - missing argument</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in weightedAvg(c(80, 90, 100)): argument "weights" is missing, with no default</code></pre>
 </div>
@@ -1247,105 +1261,105 @@ click here for answer
 ## 2023 - BEREN - UP TO HERE - AFTER CLASS 7 (also covered debugger)
 -->
 </section>
-<section id="calculations-in-middle-of-a-function-definition-are-not-displayed" class="level2" data-number="5.12">
-<h2 data-number="5.12" class="anchored" data-anchor-id="calculations-in-middle-of-a-function-definition-are-not-displayed"><span class="header-section-number">5.12</span> Calculations in middle of a function definition are NOT displayed</h2>
+<section id="calculations-in-middle-of-a-function-definition-are-not-displayed" class="level2" data-number="8.12">
+<h2 data-number="8.12" class="anchored" data-anchor-id="calculations-in-middle-of-a-function-definition-are-not-displayed"><span class="header-section-number">8.12</span> Calculations in middle of a function definition are NOT displayed</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="do">##########################################################################.</span></span>
-<span id="cb90-2"><a href="#cb90-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Code in a function definition is DIFFERENT than code that is run </span></span>
-<span id="cb90-3"><a href="#cb90-3" aria-hidden="true" tabindex="-1"></a><span class="co"># directly in the console window:</span></span>
-<span id="cb90-4"><a href="#cb90-4" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb90-5"><a href="#cb90-5" aria-hidden="true" tabindex="-1"></a><span class="co"># If you type a simple calculation IN THE CONSOLE the result is DISPLAYED.</span></span>
-<span id="cb90-6"><a href="#cb90-6" aria-hidden="true" tabindex="-1"></a><span class="co"># For example: </span></span>
-<span id="cb90-7"><a href="#cb90-7" aria-hidden="true" tabindex="-1"></a><span class="co">#      &gt; 10 + rep(1,3)</span></span>
-<span id="cb90-8"><a href="#cb90-8" aria-hidden="true" tabindex="-1"></a><span class="co">#      [1] 11 11 11</span></span>
-<span id="cb90-9"><a href="#cb90-9" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb90-10"><a href="#cb90-10" aria-hidden="true" tabindex="-1"></a><span class="co"># If you type a simple calculation IN A FUNCTION DEFINITION the result is IGNORED. ####</span></span>
-<span id="cb90-11"><a href="#cb90-11" aria-hidden="true" tabindex="-1"></a><span class="co"># See the examples below.</span></span>
-<span id="cb90-12"><a href="#cb90-12" aria-hidden="true" tabindex="-1"></a><span class="do">##########################################################################.</span></span>
-<span id="cb90-13"><a href="#cb90-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb90-14"><a href="#cb90-14" aria-hidden="true" tabindex="-1"></a><span class="co"># A calculation typed in the console that would display a value has </span></span>
-<span id="cb90-15"><a href="#cb90-15" aria-hidden="true" tabindex="-1"></a><span class="co"># absolutely no effect on the code of a function.</span></span>
-<span id="cb90-16"><a href="#cb90-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb90-17"><a href="#cb90-17" aria-hidden="true" tabindex="-1"></a>f <span class="ot">=</span> <span class="cf">function</span>( stuff ){</span>
-<span id="cb90-18"><a href="#cb90-18" aria-hidden="true" tabindex="-1"></a>  <span class="dv">3</span><span class="sc">*</span><span class="dv">10</span>        <span class="co"># this line is ignored (it is not displayed)</span></span>
-<span id="cb90-19"><a href="#cb90-19" aria-hidden="true" tabindex="-1"></a>  <span class="dv">5</span><span class="sc">+</span><span class="dv">7</span>         <span class="co"># this line is ignored (it is not displayed)</span></span>
-<span id="cb90-20"><a href="#cb90-20" aria-hidden="true" tabindex="-1"></a>  stuff <span class="sc">+</span> <span class="dv">5</span>   <span class="co"># this line is ignored (it is not displayed)</span></span>
-<span id="cb90-21"><a href="#cb90-21" aria-hidden="true" tabindex="-1"></a>  <span class="dv">2</span>           <span class="co"># the function always returns 2</span></span>
-<span id="cb90-22"><a href="#cb90-22" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb90-23"><a href="#cb90-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb90-24"><a href="#cb90-24" aria-hidden="true" tabindex="-1"></a><span class="fu">f</span>(<span class="dv">10</span>)               <span class="co"># 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="do">##########################################################################.</span></span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Code in a function definition is DIFFERENT than code that is run </span></span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a><span class="co"># directly in the console window:</span></span>
+<span id="cb88-4"><a href="#cb88-4" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb88-5"><a href="#cb88-5" aria-hidden="true" tabindex="-1"></a><span class="co"># If you type a simple calculation IN THE CONSOLE the result is DISPLAYED.</span></span>
+<span id="cb88-6"><a href="#cb88-6" aria-hidden="true" tabindex="-1"></a><span class="co"># For example: </span></span>
+<span id="cb88-7"><a href="#cb88-7" aria-hidden="true" tabindex="-1"></a><span class="co">#      &gt; 10 + rep(1,3)</span></span>
+<span id="cb88-8"><a href="#cb88-8" aria-hidden="true" tabindex="-1"></a><span class="co">#      [1] 11 11 11</span></span>
+<span id="cb88-9"><a href="#cb88-9" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb88-10"><a href="#cb88-10" aria-hidden="true" tabindex="-1"></a><span class="co"># If you type a simple calculation IN A FUNCTION DEFINITION the result is IGNORED. ####</span></span>
+<span id="cb88-11"><a href="#cb88-11" aria-hidden="true" tabindex="-1"></a><span class="co"># See the examples below.</span></span>
+<span id="cb88-12"><a href="#cb88-12" aria-hidden="true" tabindex="-1"></a><span class="do">##########################################################################.</span></span>
+<span id="cb88-13"><a href="#cb88-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-14"><a href="#cb88-14" aria-hidden="true" tabindex="-1"></a><span class="co"># A calculation typed in the console that would display a value has </span></span>
+<span id="cb88-15"><a href="#cb88-15" aria-hidden="true" tabindex="-1"></a><span class="co"># absolutely no effect on the code of a function.</span></span>
+<span id="cb88-16"><a href="#cb88-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-17"><a href="#cb88-17" aria-hidden="true" tabindex="-1"></a>f <span class="ot">=</span> <span class="cf">function</span>( stuff ){</span>
+<span id="cb88-18"><a href="#cb88-18" aria-hidden="true" tabindex="-1"></a>  <span class="dv">3</span><span class="sc">*</span><span class="dv">10</span>        <span class="co"># this line is ignored (it is not displayed)</span></span>
+<span id="cb88-19"><a href="#cb88-19" aria-hidden="true" tabindex="-1"></a>  <span class="dv">5</span><span class="sc">+</span><span class="dv">7</span>         <span class="co"># this line is ignored (it is not displayed)</span></span>
+<span id="cb88-20"><a href="#cb88-20" aria-hidden="true" tabindex="-1"></a>  stuff <span class="sc">+</span> <span class="dv">5</span>   <span class="co"># this line is ignored (it is not displayed)</span></span>
+<span id="cb88-21"><a href="#cb88-21" aria-hidden="true" tabindex="-1"></a>  <span class="dv">2</span>           <span class="co"># the function always returns 2</span></span>
+<span id="cb88-22"><a href="#cb88-22" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb88-23"><a href="#cb88-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb88-24"><a href="#cb88-24" aria-hidden="true" tabindex="-1"></a><span class="fu">f</span>(<span class="dv">10</span>)               <span class="co"># 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="fu">f</span>(<span class="fu">c</span>(<span class="dv">100</span>,<span class="dv">200</span>,<span class="dv">300</span>))   <span class="co"># 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="fu">f</span>(<span class="fu">c</span>(<span class="dv">100</span>,<span class="dv">200</span>,<span class="dv">300</span>))   <span class="co"># 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="fu">f</span>(<span class="fl">6547654.4356543</span>)  <span class="co"># 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="fu">f</span>(<span class="fl">6547654.4356543</span>)  <span class="co"># 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You can save the value of the calculation in a variable and then</span></span>
-<span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a><span class="co"># continue to use the value by referring to the variable.</span></span>
-<span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a><span class="co"># e.g. see the following code (including the comments).</span></span>
-<span id="cb96-4"><a href="#cb96-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb96-5"><a href="#cb96-5" aria-hidden="true" tabindex="-1"></a>calculateBill <span class="ot">=</span> <span class="cf">function</span>( charge, tip ){</span>
-<span id="cb96-6"><a href="#cb96-6" aria-hidden="true" tabindex="-1"></a>  tax <span class="ot">=</span> <span class="fl">0.0875</span> <span class="sc">*</span> charge        <span class="co"># you can save this calculation in a variable</span></span>
-<span id="cb96-7"><a href="#cb96-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span> (charge <span class="sc">+</span> tax <span class="sc">+</span> tip)  <span class="co"># now you can use the tax variable in this line</span></span>
-<span id="cb96-8"><a href="#cb96-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb96-9"><a href="#cb96-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb96-10"><a href="#cb96-10" aria-hidden="true" tabindex="-1"></a><span class="fu">calculateBill</span>(<span class="dv">100</span>, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You can save the value of the calculation in a variable and then</span></span>
+<span id="cb94-2"><a href="#cb94-2" aria-hidden="true" tabindex="-1"></a><span class="co"># continue to use the value by referring to the variable.</span></span>
+<span id="cb94-3"><a href="#cb94-3" aria-hidden="true" tabindex="-1"></a><span class="co"># e.g. see the following code (including the comments).</span></span>
+<span id="cb94-4"><a href="#cb94-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb94-5"><a href="#cb94-5" aria-hidden="true" tabindex="-1"></a>calculateBill <span class="ot">=</span> <span class="cf">function</span>( charge, tip ){</span>
+<span id="cb94-6"><a href="#cb94-6" aria-hidden="true" tabindex="-1"></a>  tax <span class="ot">=</span> <span class="fl">0.0875</span> <span class="sc">*</span> charge        <span class="co"># you can save this calculation in a variable</span></span>
+<span id="cb94-7"><a href="#cb94-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span> (charge <span class="sc">+</span> tax <span class="sc">+</span> tip)  <span class="co"># now you can use the tax variable in this line</span></span>
+<span id="cb94-8"><a href="#cb94-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb94-9"><a href="#cb94-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb94-10"><a href="#cb94-10" aria-hidden="true" tabindex="-1"></a><span class="fu">calculateBill</span>(<span class="dv">100</span>, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 118.75</code></pre>
 </div>
 </div>
 </section>
-<section id="practice-2" class="level2" data-number="5.13">
-<h2 data-number="5.13" class="anchored" data-anchor-id="practice-2"><span class="header-section-number">5.13</span> — Practice —</h2>
+<section id="practice-2" class="level2" data-number="8.13">
+<h2 data-number="8.13" class="anchored" data-anchor-id="practice-2"><span class="header-section-number">8.13</span> — Practice —</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb98"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="do">##################################################.</span></span>
-<span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION</span></span>
-<span id="cb98-3"><a href="#cb98-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-4"><a href="#cb98-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Write a function named, gpa, to calculate a college student's GPA.</span></span>
-<span id="cb98-5"><a href="#cb98-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Feel free to use "local" variables to make your function easier to read.</span></span>
-<span id="cb98-6"><a href="#cb98-6" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
-<span id="cb98-7"><a href="#cb98-7" aria-hidden="true" tabindex="-1"></a><span class="co"># ARGUMENTS:</span></span>
-<span id="cb98-8"><a href="#cb98-8" aria-hidden="true" tabindex="-1"></a><span class="co">#   credits - a vector that contains the number of credits for each course</span></span>
-<span id="cb98-9"><a href="#cb98-9" aria-hidden="true" tabindex="-1"></a><span class="co">#   grades - a vector that contains the grades for each course</span></span>
-<span id="cb98-10"><a href="#cb98-10" aria-hidden="true" tabindex="-1"></a><span class="co">#            (0 for F, 1 for D, 2 for C, 3 for B, 4 for A)</span></span>
-<span id="cb98-11"><a href="#cb98-11" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-12"><a href="#cb98-12" aria-hidden="true" tabindex="-1"></a><span class="co"># e.g.  </span></span>
-<span id="cb98-13"><a href="#cb98-13" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt; getGpa(credits=c(4,3,3), grades=c(2,3,4)) # i.e. (4*2 + 3*3 + 3*4) / (4+3+3)</span></span>
-<span id="cb98-14"><a href="#cb98-14" aria-hidden="true" tabindex="-1"></a><span class="co"># [1] 2.9       </span></span>
-<span id="cb98-15"><a href="#cb98-15" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-16"><a href="#cb98-16" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-17"><a href="#cb98-17" aria-hidden="true" tabindex="-1"></a><span class="co"># *****************************************************************</span></span>
-<span id="cb98-18"><a href="#cb98-18" aria-hidden="true" tabindex="-1"></a><span class="co"># ** READ THE FOLLOWING IF YOU DON'T KNOW HOW TO CALCULATE A GPA **</span></span>
-<span id="cb98-19"><a href="#cb98-19" aria-hidden="true" tabindex="-1"></a><span class="co"># *****************************************************************</span></span>
-<span id="cb98-20"><a href="#cb98-20" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-21"><a href="#cb98-21" aria-hidden="true" tabindex="-1"></a><span class="co"># A GPA is a weighted average.</span></span>
-<span id="cb98-22"><a href="#cb98-22" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-23"><a href="#cb98-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Letter grades are treated as numbers, i.e. A is 4, B is 3, C is 2, D is 1, F is 0</span></span>
-<span id="cb98-24"><a href="#cb98-24" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-25"><a href="#cb98-25" aria-hidden="true" tabindex="-1"></a><span class="co"># To calculate a GPA you determine what percent of your overall </span></span>
-<span id="cb98-26"><a href="#cb98-26" aria-hidden="true" tabindex="-1"></a><span class="co"># college average is attributed to a specific class, then you multiply</span></span>
-<span id="cb98-27"><a href="#cb98-27" aria-hidden="true" tabindex="-1"></a><span class="co"># the grade for that class by that number, i.e. </span></span>
-<span id="cb98-28"><a href="#cb98-28" aria-hidden="true" tabindex="-1"></a><span class="co">#     (credits_for_a_class / total_credits_taken) * grade_for_the_class</span></span>
-<span id="cb98-29"><a href="#cb98-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Finally, you add up the results for all of the classes.</span></span>
-<span id="cb98-30"><a href="#cb98-30" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-31"><a href="#cb98-31" aria-hidden="true" tabindex="-1"></a><span class="co"># EXAMPLE: physics 4 credits, grade is B</span></span>
-<span id="cb98-32"><a href="#cb98-32" aria-hidden="true" tabindex="-1"></a><span class="co">#          data analytics 3 credits, grade is A</span></span>
-<span id="cb98-33"><a href="#cb98-33" aria-hidden="true" tabindex="-1"></a><span class="co">#          gym 0.5 credits, grade is B</span></span>
-<span id="cb98-34"><a href="#cb98-34" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-35"><a href="#cb98-35" aria-hidden="true" tabindex="-1"></a><span class="co"># total creidts is  4 + 3 + 0.5</span></span>
-<span id="cb98-36"><a href="#cb98-36" aria-hidden="true" tabindex="-1"></a><span class="co"># percent of total that is attributed to physics is 4 / 7.5</span></span>
-<span id="cb98-37"><a href="#cb98-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Portion of GPA attributed to physics is (4/7.5) * 3   # remember B is 3</span></span>
-<span id="cb98-38"><a href="#cb98-38" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-39"><a href="#cb98-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Do this for all classes to get that the GPA is 3.4 calculated as follows</span></span>
-<span id="cb98-40"><a href="#cb98-40" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-41"><a href="#cb98-41" aria-hidden="true" tabindex="-1"></a><span class="co">#    (4/7.5)*3 + (3/7.5)*4 + (0.5/7.5)*3   which is   3.4</span></span>
-<span id="cb98-42"><a href="#cb98-42" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb98-43"><a href="#cb98-43" aria-hidden="true" tabindex="-1"></a><span class="do">##################################################.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="do">##################################################.</span></span>
+<span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION</span></span>
+<span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-4"><a href="#cb96-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Write a function named, gpa, to calculate a college student's GPA.</span></span>
+<span id="cb96-5"><a href="#cb96-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Feel free to use "local" variables to make your function easier to read.</span></span>
+<span id="cb96-6"><a href="#cb96-6" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb96-7"><a href="#cb96-7" aria-hidden="true" tabindex="-1"></a><span class="co"># ARGUMENTS:</span></span>
+<span id="cb96-8"><a href="#cb96-8" aria-hidden="true" tabindex="-1"></a><span class="co">#   credits - a vector that contains the number of credits for each course</span></span>
+<span id="cb96-9"><a href="#cb96-9" aria-hidden="true" tabindex="-1"></a><span class="co">#   grades - a vector that contains the grades for each course</span></span>
+<span id="cb96-10"><a href="#cb96-10" aria-hidden="true" tabindex="-1"></a><span class="co">#            (0 for F, 1 for D, 2 for C, 3 for B, 4 for A)</span></span>
+<span id="cb96-11"><a href="#cb96-11" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-12"><a href="#cb96-12" aria-hidden="true" tabindex="-1"></a><span class="co"># e.g.  </span></span>
+<span id="cb96-13"><a href="#cb96-13" aria-hidden="true" tabindex="-1"></a><span class="co"># &gt; getGpa(credits=c(4,3,3), grades=c(2,3,4)) # i.e. (4*2 + 3*3 + 3*4) / (4+3+3)</span></span>
+<span id="cb96-14"><a href="#cb96-14" aria-hidden="true" tabindex="-1"></a><span class="co"># [1] 2.9       </span></span>
+<span id="cb96-15"><a href="#cb96-15" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-16"><a href="#cb96-16" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-17"><a href="#cb96-17" aria-hidden="true" tabindex="-1"></a><span class="co"># *****************************************************************</span></span>
+<span id="cb96-18"><a href="#cb96-18" aria-hidden="true" tabindex="-1"></a><span class="co"># ** READ THE FOLLOWING IF YOU DON'T KNOW HOW TO CALCULATE A GPA **</span></span>
+<span id="cb96-19"><a href="#cb96-19" aria-hidden="true" tabindex="-1"></a><span class="co"># *****************************************************************</span></span>
+<span id="cb96-20"><a href="#cb96-20" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-21"><a href="#cb96-21" aria-hidden="true" tabindex="-1"></a><span class="co"># A GPA is a weighted average.</span></span>
+<span id="cb96-22"><a href="#cb96-22" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-23"><a href="#cb96-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Letter grades are treated as numbers, i.e. A is 4, B is 3, C is 2, D is 1, F is 0</span></span>
+<span id="cb96-24"><a href="#cb96-24" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-25"><a href="#cb96-25" aria-hidden="true" tabindex="-1"></a><span class="co"># To calculate a GPA you determine what percent of your overall </span></span>
+<span id="cb96-26"><a href="#cb96-26" aria-hidden="true" tabindex="-1"></a><span class="co"># college average is attributed to a specific class, then you multiply</span></span>
+<span id="cb96-27"><a href="#cb96-27" aria-hidden="true" tabindex="-1"></a><span class="co"># the grade for that class by that number, i.e. </span></span>
+<span id="cb96-28"><a href="#cb96-28" aria-hidden="true" tabindex="-1"></a><span class="co">#     (credits_for_a_class / total_credits_taken) * grade_for_the_class</span></span>
+<span id="cb96-29"><a href="#cb96-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Finally, you add up the results for all of the classes.</span></span>
+<span id="cb96-30"><a href="#cb96-30" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-31"><a href="#cb96-31" aria-hidden="true" tabindex="-1"></a><span class="co"># EXAMPLE: physics 4 credits, grade is B</span></span>
+<span id="cb96-32"><a href="#cb96-32" aria-hidden="true" tabindex="-1"></a><span class="co">#          data analytics 3 credits, grade is A</span></span>
+<span id="cb96-33"><a href="#cb96-33" aria-hidden="true" tabindex="-1"></a><span class="co">#          gym 0.5 credits, grade is B</span></span>
+<span id="cb96-34"><a href="#cb96-34" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-35"><a href="#cb96-35" aria-hidden="true" tabindex="-1"></a><span class="co"># total creidts is  4 + 3 + 0.5</span></span>
+<span id="cb96-36"><a href="#cb96-36" aria-hidden="true" tabindex="-1"></a><span class="co"># percent of total that is attributed to physics is 4 / 7.5</span></span>
+<span id="cb96-37"><a href="#cb96-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Portion of GPA attributed to physics is (4/7.5) * 3   # remember B is 3</span></span>
+<span id="cb96-38"><a href="#cb96-38" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-39"><a href="#cb96-39" aria-hidden="true" tabindex="-1"></a><span class="co"># Do this for all classes to get that the GPA is 3.4 calculated as follows</span></span>
+<span id="cb96-40"><a href="#cb96-40" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-41"><a href="#cb96-41" aria-hidden="true" tabindex="-1"></a><span class="co">#    (4/7.5)*3 + (3/7.5)*4 + (0.5/7.5)*3   which is   3.4</span></span>
+<span id="cb96-42"><a href="#cb96-42" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb96-43"><a href="#cb96-43" aria-hidden="true" tabindex="-1"></a><span class="do">##################################################.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
@@ -1360,36 +1374,36 @@ click here for answer
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------.</span></span>
-<span id="cb99-2"><a href="#cb99-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ANSWER </span></span>
-<span id="cb99-3"><a href="#cb99-3" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------.</span></span>
-<span id="cb99-4"><a href="#cb99-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb99-5"><a href="#cb99-5" aria-hidden="true" tabindex="-1"></a>gpa <span class="ot">=</span> <span class="cf">function</span>(credits, grades){</span>
-<span id="cb99-6"><a href="#cb99-6" aria-hidden="true" tabindex="-1"></a>  totalCredits <span class="ot">=</span> <span class="fu">sum</span>(credits)</span>
-<span id="cb99-7"><a href="#cb99-7" aria-hidden="true" tabindex="-1"></a>  proportionOfGpaForClass <span class="ot">=</span> credits <span class="sc">/</span> totalCredits</span>
-<span id="cb99-8"><a href="#cb99-8" aria-hidden="true" tabindex="-1"></a>  weightedGrades <span class="ot">=</span> proportionOfGpaForClass <span class="sc">*</span> grades</span>
-<span id="cb99-9"><a href="#cb99-9" aria-hidden="true" tabindex="-1"></a>  theGpa <span class="ot">=</span> <span class="fu">sum</span>(weightedGrades)</span>
-<span id="cb99-10"><a href="#cb99-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span> ( theGpa  )</span>
-<span id="cb99-11"><a href="#cb99-11" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb99-12"><a href="#cb99-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb99-13"><a href="#cb99-13" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------.</span></span>
-<span id="cb99-14"><a href="#cb99-14" aria-hidden="true" tabindex="-1"></a><span class="co"># AFTER YOU RUN YOUR CODE, CHECK YOUR ANSWER:</span></span>
-<span id="cb99-15"><a href="#cb99-15" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------.</span></span>
-<span id="cb99-16"><a href="#cb99-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb99-17"><a href="#cb99-17" aria-hidden="true" tabindex="-1"></a><span class="co"># The 1st call to gpa shown below specifies the argument names, credits=... and grades=...</span></span>
-<span id="cb99-18"><a href="#cb99-18" aria-hidden="true" tabindex="-1"></a><span class="co"># The 2nd call to gpa shown below shows how to call the function without specifying </span></span>
-<span id="cb99-19"><a href="#cb99-19" aria-hidden="true" tabindex="-1"></a><span class="co"># the argument names. If the values of the arguments are specified in the same</span></span>
-<span id="cb99-20"><a href="#cb99-20" aria-hidden="true" tabindex="-1"></a><span class="co"># order as they are defined in the function you don't have to specify the </span></span>
-<span id="cb99-21"><a href="#cb99-21" aria-hidden="true" tabindex="-1"></a><span class="co"># argument names, but you may. Therefore the following two lines of code</span></span>
-<span id="cb99-22"><a href="#cb99-22" aria-hidden="true" tabindex="-1"></a><span class="co"># both work and return the same result.</span></span>
-<span id="cb99-23"><a href="#cb99-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb99-24"><a href="#cb99-24" aria-hidden="true" tabindex="-1"></a><span class="co"># One way to call the function (with the argument names)</span></span>
-<span id="cb99-25"><a href="#cb99-25" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa</span>( <span class="at">credits=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="fl">0.5</span>)   ,   <span class="at">grades=</span><span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">3</span>))    <span class="co"># 3.4 (if you wrote the code correctly)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------.</span></span>
+<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ANSWER </span></span>
+<span id="cb97-3"><a href="#cb97-3" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------.</span></span>
+<span id="cb97-4"><a href="#cb97-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb97-5"><a href="#cb97-5" aria-hidden="true" tabindex="-1"></a>gpa <span class="ot">=</span> <span class="cf">function</span>(credits, grades){</span>
+<span id="cb97-6"><a href="#cb97-6" aria-hidden="true" tabindex="-1"></a>  totalCredits <span class="ot">=</span> <span class="fu">sum</span>(credits)</span>
+<span id="cb97-7"><a href="#cb97-7" aria-hidden="true" tabindex="-1"></a>  proportionOfGpaForClass <span class="ot">=</span> credits <span class="sc">/</span> totalCredits</span>
+<span id="cb97-8"><a href="#cb97-8" aria-hidden="true" tabindex="-1"></a>  weightedGrades <span class="ot">=</span> proportionOfGpaForClass <span class="sc">*</span> grades</span>
+<span id="cb97-9"><a href="#cb97-9" aria-hidden="true" tabindex="-1"></a>  theGpa <span class="ot">=</span> <span class="fu">sum</span>(weightedGrades)</span>
+<span id="cb97-10"><a href="#cb97-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span> ( theGpa  )</span>
+<span id="cb97-11"><a href="#cb97-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb97-12"><a href="#cb97-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb97-13"><a href="#cb97-13" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------.</span></span>
+<span id="cb97-14"><a href="#cb97-14" aria-hidden="true" tabindex="-1"></a><span class="co"># AFTER YOU RUN YOUR CODE, CHECK YOUR ANSWER:</span></span>
+<span id="cb97-15"><a href="#cb97-15" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------.</span></span>
+<span id="cb97-16"><a href="#cb97-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb97-17"><a href="#cb97-17" aria-hidden="true" tabindex="-1"></a><span class="co"># The 1st call to gpa shown below specifies the argument names, credits=... and grades=...</span></span>
+<span id="cb97-18"><a href="#cb97-18" aria-hidden="true" tabindex="-1"></a><span class="co"># The 2nd call to gpa shown below shows how to call the function without specifying </span></span>
+<span id="cb97-19"><a href="#cb97-19" aria-hidden="true" tabindex="-1"></a><span class="co"># the argument names. If the values of the arguments are specified in the same</span></span>
+<span id="cb97-20"><a href="#cb97-20" aria-hidden="true" tabindex="-1"></a><span class="co"># order as they are defined in the function you don't have to specify the </span></span>
+<span id="cb97-21"><a href="#cb97-21" aria-hidden="true" tabindex="-1"></a><span class="co"># argument names, but you may. Therefore the following two lines of code</span></span>
+<span id="cb97-22"><a href="#cb97-22" aria-hidden="true" tabindex="-1"></a><span class="co"># both work and return the same result.</span></span>
+<span id="cb97-23"><a href="#cb97-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb97-24"><a href="#cb97-24" aria-hidden="true" tabindex="-1"></a><span class="co"># One way to call the function (with the argument names)</span></span>
+<span id="cb97-25"><a href="#cb97-25" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa</span>( <span class="at">credits=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="fl">0.5</span>)   ,   <span class="at">grades=</span><span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">3</span>))    <span class="co"># 3.4 (if you wrote the code correctly)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.4</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb101"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Another way to call the function (without the arugment names)</span></span>
-<span id="cb101-2"><a href="#cb101-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa</span>( <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="fl">0.5</span>)   ,   <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">3</span>))    <span class="co"># 3.4 (if you wrote the code correctly)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Another way to call the function (without the arugment names)</span></span>
+<span id="cb99-2"><a href="#cb99-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa</span>( <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="fl">0.5</span>)   ,   <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">3</span>))    <span class="co"># 3.4 (if you wrote the code correctly)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.4</code></pre>
 </div>
@@ -1397,17 +1411,17 @@ click here for answer
 </div>
 </div>
 </div>
-<section id="question---use-the-gpa-function-to-calculate-joes-gpa" class="level3" data-number="5.13.1">
-<h3 data-number="5.13.1" class="anchored" data-anchor-id="question---use-the-gpa-function-to-calculate-joes-gpa"><span class="header-section-number">5.13.1</span> Question - use the gpa function to calculate Joe’s GPA</h3>
+<section id="question---use-the-gpa-function-to-calculate-joes-gpa" class="level3" data-number="8.13.1">
+<h3 data-number="8.13.1" class="anchored" data-anchor-id="question---use-the-gpa-function-to-calculate-joes-gpa"><span class="header-section-number">8.13.1</span> Question - use the gpa function to calculate Joe’s GPA</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb103"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="do">#######################################################################.</span></span>
-<span id="cb103-2"><a href="#cb103-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION - use the gpa function that you defined above to </span></span>
-<span id="cb103-3"><a href="#cb103-3" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate Joe's GPA. Joe took 4 classes. The credits and grades were as follows</span></span>
-<span id="cb103-4"><a href="#cb103-4" aria-hidden="true" tabindex="-1"></a><span class="co">#   4 credit class - got a C</span></span>
-<span id="cb103-5"><a href="#cb103-5" aria-hidden="true" tabindex="-1"></a><span class="co">#   3 credit class - got an A</span></span>
-<span id="cb103-6"><a href="#cb103-6" aria-hidden="true" tabindex="-1"></a><span class="co">#   3 credit class - got a B</span></span>
-<span id="cb103-7"><a href="#cb103-7" aria-hidden="true" tabindex="-1"></a><span class="co">#   2 credit Class - got a A</span></span>
-<span id="cb103-8"><a href="#cb103-8" aria-hidden="true" tabindex="-1"></a><span class="do">#######################################################################.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb101"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="do">#######################################################################.</span></span>
+<span id="cb101-2"><a href="#cb101-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION - use the gpa function that you defined above to </span></span>
+<span id="cb101-3"><a href="#cb101-3" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate Joe's GPA. Joe took 4 classes. The credits and grades were as follows</span></span>
+<span id="cb101-4"><a href="#cb101-4" aria-hidden="true" tabindex="-1"></a><span class="co">#   4 credit class - got a C</span></span>
+<span id="cb101-5"><a href="#cb101-5" aria-hidden="true" tabindex="-1"></a><span class="co">#   3 credit class - got an A</span></span>
+<span id="cb101-6"><a href="#cb101-6" aria-hidden="true" tabindex="-1"></a><span class="co">#   3 credit class - got a B</span></span>
+<span id="cb101-7"><a href="#cb101-7" aria-hidden="true" tabindex="-1"></a><span class="co">#   2 credit Class - got a A</span></span>
+<span id="cb101-8"><a href="#cb101-8" aria-hidden="true" tabindex="-1"></a><span class="do">#######################################################################.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
@@ -1422,8 +1436,8 @@ click here for answer
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb104"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ANSWER</span></span>
-<span id="cb104-2"><a href="#cb104-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa</span>( <span class="at">credits =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>), <span class="at">grades =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb102"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ANSWER</span></span>
+<span id="cb102-2"><a href="#cb102-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa</span>( <span class="at">credits =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>), <span class="at">grades =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.083333</code></pre>
 </div>
@@ -1432,99 +1446,99 @@ click here for answer
 </div>
 </div>
 </section>
-<section id="question---use-weightedavg-function-to-help-implement-a-new-gpa2-function" class="level3" data-number="5.13.2">
-<h3 data-number="5.13.2" class="anchored" data-anchor-id="question---use-weightedavg-function-to-help-implement-a-new-gpa2-function"><span class="header-section-number">5.13.2</span> Question - use weightedAvg function to help implement a new gpa2 function</h3>
+<section id="question---use-weightedavg-function-to-help-implement-a-new-gpa2-function" class="level3" data-number="8.13.2">
+<h3 data-number="8.13.2" class="anchored" data-anchor-id="question---use-weightedavg-function-to-help-implement-a-new-gpa2-function"><span class="header-section-number">8.13.2</span> Question - use weightedAvg function to help implement a new gpa2 function</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb106"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="do">##################################################.</span></span>
-<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION - part (a)</span></span>
-<span id="cb106-3"><a href="#cb106-3" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
-<span id="cb106-4"><a href="#cb106-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Rewrite the definition of the gpa function, call it gpa2.</span></span>
-<span id="cb106-5"><a href="#cb106-5" aria-hidden="true" tabindex="-1"></a><span class="co"># This time, use the weightedAvg function inside</span></span>
-<span id="cb106-6"><a href="#cb106-6" aria-hidden="true" tabindex="-1"></a><span class="co"># your definition of the gpa function.</span></span>
-<span id="cb106-7"><a href="#cb106-7" aria-hidden="true" tabindex="-1"></a><span class="do">###################################################.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb104"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a><span class="do">##################################################.</span></span>
+<span id="cb104-2"><a href="#cb104-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION - part (a)</span></span>
+<span id="cb104-3"><a href="#cb104-3" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb104-4"><a href="#cb104-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Rewrite the definition of the gpa function, call it gpa2.</span></span>
+<span id="cb104-5"><a href="#cb104-5" aria-hidden="true" tabindex="-1"></a><span class="co"># This time, use the weightedAvg function inside</span></span>
+<span id="cb104-6"><a href="#cb104-6" aria-hidden="true" tabindex="-1"></a><span class="co"># your definition of the gpa function.</span></span>
+<span id="cb104-7"><a href="#cb104-7" aria-hidden="true" tabindex="-1"></a><span class="do">###################################################.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb107"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------.</span></span>
-<span id="cb107-2"><a href="#cb107-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ANSWER</span></span>
-<span id="cb107-3"><a href="#cb107-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------.</span></span>
-<span id="cb107-4"><a href="#cb107-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb107-5"><a href="#cb107-5" aria-hidden="true" tabindex="-1"></a>gpa2 <span class="ot">&lt;-</span> <span class="cf">function</span> (credits, grades) {                               <span class="co"># **ANSWER**</span></span>
-<span id="cb107-6"><a href="#cb107-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># **ANSWER**</span></span>
-<span id="cb107-7"><a href="#cb107-7" aria-hidden="true" tabindex="-1"></a>  totalCredits <span class="ot">=</span> <span class="fu">sum</span>(credits)                                      <span class="co"># **ANSWER**</span></span>
-<span id="cb107-8"><a href="#cb107-8" aria-hidden="true" tabindex="-1"></a>  weights <span class="ot">=</span> credits <span class="sc">/</span> totalCredits                                 <span class="co"># **ANSWER**</span></span>
-<span id="cb107-9"><a href="#cb107-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># **ANSWER**</span></span>
-<span id="cb107-10"><a href="#cb107-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Instead of writing                                             # **ANSWER**</span></span>
-<span id="cb107-11"><a href="#cb107-11" aria-hidden="true" tabindex="-1"></a>  <span class="co">#                                                                # **ANSWER**</span></span>
-<span id="cb107-12"><a href="#cb107-12" aria-hidden="true" tabindex="-1"></a>  <span class="co">#   sum(weights * grades)                                        # **ANSWER**</span></span>
-<span id="cb107-13"><a href="#cb107-13" aria-hidden="true" tabindex="-1"></a>  <span class="co">#                                                                # **ANSWER**</span></span>
-<span id="cb107-14"><a href="#cb107-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># as we did in the gpa function above, we can make use of the    # **ANSWER**</span></span>
-<span id="cb107-15"><a href="#cb107-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># weightedAvg function that we defined earlier.                  # **ANSWER**</span></span>
-<span id="cb107-16"><a href="#cb107-16" aria-hidden="true" tabindex="-1"></a>  <span class="co">#                                                                # **ANSWER**</span></span>
-<span id="cb107-17"><a href="#cb107-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remember that we defined the weightedAvg function above as:    # **ANSWER**</span></span>
-<span id="cb107-18"><a href="#cb107-18" aria-hidden="true" tabindex="-1"></a>  <span class="co">#                                                                # **ANSWER**</span></span>
-<span id="cb107-19"><a href="#cb107-19" aria-hidden="true" tabindex="-1"></a>  <span class="co">#   weightedAvg = function(weights, tests) {                     # **ANSWER**</span></span>
-<span id="cb107-20"><a href="#cb107-20" aria-hidden="true" tabindex="-1"></a>  <span class="co">#      sum ( weights * tests )                                   # **ANSWER**</span></span>
-<span id="cb107-21"><a href="#cb107-21" aria-hidden="true" tabindex="-1"></a>  <span class="co">#   }                                                            # **ANSWER**</span></span>
-<span id="cb107-22"><a href="#cb107-22" aria-hidden="true" tabindex="-1"></a>  <span class="co">#                                                                # **ANSWER**</span></span>
-<span id="cb107-23"><a href="#cb107-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># </span><span class="al">NOTE</span><span class="co"> that the weightedAvg function definition uses the         # **ANSWER**</span></span>
-<span id="cb107-24"><a href="#cb107-24" aria-hidden="true" tabindex="-1"></a>  <span class="co"># argument names weights and tests                               # **ANSWER**</span></span>
-<span id="cb107-25"><a href="#cb107-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># In this function we want the weightedAvg of weights and grades. # **ANSWER**</span></span>
-<span id="cb107-26"><a href="#cb107-26" aria-hidden="true" tabindex="-1"></a>  <span class="co"># The following function call uses the weightedAvg function.     # **ANSWER**</span></span>
-<span id="cb107-27"><a href="#cb107-27" aria-hidden="true" tabindex="-1"></a>  <span class="co"># The function all passes the weights variable that is local     # **ANSWER**</span></span>
-<span id="cb107-28"><a href="#cb107-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># to the gpa2 function to the weights variable that              # **ANSWER**</span></span>
-<span id="cb107-29"><a href="#cb107-29" aria-hidden="true" tabindex="-1"></a>  <span class="co"># is local to the weightedAvg function. However, the grades      # **ANSWER**</span></span>
-<span id="cb107-30"><a href="#cb107-30" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  variable in this function is being passed to the              # **ANSWER**</span></span>
-<span id="cb107-31"><a href="#cb107-31" aria-hidden="true" tabindex="-1"></a>  <span class="co"># "tests" variable in the weightedAvg function.                  # **ANSWER**</span></span>
-<span id="cb107-32"><a href="#cb107-32" aria-hidden="true" tabindex="-1"></a>  <span class="co"># **ANSWER**</span></span>
-<span id="cb107-33"><a href="#cb107-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">weightedAvg</span>( weights , grades )                                  <span class="co"># **ANSWER**</span></span>
-<span id="cb107-34"><a href="#cb107-34" aria-hidden="true" tabindex="-1"></a>}                                                                  <span class="co"># **ANSWER**</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb105"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb105-1"><a href="#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------.</span></span>
+<span id="cb105-2"><a href="#cb105-2" aria-hidden="true" tabindex="-1"></a><span class="co"># ANSWER</span></span>
+<span id="cb105-3"><a href="#cb105-3" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------.</span></span>
+<span id="cb105-4"><a href="#cb105-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb105-5"><a href="#cb105-5" aria-hidden="true" tabindex="-1"></a>gpa2 <span class="ot">&lt;-</span> <span class="cf">function</span> (credits, grades) {                               <span class="co"># **ANSWER**</span></span>
+<span id="cb105-6"><a href="#cb105-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># **ANSWER**</span></span>
+<span id="cb105-7"><a href="#cb105-7" aria-hidden="true" tabindex="-1"></a>  totalCredits <span class="ot">=</span> <span class="fu">sum</span>(credits)                                      <span class="co"># **ANSWER**</span></span>
+<span id="cb105-8"><a href="#cb105-8" aria-hidden="true" tabindex="-1"></a>  weights <span class="ot">=</span> credits <span class="sc">/</span> totalCredits                                 <span class="co"># **ANSWER**</span></span>
+<span id="cb105-9"><a href="#cb105-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># **ANSWER**</span></span>
+<span id="cb105-10"><a href="#cb105-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Instead of writing                                             # **ANSWER**</span></span>
+<span id="cb105-11"><a href="#cb105-11" aria-hidden="true" tabindex="-1"></a>  <span class="co">#                                                                # **ANSWER**</span></span>
+<span id="cb105-12"><a href="#cb105-12" aria-hidden="true" tabindex="-1"></a>  <span class="co">#   sum(weights * grades)                                        # **ANSWER**</span></span>
+<span id="cb105-13"><a href="#cb105-13" aria-hidden="true" tabindex="-1"></a>  <span class="co">#                                                                # **ANSWER**</span></span>
+<span id="cb105-14"><a href="#cb105-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># as we did in the gpa function above, we can make use of the    # **ANSWER**</span></span>
+<span id="cb105-15"><a href="#cb105-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># weightedAvg function that we defined earlier.                  # **ANSWER**</span></span>
+<span id="cb105-16"><a href="#cb105-16" aria-hidden="true" tabindex="-1"></a>  <span class="co">#                                                                # **ANSWER**</span></span>
+<span id="cb105-17"><a href="#cb105-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remember that we defined the weightedAvg function above as:    # **ANSWER**</span></span>
+<span id="cb105-18"><a href="#cb105-18" aria-hidden="true" tabindex="-1"></a>  <span class="co">#                                                                # **ANSWER**</span></span>
+<span id="cb105-19"><a href="#cb105-19" aria-hidden="true" tabindex="-1"></a>  <span class="co">#   weightedAvg = function(weights, tests) {                     # **ANSWER**</span></span>
+<span id="cb105-20"><a href="#cb105-20" aria-hidden="true" tabindex="-1"></a>  <span class="co">#      sum ( weights * tests )                                   # **ANSWER**</span></span>
+<span id="cb105-21"><a href="#cb105-21" aria-hidden="true" tabindex="-1"></a>  <span class="co">#   }                                                            # **ANSWER**</span></span>
+<span id="cb105-22"><a href="#cb105-22" aria-hidden="true" tabindex="-1"></a>  <span class="co">#                                                                # **ANSWER**</span></span>
+<span id="cb105-23"><a href="#cb105-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># </span><span class="al">NOTE</span><span class="co"> that the weightedAvg function definition uses the         # **ANSWER**</span></span>
+<span id="cb105-24"><a href="#cb105-24" aria-hidden="true" tabindex="-1"></a>  <span class="co"># argument names weights and tests                               # **ANSWER**</span></span>
+<span id="cb105-25"><a href="#cb105-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># In this function we want the weightedAvg of weights and grades. # **ANSWER**</span></span>
+<span id="cb105-26"><a href="#cb105-26" aria-hidden="true" tabindex="-1"></a>  <span class="co"># The following function call uses the weightedAvg function.     # **ANSWER**</span></span>
+<span id="cb105-27"><a href="#cb105-27" aria-hidden="true" tabindex="-1"></a>  <span class="co"># The function all passes the weights variable that is local     # **ANSWER**</span></span>
+<span id="cb105-28"><a href="#cb105-28" aria-hidden="true" tabindex="-1"></a>  <span class="co"># to the gpa2 function to the weights variable that              # **ANSWER**</span></span>
+<span id="cb105-29"><a href="#cb105-29" aria-hidden="true" tabindex="-1"></a>  <span class="co"># is local to the weightedAvg function. However, the grades      # **ANSWER**</span></span>
+<span id="cb105-30"><a href="#cb105-30" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  variable in this function is being passed to the              # **ANSWER**</span></span>
+<span id="cb105-31"><a href="#cb105-31" aria-hidden="true" tabindex="-1"></a>  <span class="co"># "tests" variable in the weightedAvg function.                  # **ANSWER**</span></span>
+<span id="cb105-32"><a href="#cb105-32" aria-hidden="true" tabindex="-1"></a>  <span class="co"># **ANSWER**</span></span>
+<span id="cb105-33"><a href="#cb105-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">weightedAvg</span>( weights , grades )                                  <span class="co"># **ANSWER**</span></span>
+<span id="cb105-34"><a href="#cb105-34" aria-hidden="true" tabindex="-1"></a>}                                                                  <span class="co"># **ANSWER**</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="question---use-the-new-gpa2-function-to-calculate-joes-gpa" class="level3" data-number="5.13.3">
-<h3 data-number="5.13.3" class="anchored" data-anchor-id="question---use-the-new-gpa2-function-to-calculate-joes-gpa"><span class="header-section-number">5.13.3</span> Question - use the new gpa2 function to calculate Joe’s GPA</h3>
+<section id="question---use-the-new-gpa2-function-to-calculate-joes-gpa" class="level3" data-number="8.13.3">
+<h3 data-number="8.13.3" class="anchored" data-anchor-id="question---use-the-new-gpa2-function-to-calculate-joes-gpa"><span class="header-section-number">8.13.3</span> Question - use the new gpa2 function to calculate Joe’s GPA</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------------------------------------------------.</span></span>
-<span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION - part (b)</span></span>
-<span id="cb108-3"><a href="#cb108-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb108-4"><a href="#cb108-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the new gpa2 function to calculate Joe's GPA.</span></span>
-<span id="cb108-5"><a href="#cb108-5" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb108-6"><a href="#cb108-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Joe took 4 classes. The credits and grades were as follows:</span></span>
-<span id="cb108-7"><a href="#cb108-7" aria-hidden="true" tabindex="-1"></a><span class="co">#   4 credit class - got a C</span></span>
-<span id="cb108-8"><a href="#cb108-8" aria-hidden="true" tabindex="-1"></a><span class="co">#   3 credit class - got an A</span></span>
-<span id="cb108-9"><a href="#cb108-9" aria-hidden="true" tabindex="-1"></a><span class="co">#   3 credit class - got a B</span></span>
-<span id="cb108-10"><a href="#cb108-10" aria-hidden="true" tabindex="-1"></a><span class="co">#   2 credit Class - got a A</span></span>
-<span id="cb108-11"><a href="#cb108-11" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------------------------------------------------.</span></span>
-<span id="cb108-12"><a href="#cb108-12" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa2</span>( <span class="at">credits =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>), <span class="at">grades =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb106"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------------------------------------------------.</span></span>
+<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION - part (b)</span></span>
+<span id="cb106-3"><a href="#cb106-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb106-4"><a href="#cb106-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the new gpa2 function to calculate Joe's GPA.</span></span>
+<span id="cb106-5"><a href="#cb106-5" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb106-6"><a href="#cb106-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Joe took 4 classes. The credits and grades were as follows:</span></span>
+<span id="cb106-7"><a href="#cb106-7" aria-hidden="true" tabindex="-1"></a><span class="co">#   4 credit class - got a C</span></span>
+<span id="cb106-8"><a href="#cb106-8" aria-hidden="true" tabindex="-1"></a><span class="co">#   3 credit class - got an A</span></span>
+<span id="cb106-9"><a href="#cb106-9" aria-hidden="true" tabindex="-1"></a><span class="co">#   3 credit class - got a B</span></span>
+<span id="cb106-10"><a href="#cb106-10" aria-hidden="true" tabindex="-1"></a><span class="co">#   2 credit Class - got a A</span></span>
+<span id="cb106-11"><a href="#cb106-11" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------------------------------------------------.</span></span>
+<span id="cb106-12"><a href="#cb106-12" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa2</span>( <span class="at">credits =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>), <span class="at">grades =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.083333</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------.</span></span>
-<span id="cb110-2"><a href="#cb110-2" aria-hidden="true" tabindex="-1"></a><span class="co"># CHECK YOUR ANSWER</span></span>
-<span id="cb110-3"><a href="#cb110-3" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------.</span></span>
-<span id="cb110-4"><a href="#cb110-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb110-5"><a href="#cb110-5" aria-hidden="true" tabindex="-1"></a><span class="co"># If you wrote the code correctly you should get the following results.</span></span>
-<span id="cb110-6"><a href="#cb110-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb110-7"><a href="#cb110-7" aria-hidden="true" tabindex="-1"></a><span class="co">#.............................................................................</span></span>
-<span id="cb110-8"><a href="#cb110-8" aria-hidden="true" tabindex="-1"></a><span class="co"># The following shows how to call the function with specifying the names</span></span>
-<span id="cb110-9"><a href="#cb110-9" aria-hidden="true" tabindex="-1"></a><span class="co"># of the arguments. The gpa and gpa2 functions should return the same results.</span></span>
-<span id="cb110-10"><a href="#cb110-10" aria-hidden="true" tabindex="-1"></a><span class="co">#.............................................................................</span></span>
-<span id="cb110-11"><a href="#cb110-11" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa</span> (<span class="at">credits=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>) ,  <span class="at">grades=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">4</span>) )     <span class="co"># 3.08333</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------.</span></span>
+<span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a><span class="co"># CHECK YOUR ANSWER</span></span>
+<span id="cb108-3"><a href="#cb108-3" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------.</span></span>
+<span id="cb108-4"><a href="#cb108-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb108-5"><a href="#cb108-5" aria-hidden="true" tabindex="-1"></a><span class="co"># If you wrote the code correctly you should get the following results.</span></span>
+<span id="cb108-6"><a href="#cb108-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb108-7"><a href="#cb108-7" aria-hidden="true" tabindex="-1"></a><span class="co">#.............................................................................</span></span>
+<span id="cb108-8"><a href="#cb108-8" aria-hidden="true" tabindex="-1"></a><span class="co"># The following shows how to call the function with specifying the names</span></span>
+<span id="cb108-9"><a href="#cb108-9" aria-hidden="true" tabindex="-1"></a><span class="co"># of the arguments. The gpa and gpa2 functions should return the same results.</span></span>
+<span id="cb108-10"><a href="#cb108-10" aria-hidden="true" tabindex="-1"></a><span class="co">#.............................................................................</span></span>
+<span id="cb108-11"><a href="#cb108-11" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa</span> (<span class="at">credits=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>) ,  <span class="at">grades=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">4</span>) )     <span class="co"># 3.08333</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.083333</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa2</span> (<span class="at">credits=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>) ,  <span class="at">grades=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">4</span>) )    <span class="co"># 3.08333</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa2</span> (<span class="at">credits=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>) ,  <span class="at">grades=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">4</span>) )    <span class="co"># 3.08333</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.083333</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="co">#.............................................................................</span></span>
-<span id="cb114-2"><a href="#cb114-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The following shows how to call the function WITHOUT specifying the names</span></span>
-<span id="cb114-3"><a href="#cb114-3" aria-hidden="true" tabindex="-1"></a><span class="co"># of the arguments. The gpa and gpa2 functions should return the same results.</span></span>
-<span id="cb114-4"><a href="#cb114-4" aria-hidden="true" tabindex="-1"></a><span class="co">#.............................................................................</span></span>
-<span id="cb114-5"><a href="#cb114-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa</span> ( <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>) ,  <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">4</span>) )     <span class="co"># 3.08333</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="co">#.............................................................................</span></span>
+<span id="cb112-2"><a href="#cb112-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The following shows how to call the function WITHOUT specifying the names</span></span>
+<span id="cb112-3"><a href="#cb112-3" aria-hidden="true" tabindex="-1"></a><span class="co"># of the arguments. The gpa and gpa2 functions should return the same results.</span></span>
+<span id="cb112-4"><a href="#cb112-4" aria-hidden="true" tabindex="-1"></a><span class="co">#.............................................................................</span></span>
+<span id="cb112-5"><a href="#cb112-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa</span> ( <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>) ,  <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">4</span>) )     <span class="co"># 3.08333</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.083333</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb116"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa2</span> ( <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>) ,  <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">4</span>) )    <span class="co"># 3.08333</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="fu">gpa2</span> ( <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">2</span>) ,  <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">4</span>) )    <span class="co"># 3.08333</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3.083333</code></pre>
 </div>
@@ -1936,13 +1950,13 @@ click here for answer
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./000300-usingSomeBuiltinFunctions-v028.html" class="pagination-link" aria-label="<yrChapterNumber>4. </yrChapterNumber> Using some built-in functions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><yrchapternumber>4. </yrchapternumber> Using some built-in functions</span></span>
+      <a href="./000300-usingSomeBuiltinFunctions-v028-d.html" class="pagination-link" aria-label="<yrChapterNumber>7. </yrChapterNumber> More function stuff - rep, sort, seq, colon operator">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><yrchapternumber>7. </yrchapternumber> More function stuff - rep, sort, seq, colon operator</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./000350-c_h-introToTheDebugger-v060.html" class="pagination-link" aria-label="<yrChapterNumber>6. </yrChapterNumber> deubugger   (also known as the &quot;browser&quot;)">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>6. </yrchapternumber> deubugger (also known as the “browser”)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./000350-c_h-introToTheDebugger-v060.html" class="pagination-link" aria-label="<yrChapterNumber>9. </yrChapterNumber> debugger   (also known as the &quot;browser&quot;)">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><yrchapternumber>9. </yrchapternumber> debugger (also known as the “browser”)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

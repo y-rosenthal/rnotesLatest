@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>26&nbsp; 26.  Modifying Lists: (1) removing items (2) adding items (3) replacing items – r notes (latest version)</title>
+<title>29&nbsp; 29.  Modifying Lists: (1) removing items (2) adding items (3) replacing items – r notes (latest version)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -143,7 +143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000415-d-lists-v036.html"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title"><yrchapternumber>26. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000415-d-lists-v036.html"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title"><yrchapternumber>29. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -189,200 +189,218 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000300-usingSomeBuiltinFunctions-v028.html" class="sidebar-item-text sidebar-link">
+  <a href="./000300-usingSomeBuiltinFunctions-v028-a.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><yrchapternumber>4. </yrchapternumber> Using some built-in functions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./000300-usingSomeBuiltinFunctions-v028-b.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> Intro to R vectors</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000300-usingSomeBuiltinFunctions-v028-c.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>6. </yrchapternumber> The recycling rule and more ...</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000300-usingSomeBuiltinFunctions-v028-d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><yrchapternumber>7. </yrchapternumber> More function stuff - rep, sort, seq, colon operator</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./000350-b_b-userDefinedFunctions-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> User defined functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><yrchapternumber>8. </yrchapternumber> User defined functions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-c_h-introToTheDebugger-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>6. </yrchapternumber> deubugger   (also known as the "browser")</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><yrchapternumber>9. </yrchapternumber> debugger   (also known as the "browser")</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-d_d-modesOfData_numeric_logical_character-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><yrchapternumber>7. </yrchapternumber> modes of data: "numeric","logical","character",etc.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><yrchapternumber>10. </yrchapternumber> modes of data: "numeric","logical","character",etc.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-e_e-NA_is.na_na.rm-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><yrchapternumber>8. </yrchapternumber> NA &nbsp;&nbsp; is.na() &nbsp;&nbsp; na.rm argument</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><yrchapternumber>11. </yrchapternumber> NA &nbsp;&nbsp; is.na() &nbsp;&nbsp; na.rm argument</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-f_f-indexingWithPositiveNumbers-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><yrchapternumber>9. </yrchapternumber> Indexing with positive numbers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><yrchapternumber>12. </yrchapternumber> Indexing with positive numbers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-g_g-indexingWithNegativeNumbers-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><yrchapternumber>10. </yrchapternumber> Indexing with NEGATIVE numbers</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><yrchapternumber>13. </yrchapternumber> Indexing with NEGATIVE numbers</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-h_c-IntroToLogicalVectorsAndOperators_ifelseFunction-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><yrchapternumber>11. </yrchapternumber> Logical vectors, relational (AKA logical) operators, ifelse</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><yrchapternumber>14. </yrchapternumber> Logical vectors, relational (AKA logical) operators, ifelse</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-j_j-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><yrchapternumber>12. </yrchapternumber> Indexing with logicals, e.g. someVector [ c(TRUE, FALSE, TRUE) ]</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><yrchapternumber>15. </yrchapternumber> Indexing with logicals, e.g. someVector [ c(TRUE, FALSE, TRUE) ]</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-j_j_b-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><yrchapternumber>13. </yrchapternumber> Automatic (or "implicit") conversions - numeric to logical - logical to numeric</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><yrchapternumber>16. </yrchapternumber> Automatic (or "implicit") conversions - numeric to logical - logical to numeric</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-j_j_c-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><yrchapternumber>14. </yrchapternumber> (a) EXCLAMATION POINT (i.e the "not" operator)  (b) is.na( LOGICAL_VECTOR )</span></span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title"><yrchapternumber>17. </yrchapternumber> (a) EXCLAMATION POINT (i.e the "not" operator)  (b) is.na( LOGICAL_VECTOR )</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-k_k-characterValues_cat_nchar_paste_paste0-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><yrchapternumber>15. </yrchapternumber> "character" values (also known as "strings"), cat(), nchar(), paste(), paste0()</span></span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title"><yrchapternumber>18. </yrchapternumber> "character" values (also known as "strings"), cat(), nchar(), paste(), paste0()</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-l_i-usingCatToDebugYourCode-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><yrchapternumber>16. </yrchapternumber> Using cat to help debug your code.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title"><yrchapternumber>19. </yrchapternumber> Using cat to help debug your code.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-m_l-parallelVectors-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title"><yrchapternumber>17. </yrchapternumber> Parallel vectors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title"><yrchapternumber>20. </yrchapternumber> Parallel vectors</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-o-in_intersect_setdiff_usingNotIn-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title"><yrchapternumber>18. </yrchapternumber> %in%</span></span></a>
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title"><yrchapternumber>21. </yrchapternumber> %in%</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000350-p-localVariables_globalVariables-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title"><yrchapternumber>19. </yrchapternumber> "GLOBAL VARIABLES" vs "LOCAL VARIABLES"</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title"><yrchapternumber>22. </yrchapternumber> "LOCAL VARIABLES" vs "GLOBAL VARIABLES"</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000380-logicalOperators_and_or_not-v013-withAnswers-afterBerenClass.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title"><yrchapternumber>20. </yrchapternumber> logical operators &nbsp;&nbsp; ! (not) &nbsp;&nbsp; &amp; (and) &nbsp;&nbsp; | (or)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title"><yrchapternumber>23. </yrchapternumber> logical operators &nbsp;&nbsp; ! (not) &nbsp;&nbsp; &amp; (and) &nbsp;&nbsp; | (or)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000390-sciNotation_roundoffError_v005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title"><yrchapternumber>21. </yrchapternumber> scientific notation *~(longer version)~*</span></span></a>
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title"><yrchapternumber>24. </yrchapternumber> scientific notation *~(longer version)~*</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000400-sciNotation_roundoffError_accessingVectorPositions-v000.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title"><yrchapternumber>22. </yrchapternumber> scientific notation *~(abbridged version)~*</span></span></a>
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title"><yrchapternumber>25. </yrchapternumber> scientific notation *~(abbridged version)~*</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000410-implicitAndExplicitConversions-v025.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title"><yrchapternumber>23. </yrchapternumber> implicit and explicit conversions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title"><yrchapternumber>26. </yrchapternumber> implicit and explicit conversions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-a-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title"><yrchapternumber>24. </yrchapternumber> intro to "lists" - i.e. collections of any R objects</span></span></a>
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title"><yrchapternumber>27. </yrchapternumber> intro to "lists" - i.e. collections of any R objects</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-c2-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title"><yrchapternumber>25. </yrchapternumber> [[double-brackets]]</span></span></a>
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title"><yrchapternumber>28. </yrchapternumber> [[double-brackets]]</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-d-lists-v036.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title"><yrchapternumber>26. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></span></a>
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title"><yrchapternumber>29. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000415-e-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title"><yrchapternumber>27. </yrchapternumber> NAMED LISTS</span></span></a>
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title"><yrchapternumber>30. </yrchapternumber> NAMED LISTS</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000430-lapply-v031-afterWilf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title"><yrchapternumber>28. </yrchapternumber> lapply ( SOME_LIST , SOME_FUNCTION )</span></span></a>
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title"><yrchapternumber>31. </yrchapternumber> lapply ( SOME_LIST , SOME_FUNCTION )</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000495-attributres_attr_names_matrix_factor_dataframe-v010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title"><yrchapternumber>29. </yrchapternumber> attributes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title"><yrchapternumber>32. </yrchapternumber> attributes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000700-matrices-v015.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title"><yrchapternumber>30. </yrchapternumber> matrices</span></span></a>
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title"><yrchapternumber>33. </yrchapternumber> matrices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000800-factors-v010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title"><yrchapternumber>31. </yrchapternumber> factors</span></span></a>
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title"><yrchapternumber>34. </yrchapternumber> factors</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000850-introToDataframes-v0019-afterBeren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title"><yrchapternumber>32. </yrchapternumber> dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title"><yrchapternumber>35. </yrchapternumber> dataframes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000875-cbind_rbind-v002.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title"><yrchapternumber>33. </yrchapternumber> cbind and rbind (to combine dataframes)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber>36. </yrchapternumber> cbind and rbind (to combine dataframes)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000900-if_ifElse_if_elseif_else_nestedStatements-v019.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title"><yrchapternumber>34. </yrchapternumber> "if / else if / else"  constructs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber>37. </yrchapternumber> "if / else if / else"  constructs</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001000-whileLoops-v027-afterWilfClass25.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title"><yrchapternumber>35. </yrchapternumber> while loops</span></span></a>
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title"><yrchapternumber>38. </yrchapternumber> while loops</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001020-forLoops_sleep_strsplit-v017-maybeChanged.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber>36. </yrchapternumber> for loops</span></span></a>
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title"><yrchapternumber>39. </yrchapternumber> for loops</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -397,67 +415,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000555-midtermQuestionsToStudy.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber>37. </yrchapternumber> FINAL EXAM (2023) - Questions to study (ie. everything)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title"><yrchapternumber>40. </yrchapternumber> FINAL EXAM (2023) - Questions to study (ie. everything)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000600-HW-vectorsFunctionsRecyclingrule-v004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title"><yrchapternumber>38. </yrchapternumber> Practice Questions - TOPIC: Vectors1</span></span></a>
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title"><yrchapternumber>41. </yrchapternumber> Practice Questions - TOPIC: Vectors1</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-10-vectors-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title"><yrchapternumber>39. </yrchapternumber> Practice Questions - TOPIC: Vectors2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title"><yrchapternumber>42. </yrchapternumber> Practice Questions - TOPIC: Vectors2</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-40-assortedTopics-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title"><yrchapternumber>40. </yrchapternumber> Practice Questions - TOPIC: Assorted Topics</span></span></a>
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title"><yrchapternumber>43. </yrchapternumber> Practice Questions - TOPIC: Assorted Topics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-20-dataframes-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title"><yrchapternumber>41. </yrchapternumber> Practice Questions - TOPIC: Dataframes</span></span></a>
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title"><yrchapternumber>44. </yrchapternumber> Practice Questions - TOPIC: Dataframes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99900-qstns-30-userDefinedFunctions-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title"><yrchapternumber>42. </yrchapternumber> Practice Questions - TOPIC: User Defined Functions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title"><yrchapternumber>45. </yrchapternumber> Practice Questions - TOPIC: User Defined Functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000450-additionalPracticeProblems-WITH_ANSWERS-v005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title"><yrchapternumber>43. </yrchapternumber> Practice Questions - TOPICS: Parallel Vectors, &amp;, |, scientific notation, etc.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title"><yrchapternumber>46. </yrchapternumber> Practice Questions - TOPICS: Parallel Vectors, &amp;, |, scientific notation, etc.</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000460-listQuestions-WITH_ANSWERS-v004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title"><yrchapternumber>44. </yrchapternumber> Practice Questions - TOPIC: Lists and Dataframes.</span></span></a>
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title"><yrchapternumber>47. </yrchapternumber> Practice Questions - TOPIC: Lists and Dataframes.</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001100-assignment-loops-v001-SOLUTIONS-v002-ONLY_QUESTIONS_4-9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title"><yrchapternumber>45. </yrchapternumber> Practice Questions - TOPIC: loops (writing code)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title"><yrchapternumber>48. </yrchapternumber> Practice Questions - TOPIC: loops (writing code)</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./99950-qstns-moreQuestions-v001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title"><yrchapternumber>46. </yrchapternumber> Practice Questions - TOPICS: Dataframes, &amp; | !</span></span></a>
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title"><yrchapternumber>49. </yrchapternumber> Practice Questions - TOPICS: Dataframes, &amp; | !</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./001035-qstns-loopsReadcode-v001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title"><yrchapternumber>47. </yrchapternumber> Practice Questions - TOPICS: cat, loops (reading code)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title"><yrchapternumber>50. </yrchapternumber> Practice Questions - TOPICS: cat, loops (reading code)</span></span></a>
   </div>
 </li>
       </ul>
@@ -507,27 +525,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#removing-objects-from-a-list-with-null" id="toc-removing-objects-from-a-list-with-null" class="nav-link active" data-scroll-target="#removing-objects-from-a-list-with-null"><span class="header-section-number">26.1</span> Removing objects from a list with NULL</a>
+  <li><a href="#removing-objects-from-a-list-with-null" id="toc-removing-objects-from-a-list-with-null" class="nav-link active" data-scroll-target="#removing-objects-from-a-list-with-null"><span class="header-section-number">29.1</span> Removing objects from a list with NULL</a>
   <ul class="collapse">
-  <li><a href="#you-cannot-use-null-to-remove-values-from-vectors." id="toc-you-cannot-use-null-to-remove-values-from-vectors." class="nav-link" data-scroll-target="#you-cannot-use-null-to-remove-values-from-vectors."><span class="header-section-number">26.1.1</span> You cannot use NULL to remove values from vectors.</a></li>
-  <li><a href="#removing-more-than-one-item-in-one-command-with-single-brackets" id="toc-removing-more-than-one-item-in-one-command-with-single-brackets" class="nav-link" data-scroll-target="#removing-more-than-one-item-in-one-command-with-single-brackets"><span class="header-section-number">26.1.2</span> Removing more than one item in one command with [single-brackets]</a></li>
+  <li><a href="#you-cannot-use-null-to-remove-values-from-vectors." id="toc-you-cannot-use-null-to-remove-values-from-vectors." class="nav-link" data-scroll-target="#you-cannot-use-null-to-remove-values-from-vectors."><span class="header-section-number">29.1.1</span> You cannot use NULL to remove values from vectors.</a></li>
+  <li><a href="#removing-more-than-one-item-in-one-command-with-single-brackets" id="toc-removing-more-than-one-item-in-one-command-with-single-brackets" class="nav-link" data-scroll-target="#removing-more-than-one-item-in-one-command-with-single-brackets"><span class="header-section-number">29.1.2</span> Removing more than one item in one command with [single-brackets]</a></li>
   </ul></li>
-  <li><a href="#adding-items-to-a-list---3-different-ways" id="toc-adding-items-to-a-list---3-different-ways" class="nav-link" data-scroll-target="#adding-items-to-a-list---3-different-ways"><span class="header-section-number">26.2</span> Adding items to a list - 3 different ways</a>
+  <li><a href="#adding-items-to-a-list---3-different-ways" id="toc-adding-items-to-a-list---3-different-ways" class="nav-link" data-scroll-target="#adding-items-to-a-list---3-different-ways"><span class="header-section-number">29.2</span> Adding items to a list - 3 different ways</a>
   <ul class="collapse">
-  <li><a href="#add-to-a-list---option-1---use-the-c-function" id="toc-add-to-a-list---option-1---use-the-c-function" class="nav-link" data-scroll-target="#add-to-a-list---option-1---use-the-c-function"><span class="header-section-number">26.2.1</span> add to a list - option 1 - use the c() function</a></li>
-  <li><a href="#add-to-a-list---option-2---use-the-append-function" id="toc-add-to-a-list---option-2---use-the-append-function" class="nav-link" data-scroll-target="#add-to-a-list---option-2---use-the-append-function"><span class="header-section-number">26.2.2</span> add to a list - option 2 - use the append() function</a></li>
-  <li><a href="#add-to-a-list---option-3---assign-new-items-to-positions-past-the-end-of-the-list" id="toc-add-to-a-list---option-3---assign-new-items-to-positions-past-the-end-of-the-list" class="nav-link" data-scroll-target="#add-to-a-list---option-3---assign-new-items-to-positions-past-the-end-of-the-list"><span class="header-section-number">26.2.3</span> add to a list - option 3 - assign new items to positions past the end of the list</a></li>
-  <li><a href="#you-can-add-items-to-an-empty-list-this-will-be-a-useful-technique-later" id="toc-you-can-add-items-to-an-empty-list-this-will-be-a-useful-technique-later" class="nav-link" data-scroll-target="#you-can-add-items-to-an-empty-list-this-will-be-a-useful-technique-later"><span class="header-section-number">26.2.4</span> You can add items to an empty list (this will be a useful technique later)</a></li>
+  <li><a href="#add-to-a-list---option-1---use-the-c-function" id="toc-add-to-a-list---option-1---use-the-c-function" class="nav-link" data-scroll-target="#add-to-a-list---option-1---use-the-c-function"><span class="header-section-number">29.2.1</span> add to a list - option 1 - use the c() function</a></li>
+  <li><a href="#add-to-a-list---option-2---use-the-append-function" id="toc-add-to-a-list---option-2---use-the-append-function" class="nav-link" data-scroll-target="#add-to-a-list---option-2---use-the-append-function"><span class="header-section-number">29.2.2</span> add to a list - option 2 - use the append() function</a></li>
+  <li><a href="#add-to-a-list---option-3---assign-new-items-to-positions-past-the-end-of-the-list" id="toc-add-to-a-list---option-3---assign-new-items-to-positions-past-the-end-of-the-list" class="nav-link" data-scroll-target="#add-to-a-list---option-3---assign-new-items-to-positions-past-the-end-of-the-list"><span class="header-section-number">29.2.3</span> add to a list - option 3 - assign new items to positions past the end of the list</a></li>
+  <li><a href="#you-can-add-items-to-an-empty-list-this-will-be-a-useful-technique-later" id="toc-you-can-add-items-to-an-empty-list-this-will-be-a-useful-technique-later" class="nav-link" data-scroll-target="#you-can-add-items-to-an-empty-list-this-will-be-a-useful-technique-later"><span class="header-section-number">29.2.4</span> You can add items to an empty list (this will be a useful technique later)</a></li>
   </ul></li>
-  <li><a href="#replacing-items-in-a-list" id="toc-replacing-items-in-a-list" class="nav-link" data-scroll-target="#replacing-items-in-a-list"><span class="header-section-number">26.3</span> Replacing items in a list</a>
+  <li><a href="#replacing-items-in-a-list" id="toc-replacing-items-in-a-list" class="nav-link" data-scroll-target="#replacing-items-in-a-list"><span class="header-section-number">29.3</span> Replacing items in a list</a>
   <ul class="collapse">
-  <li><a href="#using-double-brackets-to-replace-entries-in-a-list" id="toc-using-double-brackets-to-replace-entries-in-a-list" class="nav-link" data-scroll-target="#using-double-brackets-to-replace-entries-in-a-list"><span class="header-section-number">26.3.1</span> Using [[double-brackets]] to replace entries in a list</a></li>
-  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice"><span class="header-section-number">26.3.2</span> — Practice —</a></li>
-  <li><a href="#another-example---insert-a-list-into-a-list" id="toc-another-example---insert-a-list-into-a-list" class="nav-link" data-scroll-target="#another-example---insert-a-list-into-a-list"><span class="header-section-number">26.3.3</span> Another example - insert a list into a list</a></li>
-  <li><a href="#using-recursive-indexing-to-replace-a-single-value-deep-inside-of-a-list" id="toc-using-recursive-indexing-to-replace-a-single-value-deep-inside-of-a-list" class="nav-link" data-scroll-target="#using-recursive-indexing-to-replace-a-single-value-deep-inside-of-a-list"><span class="header-section-number">26.3.4</span> Using RECURSIVE INDEXING to replace a single value deep inside of a list</a></li>
-  <li><a href="#practice-1" id="toc-practice-1" class="nav-link" data-scroll-target="#practice-1"><span class="header-section-number">26.3.5</span> — Practice —</a></li>
-  <li><a href="#using-single-brackets-to-replace-items-in-a-list" id="toc-using-single-brackets-to-replace-items-in-a-list" class="nav-link" data-scroll-target="#using-single-brackets-to-replace-items-in-a-list"><span class="header-section-number">26.3.6</span> Using [single-brackets] to replace items in a list</a></li>
-  <li><a href="#list114-listwith2values-recycling-rule" id="toc-list114-listwith2values-recycling-rule" class="nav-link" data-scroll-target="#list114-listwith2values-recycling-rule"><span class="header-section-number">26.3.7</span> list1[1:4] = listWith2Values # recycling rule!!</a></li>
+  <li><a href="#using-double-brackets-to-replace-entries-in-a-list" id="toc-using-double-brackets-to-replace-entries-in-a-list" class="nav-link" data-scroll-target="#using-double-brackets-to-replace-entries-in-a-list"><span class="header-section-number">29.3.1</span> Using [[double-brackets]] to replace entries in a list</a></li>
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice"><span class="header-section-number">29.3.2</span> — Practice —</a></li>
+  <li><a href="#another-example---insert-a-list-into-a-list" id="toc-another-example---insert-a-list-into-a-list" class="nav-link" data-scroll-target="#another-example---insert-a-list-into-a-list"><span class="header-section-number">29.3.3</span> Another example - insert a list into a list</a></li>
+  <li><a href="#using-recursive-indexing-to-replace-a-single-value-deep-inside-of-a-list" id="toc-using-recursive-indexing-to-replace-a-single-value-deep-inside-of-a-list" class="nav-link" data-scroll-target="#using-recursive-indexing-to-replace-a-single-value-deep-inside-of-a-list"><span class="header-section-number">29.3.4</span> Using RECURSIVE INDEXING to replace a single value deep inside of a list</a></li>
+  <li><a href="#practice-1" id="toc-practice-1" class="nav-link" data-scroll-target="#practice-1"><span class="header-section-number">29.3.5</span> — Practice —</a></li>
+  <li><a href="#using-single-brackets-to-replace-items-in-a-list" id="toc-using-single-brackets-to-replace-items-in-a-list" class="nav-link" data-scroll-target="#using-single-brackets-to-replace-items-in-a-list"><span class="header-section-number">29.3.6</span> Using [single-brackets] to replace items in a list</a></li>
+  <li><a href="#list114-listwith2values-recycling-rule" id="toc-list114-listwith2values-recycling-rule" class="nav-link" data-scroll-target="#list114-listwith2values-recycling-rule"><span class="header-section-number">29.3.7</span> list1[1:4] = listWith2Values # recycling rule!!</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -537,7 +555,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title"><yrchapternumber>26. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></h1>
+<h1 class="title"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title"><yrchapternumber>29. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></h1>
 </div>
 
 
@@ -579,8 +597,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># on the LHS, so we'll start with that ...</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="do">############################################################################.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="removing-objects-from-a-list-with-null" class="level2" data-number="26.1">
-<h2 data-number="26.1" class="anchored" data-anchor-id="removing-objects-from-a-list-with-null"><span class="header-section-number">26.1</span> Removing objects from a list with NULL</h2>
+<section id="removing-objects-from-a-list-with-null" class="level2" data-number="29.1">
+<h2 data-number="29.1" class="anchored" data-anchor-id="removing-objects-from-a-list-with-null"><span class="header-section-number">29.1</span> Removing objects from a list with NULL</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------------------------------------------------.</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Removing objects from a list with NULL</span></span>
@@ -718,8 +736,8 @@ see the actual values - click here
 </div>
 </div>
 </div>
-<section id="you-cannot-use-null-to-remove-values-from-vectors." class="level3" data-number="26.1.1">
-<h3 data-number="26.1.1" class="anchored" data-anchor-id="you-cannot-use-null-to-remove-values-from-vectors."><span class="header-section-number">26.1.1</span> You cannot use NULL to remove values from vectors.</h3>
+<section id="you-cannot-use-null-to-remove-values-from-vectors." class="level3" data-number="29.1.1">
+<h3 data-number="29.1.1" class="anchored" data-anchor-id="you-cannot-use-null-to-remove-values-from-vectors."><span class="header-section-number">29.1.1</span> You cannot use NULL to remove values from vectors.</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#------------------------------------------------------------------.</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># VECTORS and LISTS are fundamentally different in how they </span></span>
@@ -741,8 +759,8 @@ see the actual values - click here
 </div>
 </div>
 </section>
-<section id="removing-more-than-one-item-in-one-command-with-single-brackets" class="level3" data-number="26.1.2">
-<h3 data-number="26.1.2" class="anchored" data-anchor-id="removing-more-than-one-item-in-one-command-with-single-brackets"><span class="header-section-number">26.1.2</span> Removing more than one item in one command with [single-brackets]</h3>
+<section id="removing-more-than-one-item-in-one-command-with-single-brackets" class="level3" data-number="29.1.2">
+<h3 data-number="29.1.2" class="anchored" data-anchor-id="removing-more-than-one-item-in-one-command-with-single-brackets"><span class="header-section-number">29.1.2</span> Removing more than one item in one command with [single-brackets]</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>()) <span class="co"># Let's start from scratch</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>gradebook <span class="ot">=</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="st">"bob"</span>, <span class="st">"charlie"</span>, <span class="st">"frank"</span>), </span>
@@ -869,8 +887,8 @@ see the actual values - click here
 </div>
 </section>
 </section>
-<section id="adding-items-to-a-list---3-different-ways" class="level2" data-number="26.2">
-<h2 data-number="26.2" class="anchored" data-anchor-id="adding-items-to-a-list---3-different-ways"><span class="header-section-number">26.2</span> Adding items to a list - 3 different ways</h2>
+<section id="adding-items-to-a-list---3-different-ways" class="level2" data-number="29.2">
+<h2 data-number="29.2" class="anchored" data-anchor-id="adding-items-to-a-list---3-different-ways"><span class="header-section-number">29.2</span> Adding items to a list - 3 different ways</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="do">##############################################################################.</span></span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="co"># There are 3 different way to add items to a list</span></span>
@@ -885,8 +903,8 @@ see the actual values - click here
 <span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a><span class="co"># See the examples below ...</span></span>
 <span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a><span class="do">##############################################################################.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="add-to-a-list---option-1---use-the-c-function" class="level3" data-number="26.2.1">
-<h3 data-number="26.2.1" class="anchored" data-anchor-id="add-to-a-list---option-1---use-the-c-function"><span class="header-section-number">26.2.1</span> add to a list - option 1 - use the c() function</h3>
+<section id="add-to-a-list---option-1---use-the-c-function" class="level3" data-number="29.2.1">
+<h3 data-number="29.2.1" class="anchored" data-anchor-id="add-to-a-list---option-1---use-the-c-function"><span class="header-section-number">29.2.1</span> add to a list - option 1 - use the c() function</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>()) <span class="co"># start from scratch</span></span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>gradebook <span class="ot">=</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="st">"bob"</span>, <span class="st">"charlie"</span>, <span class="st">"frank"</span>), </span>
@@ -1000,8 +1018,8 @@ see the actual data - click here
 </div>
 </div>
 </section>
-<section id="add-to-a-list---option-2---use-the-append-function" class="level3" data-number="26.2.2">
-<h3 data-number="26.2.2" class="anchored" data-anchor-id="add-to-a-list---option-2---use-the-append-function"><span class="header-section-number">26.2.2</span> add to a list - option 2 - use the append() function</h3>
+<section id="add-to-a-list---option-2---use-the-append-function" class="level3" data-number="29.2.2">
+<h3 data-number="29.2.2" class="anchored" data-anchor-id="add-to-a-list---option-2---use-the-append-function"><span class="header-section-number">29.2.2</span> add to a list - option 2 - use the append() function</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>()) <span class="co"># start from scratch</span></span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>gradebook <span class="ot">=</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="st">"bob"</span>, <span class="st">"charlie"</span>, <span class="st">"frank"</span>), </span>
@@ -1120,8 +1138,8 @@ Analyze the gradeook object - click here
 </div>
 </div>
 </section>
-<section id="add-to-a-list---option-3---assign-new-items-to-positions-past-the-end-of-the-list" class="level3" data-number="26.2.3">
-<h3 data-number="26.2.3" class="anchored" data-anchor-id="add-to-a-list---option-3---assign-new-items-to-positions-past-the-end-of-the-list"><span class="header-section-number">26.2.3</span> add to a list - option 3 - assign new items to positions past the end of the list</h3>
+<section id="add-to-a-list---option-3---assign-new-items-to-positions-past-the-end-of-the-list" class="level3" data-number="29.2.3">
+<h3 data-number="29.2.3" class="anchored" data-anchor-id="add-to-a-list---option-3---assign-new-items-to-positions-past-the-end-of-the-list"><span class="header-section-number">29.2.3</span> add to a list - option 3 - assign new items to positions past the end of the list</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>()) <span class="co"># start from scratch</span></span>
 <span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>gradebook <span class="ot">=</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="st">"bob"</span>, <span class="st">"charlie"</span>, <span class="st">"frank"</span>), </span>
@@ -1397,8 +1415,8 @@ NULL
 </div>
 </section>
 </section>
-<section id="you-can-add-items-to-an-empty-list-this-will-be-a-useful-technique-later" class="level3" data-number="26.2.4">
-<h3 data-number="26.2.4" class="anchored" data-anchor-id="you-can-add-items-to-an-empty-list-this-will-be-a-useful-technique-later"><span class="header-section-number">26.2.4</span> You can add items to an empty list (this will be a useful technique later)</h3>
+<section id="you-can-add-items-to-an-empty-list-this-will-be-a-useful-technique-later" class="level3" data-number="29.2.4">
+<h3 data-number="29.2.4" class="anchored" data-anchor-id="you-can-add-items-to-an-empty-list-this-will-be-a-useful-technique-later"><span class="header-section-number">29.2.4</span> You can add items to an empty list (this will be a useful technique later)</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="do">#############################################################################.</span></span>
 <span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Add items to an empty list (this will be a useful technique later)</span></span>
@@ -1495,10 +1513,10 @@ Analyze the gradeook object - click here
 </div>
 </section>
 </section>
-<section id="replacing-items-in-a-list" class="level2" data-number="26.3">
-<h2 data-number="26.3" class="anchored" data-anchor-id="replacing-items-in-a-list"><span class="header-section-number">26.3</span> Replacing items in a list</h2>
-<section id="using-double-brackets-to-replace-entries-in-a-list" class="level3" data-number="26.3.1">
-<h3 data-number="26.3.1" class="anchored" data-anchor-id="using-double-brackets-to-replace-entries-in-a-list"><span class="header-section-number">26.3.1</span> Using [[double-brackets]] to replace entries in a list</h3>
+<section id="replacing-items-in-a-list" class="level2" data-number="29.3">
+<h2 data-number="29.3" class="anchored" data-anchor-id="replacing-items-in-a-list"><span class="header-section-number">29.3</span> Replacing items in a list</h2>
+<section id="using-double-brackets-to-replace-entries-in-a-list" class="level3" data-number="29.3.1">
+<h3 data-number="29.3.1" class="anchored" data-anchor-id="using-double-brackets-to-replace-entries-in-a-list"><span class="header-section-number">29.3.1</span> Using [[double-brackets]] to replace entries in a list</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb98"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="do">#####################################################################.</span></span>
 <span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Using [[double-brackets]] to replace entries in a list</span></span>
@@ -1582,8 +1600,8 @@ Analyze the gradeook object - click here
 </div>
 </div>
 </section>
-<section id="practice" class="level3" data-number="26.3.2">
-<h3 data-number="26.3.2" class="anchored" data-anchor-id="practice"><span class="header-section-number">26.3.2</span> — Practice —</h3>
+<section id="practice" class="level3" data-number="29.3.2">
+<h3 data-number="29.3.2" class="anchored" data-anchor-id="practice"><span class="header-section-number">29.3.2</span> — Practice —</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb106"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="do">#########################################################################.</span></span>
 <span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION - write code to replace the 2nd item in the list with a new</span></span>
@@ -1608,8 +1626,8 @@ Analyze the gradeook object - click here
 </div>
 </div>
 </section>
-<section id="another-example---insert-a-list-into-a-list" class="level3" data-number="26.3.3">
-<h3 data-number="26.3.3" class="anchored" data-anchor-id="another-example---insert-a-list-into-a-list"><span class="header-section-number">26.3.3</span> Another example - insert a list into a list</h3>
+<section id="another-example---insert-a-list-into-a-list" class="level3" data-number="29.3.3">
+<h3 data-number="29.3.3" class="anchored" data-anchor-id="another-example---insert-a-list-into-a-list"><span class="header-section-number">29.3.3</span> Another example - insert a list into a list</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>())  <span class="co"># start from scratch</span></span>
 <span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a>gradebook <span class="ot">=</span> <span class="fu">list</span>( <span class="fu">c</span>(<span class="st">"bob"</span>, <span class="st">"charlie"</span>, <span class="st">"frank"</span>), <span class="co"># student names</span></span>
@@ -1721,8 +1739,8 @@ click here to see the actual data
 </div>
 </div>
 </section>
-<section id="using-recursive-indexing-to-replace-a-single-value-deep-inside-of-a-list" class="level3" data-number="26.3.4">
-<h3 data-number="26.3.4" class="anchored" data-anchor-id="using-recursive-indexing-to-replace-a-single-value-deep-inside-of-a-list"><span class="header-section-number">26.3.4</span> Using RECURSIVE INDEXING to replace a single value deep inside of a list</h3>
+<section id="using-recursive-indexing-to-replace-a-single-value-deep-inside-of-a-list" class="level3" data-number="29.3.4">
+<h3 data-number="29.3.4" class="anchored" data-anchor-id="using-recursive-indexing-to-replace-a-single-value-deep-inside-of-a-list"><span class="header-section-number">29.3.4</span> Using RECURSIVE INDEXING to replace a single value deep inside of a list</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb118"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb118-1"><a href="#cb118-1" aria-hidden="true" tabindex="-1"></a><span class="do">############################################################################.</span></span>
 <span id="cb118-2"><a href="#cb118-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Using RECURSIVE INDEXING to replace a single value deep inside of a list</span></span>
@@ -1826,8 +1844,8 @@ click here to see the actual data
 </div>
 </div>
 </section>
-<section id="practice-1" class="level3" data-number="26.3.5">
-<h3 data-number="26.3.5" class="anchored" data-anchor-id="practice-1"><span class="header-section-number">26.3.5</span> — Practice —</h3>
+<section id="practice-1" class="level3" data-number="29.3.5">
+<h3 data-number="29.3.5" class="anchored" data-anchor-id="practice-1"><span class="header-section-number">29.3.5</span> — Practice —</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb128"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb128-1"><a href="#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="do">########################################################################.</span></span>
 <span id="cb128-2"><a href="#cb128-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION - write code to </span></span>
@@ -1883,8 +1901,8 @@ Answer - click here
 </div>
 </div>
 </section>
-<section id="using-single-brackets-to-replace-items-in-a-list" class="level3" data-number="26.3.6">
-<h3 data-number="26.3.6" class="anchored" data-anchor-id="using-single-brackets-to-replace-items-in-a-list"><span class="header-section-number">26.3.6</span> Using [single-brackets] to replace items in a list</h3>
+<section id="using-single-brackets-to-replace-items-in-a-list" class="level3" data-number="29.3.6">
+<h3 data-number="29.3.6" class="anchored" data-anchor-id="using-single-brackets-to-replace-items-in-a-list"><span class="header-section-number">29.3.6</span> Using [single-brackets] to replace items in a list</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb133"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb133-1"><a href="#cb133-1" aria-hidden="true" tabindex="-1"></a><span class="do">############################################################################.</span></span>
 <span id="cb133-2"><a href="#cb133-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Using [single-brackets] to replace items in a list</span></span>
@@ -2311,8 +2329,8 @@ see actual values - click here
 </div>
 </section>
 </section>
-<section id="list114-listwith2values-recycling-rule" class="level3" data-number="26.3.7">
-<h3 data-number="26.3.7" class="anchored" data-anchor-id="list114-listwith2values-recycling-rule"><span class="header-section-number">26.3.7</span> list1[1:4] = listWith2Values # recycling rule!!</h3>
+<section id="list114-listwith2values-recycling-rule" class="level3" data-number="29.3.7">
+<h3 data-number="29.3.7" class="anchored" data-anchor-id="list114-listwith2values-recycling-rule"><span class="header-section-number">29.3.7</span> list1[1:4] = listWith2Values # recycling rule!!</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb172"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb172-1"><a href="#cb172-1" aria-hidden="true" tabindex="-1"></a><span class="co">#--------------------------------------------------------------------------.</span></span>
 <span id="cb172-2"><a href="#cb172-2" aria-hidden="true" tabindex="-1"></a><span class="co"># DON'T FORGET the recycling rule!!!</span></span>
@@ -3480,13 +3498,13 @@ $honors
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./000415-c2-lists-v035.html" class="pagination-link" aria-label="<yrChapterNumber>25. </yrChapterNumber> [[double-brackets]]">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title"><yrchapternumber>25. </yrchapternumber> [[double-brackets]]</span></span>
+      <a href="./000415-c2-lists-v035.html" class="pagination-link" aria-label="<yrChapterNumber>28. </yrChapterNumber> [[double-brackets]]">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title"><yrchapternumber>28. </yrchapternumber> [[double-brackets]]</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./000415-e-lists-v035.html" class="pagination-link" aria-label="<yrChapterNumber>27. </yrChapterNumber> NAMED LISTS">
-        <span class="nav-page-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title"><yrchapternumber>27. </yrchapternumber> NAMED LISTS</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./000415-e-lists-v035.html" class="pagination-link" aria-label="<yrChapterNumber>30. </yrChapterNumber> NAMED LISTS">
+        <span class="nav-page-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title"><yrchapternumber>30. </yrchapternumber> NAMED LISTS</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

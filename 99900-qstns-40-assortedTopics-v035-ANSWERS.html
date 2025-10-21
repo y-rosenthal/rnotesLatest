@@ -664,46 +664,46 @@ click here for answer
 <span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          fruit price
-1         apple  6.46
-2       apricot  4.11
-3       avocado  6.68
-4        banana  2.19
-5   bell pepper  2.67
-6      bilberry  1.08
-7    blackberry  2.13
-8  blackcurrant  5.30
-9  blood orange  4.70
-10    blueberry  1.31
-11  boysenberry  2.27
-12   breadfruit  3.55
-13 canary melon  4.29
-14   cantaloupe  1.22
-15    cherimoya  4.10
-16       cherry  4.20
-17 chili pepper  1.09
-18   clementine  1.78
-19   cloudberry  4.80
-20      coconut  2.79
-21    cranberry  1.72
-22     cucumber  3.84
-23      currant  2.99
-24       damson  5.42
-25         date  6.26
-26  dragonfruit  5.99
-27       durian  2.64
-28     eggplant  3.74
-29   elderberry  3.03
-30       feijoa  6.13
-31          fig  4.10
-32   goji berry  5.18
-33   gooseberry  6.66
-34        grape  5.33
-35   grapefruit  1.00
-36        guava  3.51
-37     honeydew  5.30
-38  huckleberry  2.39
-39    jackfruit  1.86
-40   kiwi fruit  1.07</code></pre>
+1         apple  6.89
+2       apricot  2.26
+3       avocado  4.66
+4        banana  6.68
+5   bell pepper  4.78
+6      bilberry  6.76
+7    blackberry  5.37
+8  blackcurrant  1.39
+9  blood orange  6.41
+10    blueberry  6.16
+11  boysenberry  6.56
+12   breadfruit  3.83
+13 canary melon  6.00
+14   cantaloupe  2.37
+15    cherimoya  3.31
+16       cherry  1.89
+17 chili pepper  3.05
+18   clementine  2.27
+19   cloudberry  3.33
+20      coconut  5.54
+21    cranberry  5.19
+22     cucumber  6.79
+23      currant  1.98
+24       damson  2.87
+25         date  6.79
+26  dragonfruit  1.72
+27       durian  3.65
+28     eggplant  6.66
+29   elderberry  2.06
+30       feijoa  3.94
+31          fig  4.28
+32   goji berry  3.36
+33   gooseberry  3.16
+34        grape  3.56
+35   grapefruit  3.78
+36        guava  1.46
+37     honeydew  5.88
+38  huckleberry  4.12
+39    jackfruit  6.83
+40   kiwi fruit  6.16</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Show just the las 5% of the rows</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -713,8 +713,8 @@ click here for answer
 <span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(df, .<span class="dv">05</span> <span class="sc">*</span> <span class="fu">nrow</span>(df))    <span class="co"># BEST ANSWER</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        fruit price
-39  jackfruit  1.86
-40 kiwi fruit  1.07</code></pre>
+39  jackfruit  6.83
+40 kiwi fruit  6.16</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="do">##############################################################.</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Another answer - don't forget the last comma (see below)</span></span>
@@ -723,8 +723,8 @@ click here for answer
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>df[ rowNumbers <span class="sc">&gt;</span> .<span class="dv">95</span><span class="sc">*</span><span class="fu">nrow</span>(df) ,  ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        fruit price
-39  jackfruit  1.86
-40 kiwi fruit  1.07</code></pre>
+39  jackfruit  6.83
+40 kiwi fruit  6.16</code></pre>
 </div>
 </div>
 </div>

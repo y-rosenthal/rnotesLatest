@@ -171,13 +171,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Chapters</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000100-a-installingAndUsingR-v011-afterClass.html" class="sidebar-item-text sidebar-link">
@@ -487,13 +487,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000110-RStudioHotkeys-v001.html" class="sidebar-item-text sidebar-link">
@@ -1828,8 +1828,8 @@ item5     bakery rye bread       6.04      4.53</code></pre>
 <span id="cb167-2"><a href="#cb167-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (Note that, we might get a different random row this time.)</span></span>
 <span id="cb167-3"><a href="#cb167-3" aria-hidden="true" tabindex="-1"></a>prices[   <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(prices), <span class="dv">1</span>) ,   ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>      department       itemName pricePerLb salePrice
-item1    produce mcintosh apple       2.41      1.81</code></pre>
+<pre><code>      department itemName pricePerLb salePrice
+item4    produce     pear       2.41      1.81</code></pre>
 </div>
 </div>
 </div>
@@ -1911,33 +1911,33 @@ part c - click here for answer
 <span id="cb175-10"><a href="#cb175-10" aria-hidden="true" tabindex="-1"></a>rows  <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(prices), <span class="at">size=</span><span class="fu">length</span>(row))</span>
 <span id="cb175-11"><a href="#cb175-11" aria-hidden="true" tabindex="-1"></a>rows  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<pre><code>[1] 4</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb177"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb177-1"><a href="#cb177-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Another way to do this with sample is just to leave out the size parameter.</span></span>
 <span id="cb177-2"><a href="#cb177-2" aria-hidden="true" tabindex="-1"></a>rows  <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(prices))</span>
 <span id="cb177-3"><a href="#cb177-3" aria-hidden="true" tabindex="-1"></a>rows  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 1 2 4 5 3</code></pre>
+<pre><code>[1] 2 3 1 5 4</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb179"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb179-1"><a href="#cb179-1" aria-hidden="true" tabindex="-1"></a><span class="co"># now display the data from the randomly chosen rows:</span></span>
 <span id="cb179-2"><a href="#cb179-2" aria-hidden="true" tabindex="-1"></a>prices[ rows , ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      department       itemName pricePerLb salePrice
-item1    produce mcintosh apple       2.41      1.81
 item2     bakery chocolate cake       1.93      1.45
-item4    produce           pear       2.41      1.81
+item3    produce         orange       1.59      1.19
+item1    produce mcintosh apple       2.41      1.81
 item5     bakery      rye bread       6.04      4.53
-item3    produce         orange       1.59      1.19</code></pre>
+item4    produce           pear       2.41      1.81</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb181"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb181-1"><a href="#cb181-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternatively, we can do all this in one line:</span></span>
 <span id="cb181-2"><a href="#cb181-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (Note that, we might get a different order this time.)</span></span>
 <span id="cb181-3"><a href="#cb181-3" aria-hidden="true" tabindex="-1"></a>prices[   <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(prices))   ,   ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      department       itemName pricePerLb salePrice
-item1    produce mcintosh apple       2.41      1.81
-item4    produce           pear       2.41      1.81
-item2     bakery chocolate cake       1.93      1.45
 item3    produce         orange       1.59      1.19
+item4    produce           pear       2.41      1.81
+item1    produce mcintosh apple       2.41      1.81
+item2     bakery chocolate cake       1.93      1.45
 item5     bakery      rye bread       6.04      4.53</code></pre>
 </div>
 </div>

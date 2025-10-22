@@ -171,13 +171,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Chapters</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000100-a-installingAndUsingR-v011-afterClass.html" class="sidebar-item-text sidebar-link">
@@ -487,13 +487,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000110-RStudioHotkeys-v001.html" class="sidebar-item-text sidebar-link">
@@ -994,12 +994,12 @@ click here for answer
 <div class="cell">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">runif</span>(<span class="dv">10</span>,<span class="dv">50</span>,<span class="dv">51</span>)                  <span class="co"># generate 10 random numbers between 50 and 51</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 50.97411 50.11327 50.67133 50.67971 50.32241 50.44698 50.53433 50.13463
- [9] 50.83264 50.85237</code></pre>
+<pre><code> [1] 50.29367 50.52853 50.46101 50.18757 50.91259 50.44973 50.20308 50.95203
+ [9] 50.34705 50.44194</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">runif</span>(<span class="dv">10</span>,<span class="dv">50</span>,<span class="dv">51</span>),<span class="at">digits=</span><span class="dv">2</span>)  <span class="co"># ANSWER </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 50.31 50.52 50.08 50.18 50.75 50.36 50.68 50.09 50.69 50.58</code></pre>
+<pre><code> [1] 50.85 50.86 50.89 50.55 50.59 50.39 50.19 50.41 50.80 50.02</code></pre>
 </div>
 </div>
 </div>
@@ -2111,36 +2111,36 @@ click here for answer
 <div class="sourceCode cell-code" id="cb135"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb135-1"><a href="#cb135-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">floor</span>(<span class="fu">runif</span>(<span class="dv">50</span>,<span class="dv">1</span>,<span class="dv">100</span>))</span>
 <span id="cb135-2"><a href="#cb135-2" aria-hidden="true" tabindex="-1"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 79 15  2  1 72 14 18 61 68 13 76 70 79 59 64 89  8 60 80 64 59 71 11 70 89
-[26] 25 77 34 72 34 13  3 78 45 89 51 69 21 81 49 62 58 63 54 43 72 15 45 29 87</code></pre>
+<pre><code> [1] 30 12 50 24 48 31 27 88 42  7 37 52 45 73  8 80 32 41 18 29 96 64 98 89  1
+[26] 93 95  8 92 60 49 65 14 54 61 49 70 85  4 46 27  5 97 91 88 19 56 19 61 45</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb137"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb137-1"><a href="#cb137-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 27.24139</code></pre>
+<pre><code>[1] 29.78443</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb139"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb139-1"><a href="#cb139-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 51.22</code></pre>
+<pre><code>[1] 49.5</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb141"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb141-1"><a href="#cb141-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x) <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="fu">sd</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 10.35791</code></pre>
+<pre><code>[1] 4.823356</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb143"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb143-1"><a href="#cb143-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x) <span class="sc">+</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="fu">sd</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 92.08209</code></pre>
+<pre><code>[1] 94.17664</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb145"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb145-1"><a href="#cb145-1" aria-hidden="true" tabindex="-1"></a>x[x <span class="sc">&lt;=</span> <span class="fu">mean</span>(x) <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="fu">sd</span>(x)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2 1 8 3</code></pre>
+<pre><code>[1] 1 4</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb147"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb147-1"><a href="#cb147-1" aria-hidden="true" tabindex="-1"></a>x[x <span class="sc">&gt;=</span> <span class="fu">mean</span>(x) <span class="sc">+</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="fu">sd</span>(x)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>numeric(0)</code></pre>
+<pre><code>[1] 96 98 95 97</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb149"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb149-1"><a href="#cb149-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span> ( x[x <span class="sc">&lt;=</span> <span class="fu">mean</span>(x) <span class="sc">-</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="fu">sd</span>(x)]  ,  x[x <span class="sc">&gt;=</span> <span class="fu">mean</span>(x) <span class="sc">+</span> <span class="fl">1.5</span> <span class="sc">*</span> <span class="fu">sd</span>(x)]  )    <span class="co"># ANSWER</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2 1 8 3</code></pre>
+<pre><code>[1]  1  4 96 98 95 97</code></pre>
 </div>
 </div>
 </div>

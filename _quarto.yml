@@ -30,8 +30,8 @@ book:
     left:
       - text: "(click here for fall24 version of this website)"
         href: https://y-rosenthal.github.io/rnotes-fall24/
-  sidebar:
-    collapse-level: 1   # show only parts; chapters start collapsed
+#  sidebar:
+#    collapse-level: 1   # show only parts; chapters start collapsed
   search: 
     location: sidebar
   #  date: "10/31/2023"

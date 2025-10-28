@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Appendix C — C.  matching braces, indentation – r notes (latest version)</title>
+<title>1&nbsp; 0.  About the midterm (Prof.&nbsp;Rosenthal’s class) – r notes (latest version)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -65,8 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./0200200-rstudioFolding-v033.html" rel="next">
-<link href="./000350-n-doNotUseParenthesesWhenTheyAreClearlyNotNecessary-v060.html" rel="prev">
+<link href="./000100-a-installingAndUsingR-v011-afterClass.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -143,7 +108,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000110-RStudioHotkeys-v001.html">Appendices</a></li><li class="breadcrumb-item"><a href="./000365-matchingBraces_indentation-v001.html"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title"><yrchapternumber>C. </yrchapternumber> matching braces, indentation</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./profRosenthal-fall25-midterm.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><yrchapternumber>0. </yrchapternumber> About the midterm (Prof. Rosenthal's class)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -171,7 +136,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./profRosenthal-fall25-midterm.html" class="sidebar-item-text sidebar-link">
+  <a href="./profRosenthal-fall25-midterm.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><yrchapternumber>0. </yrchapternumber> About the midterm (Prof. Rosenthal's class)</span></span></a>
   </div>
 </li>
@@ -508,7 +473,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000365-matchingBraces_indentation-v001.html" class="sidebar-item-text sidebar-link active">
+  <a href="./000365-matchingBraces_indentation-v001.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title"><yrchapternumber>C. </yrchapternumber> matching braces, indentation</span></span></a>
   </div>
 </li>
@@ -525,15 +490,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#updates---oct-28-2025" id="toc-updates---oct-28-2025" class="nav-link active" data-scroll-target="#updates---oct-28-2025"><span class="header-section-number">1.1</span> <span class="update1">Updates - Oct 28, 2025</span></a></li>
+  <li><a href="#info-about-the-midterm---wed.-nov-5-2025" id="toc-info-about-the-midterm---wed.-nov-5-2025" class="nav-link" data-scroll-target="#info-about-the-midterm---wed.-nov-5-2025"><span class="header-section-number">1.2</span> Info about the Midterm - Wed. Nov 5, 2025</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000110-RStudioHotkeys-v001.html">Appendices</a></li><li class="breadcrumb-item"><a href="./000365-matchingBraces_indentation-v001.html"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title"><yrchapternumber>C. </yrchapternumber> matching braces, indentation</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Appendix C — <yrchapternumber>C. </yrchapternumber> matching braces, indentation</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><yrchapternumber>0. </yrchapternumber> About the midterm (Prof.&nbsp;Rosenthal’s class)</span></h1>
 </div>
 
 
@@ -551,31 +523,111 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using RStudio to find matching (parentheses), [square brackets] and {curly braces} ####</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Place your cursor immediately after an "opening" (, [ or [ and </span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># RStudio will highlight the matching "closing" ), ] or } by shading it grey.</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Similarly if you put your cursor immeately after a "closing symbol", RStudio</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># will highlight the corresponding "opening" symbol.</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># If you try this and you don't see the matching symbol, chances are you're</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># missing either an "opening" or a "closing" symbol. </span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Indentation  ####</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># You can make it a lot easier for yourself (and others) to understand your</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># code and to find missing (or extra) {curly braces} by using "indentation"</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># consistently and carefully.</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># EVERY TIME you type an open curly brace</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co"># (whether for an "if", an "if else", an "else", a "while loop" or a "for loop"), </span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># you should increase the level of indentation for the code inside the </span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># {curly braces}. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<style type="text/css">
+.update1 {
+  font-size: 1.2em;
+  color: #FF002B;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.update2 {
+  font-size: 1.2em;
+  color: #A3001B;
+  font-weight: bold;
+  font-style: italic;
+}
+
+</style>
 </div>
+<p>See the info below about the midterm.</p>
+<section id="updates---oct-28-2025" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="updates---oct-28-2025"><span class="header-section-number">1.1</span> <span class="update1">Updates - Oct 28, 2025</span></h2>
+<p>Since my earlier email last week we covered additional material. The additional material we covered since then is highlighted below <span class="update1">like this</span></p>
+<hr>
+</section>
+<section id="info-about-the-midterm---wed.-nov-5-2025" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="info-about-the-midterm---wed.-nov-5-2025"><span class="header-section-number">1.2</span> Info about the Midterm - Wed. Nov 5, 2025</h2>
+<p>As I announced in class, the midterm will be on Wednesday Nov 5, 2025. There was some confusion in class about the URL for the website. The website you should be using is:</p>
+<p>https://y-rosenthal.github.io/rnotesLatest/</p>
+<ul>
+<li><p>The test is on paper - you are NOT allowed to bring in a computer.</p></li>
+<li><p>You are NOT allowed to bring in a calculator (the math will be easy). If you cannot do the math - ask me and I will be your calculator.</p></li>
+<li><p>You may bring in one piece of double sided 8.5”x11” paper with notes.</p></li>
+</ul>
+<hr>
+<p>As of today, we have so far covered the following material: The midterm will cover all material that we get up to by Wed Oct 29 (including what we cover on Oct 29).</p>
+<p>Chapters that we have covered so far (as of Octber 27, 2025)</p>
+<ol type="1">
+<li>Installing and using R</li>
+<li>variables, integer division and remainder operators</li>
+<li>Order of Operations in R</li>
+<li>Using some built-in functions</li>
+<li>Intro to R vectors</li>
+<li>The recycling rule and more …</li>
+<li>More function stuff - rep, sort, seq, colon operator</li>
+<li>User defined functions</li>
+<li>debugger (also known as the “browser”)</li>
+<li>modes of data: “numeric”,“logical”,“character”,etc.</li>
+<li>NA is.na() na.rm argument</li>
+<li>Indexing with positive numbers</li>
+<li>Indexing with NEGATIVE numbers</li>
+<li>Logical vectors, relational (AKA logical) operators, ifelse</li>
+<li>Indexing with logicals, e.g.&nbsp;someVector [ c(TRUE, FALSE, TRUE) ]</li>
+<li>Automatic (or “implicit”) conversions - numeric to logical - logical to numeric</li>
+<li><ol type="a">
+<li>EXCLAMATION POINT (i.e the “not” operator) (b) is.na( LOGICAL_VECTOR )</li>
+</ol></li>
+<li>“character” values (also known as “strings”), cat(), nchar(), paste(), paste0()</li>
+<li><span class="update1">Using cat to help debug your code.</span></li>
+<li><span class="update1">Parallel vectors</span></li>
+<li><span class="update1">%in%</span></li>
+<li>“LOCAL VARIABLES” vs “GLOBAL VARIABLES”</li>
+<li><span class="update1">logical operators ! (not) &amp; (and) | (or)</span></li>
+</ol>
+<p>We will likely cover the following additional chapters before the exam. The midterm will cover all material that we get up to by Wed Oct 29 (including what we cover on Oct 29).</p>
+<ol start="25" type="1">
+<li>scientific notation <em>~(abbridged version)~</em></li>
+<li>implicit and explicit conversions</li>
+<li>intro to “lists” - i.e.&nbsp;collections of any R objects</li>
+<li>[[double-brackets]]</li>
+</ol>
+<p>As of today - you should already be able to do the following questions from the I will announce additional practice questions when we cover new material. You should consider it homework to go through all of these review questions before the exam. There are answers posted with the questions. Please review the answers too. If you don’t understand the code for an answer, please send me a WhatsApp (I gave out my number in class) and be sure to include both the text of the question and the text of the answer.</p>
+<ul>
+<li><p>Practice Questions - TOPIC: Vectors1</p>
+<ul>
+<li>ALL QUESTIONS</li>
+</ul></li>
+<li><p>Practice Questions - TOPIC: Vectors2</p>
+<ul>
+<li>ALL QUESTIONS except for questions 12,13 (we did not cover “named lists” yet)</li>
+</ul></li>
+<li><p>Practice Questions - TOPIC: Assorted Topics</p>
+<ul>
+<li>QUESTIONS 73, 75, 76, 77, 78, 79, 81</li>
+</ul></li>
+<li><p>Practice Questions - TOPIC: User Defined Functions</p>
+<ul>
+<li>QUESTIONS 67, 68a-d, 71a,b</li>
+</ul></li>
+<li><p>Practice Questions - TOPICS: Parallel Vectors, &amp;, |, scientific notation, etc.</p>
+<ul>
+<li>QUESTIONS 1,2,4,5,6,19,22,25,26,27,28,29,31,33,34,35,36,37,38<br>
+</li>
+<li>OTHER QUESTIONS: 23,24 Note that for these you need to know the “collapse” argument to paste/paste0 - read about that in the notes or in the online documentation for ?paste or ?paste0</li>
+</ul></li>
+<li><p>Practice Questions - TOPICS: cat, loops (reading code)</p>
+<ul>
+<li>QUESTIONS: 1, 2, 3, 4</li>
+</ul></li>
+<li><p><span class="update1">Practice Questions - TOPICS: Parallel Vectors, &amp;, |, scientific notation, etc.</span></p>
+<ul>
+<li><span class="update1">ALL QUESTIONS</span></li>
+</ul></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -979,13 +1031,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./000350-n-doNotUseParenthesesWhenTheyAreClearlyNotNecessary-v060.html" class="pagination-link" aria-label="<yrChapterNumber>B. </yrChapterNumber> DO NOT use parentheses when they are clearly not necessary.">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title"><yrchapternumber>B. </yrchapternumber> DO NOT use parentheses when they are clearly not necessary.</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="About This Website">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">About This Website</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./0200200-rstudioFolding-v033.html" class="pagination-link" aria-label="<yrChapterNumber>D. </yrChapterNumber> How to hide/show portions of code in RStudio (&quot;code folding&quot;)">
-        <span class="nav-page-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title"><yrchapternumber>D. </yrchapternumber> How to hide/show portions of code in RStudio (“code folding”)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./000100-a-installingAndUsingR-v011-afterClass.html" class="pagination-link" aria-label="<yrChapterNumber>1. </yrChapterNumber> Installing and using R">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><yrchapternumber>1. </yrchapternumber> Installing and using R</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

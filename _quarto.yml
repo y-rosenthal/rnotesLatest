@@ -37,9 +37,10 @@ book:
   #  date: "10/31/2023"
   chapters:
     - index.qmd
-    - part: "For Prof Rosenthal's class"
-      chapters:
-        - profRosenthal-20251028-midterm.qmd # yrChapterNumber 0
+    - profRosenthal-fall25-midterm.qmd # yrChapterNumber 0
+#    - part: "For Prof Rosenthal's class"
+#      chapters:
+#        - profRosenthal-20251028-midterm.qmd # yrChapterNumber 0
     - part: "Chapters"
       chapters: 
         - 000100-a-installingAndUsingR-v011-afterClass.qmd # yrChapterNumber 1

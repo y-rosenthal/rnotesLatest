@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; 5.  Intro to R vectors – r notes (latest version)</title>
+<title>6&nbsp; 5.  Intro to R vectors – r notes (latest version)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -143,7 +143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000100-a-installingAndUsingR-v011-afterClass.html">Chapters</a></li><li class="breadcrumb-item"><a href="./000300-usingSomeBuiltinFunctions-v028-b.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> Intro to R vectors</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000100-a-installingAndUsingR-v011-afterClass.html">Chapters</a></li><li class="breadcrumb-item"><a href="./000300-usingSomeBuiltinFunctions-v028-b.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> Intro to R vectors</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -172,7 +172,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Chapters</span></a>
+ <span class="menu-text">For Prof Rosenthal’s class</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -180,236 +180,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000100-a-installingAndUsingR-v011-afterClass.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><yrchapternumber>1. </yrchapternumber> Installing and using R</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000100-b-variables_intDivision_remainder_ls_rm-v011-afterClass.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><yrchapternumber>2. </yrchapternumber> variables, integer division and remainder operators</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000150-orderOfOperationsInR-v002.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title"><yrchapternumber>3. </yrchapternumber> Order of Operations in R</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000300-usingSomeBuiltinFunctions-v028-a.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><yrchapternumber>4. </yrchapternumber> Using some built-in functions</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000300-usingSomeBuiltinFunctions-v028-b.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> Intro to R vectors</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000300-usingSomeBuiltinFunctions-v028-c.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>6. </yrchapternumber> The recycling rule and more ...</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000300-usingSomeBuiltinFunctions-v028-d.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><yrchapternumber>7. </yrchapternumber> More function stuff - rep, sort, seq, colon operator</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-b_b-userDefinedFunctions-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><yrchapternumber>8. </yrchapternumber> User defined functions</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-c_h-introToTheDebugger-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><yrchapternumber>9. </yrchapternumber> debugger   (also known as the "browser")</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-d_d-modesOfData_numeric_logical_character-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><yrchapternumber>10. </yrchapternumber> modes of data: "numeric","logical","character",etc.</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-e_e-NA_is.na_na.rm-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><yrchapternumber>11. </yrchapternumber> NA &nbsp;&nbsp; is.na() &nbsp;&nbsp; na.rm argument</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-f_f-indexingWithPositiveNumbers-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><yrchapternumber>12. </yrchapternumber> Indexing with positive numbers</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-g_g-indexingWithNegativeNumbers-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><yrchapternumber>13. </yrchapternumber> Indexing with NEGATIVE numbers</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-h_c-IntroToLogicalVectorsAndOperators_ifelseFunction-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><yrchapternumber>14. </yrchapternumber> Logical vectors, relational (AKA logical) operators, ifelse</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-j_j-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><yrchapternumber>15. </yrchapternumber> Indexing with logicals, e.g. someVector [ c(TRUE, FALSE, TRUE) ]</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-j_j_b-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><yrchapternumber>16. </yrchapternumber> Automatic (or "implicit") conversions - numeric to logical - logical to numeric</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-j_j_c-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title"><yrchapternumber>17. </yrchapternumber> (a) EXCLAMATION POINT (i.e the "not" operator)  (b) is.na( LOGICAL_VECTOR )</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-k_k-characterValues_cat_nchar_paste_paste0-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title"><yrchapternumber>18. </yrchapternumber> "character" values (also known as "strings"), cat(), nchar(), paste(), paste0()</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-l_i-usingCatToDebugYourCode-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title"><yrchapternumber>19. </yrchapternumber> Using cat to help debug your code.</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-m_l-parallelVectors-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title"><yrchapternumber>20. </yrchapternumber> Parallel vectors</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-o-in_intersect_setdiff_usingNotIn-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title"><yrchapternumber>21. </yrchapternumber> %in%</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000350-p-localVariables_globalVariables-v060.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title"><yrchapternumber>22. </yrchapternumber> "LOCAL VARIABLES" vs "GLOBAL VARIABLES"</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000380-logicalOperators_and_or_not-v013-withAnswers-afterBerenClass.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title"><yrchapternumber>23. </yrchapternumber> logical operators &nbsp;&nbsp; ! (not) &nbsp;&nbsp; &amp; (and) &nbsp;&nbsp; | (or)</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000390-sciNotation_roundoffError_v005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title"><yrchapternumber>24. </yrchapternumber> scientific notation *~(longer version)~*</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000400-sciNotation_roundoffError_accessingVectorPositions-v000.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title"><yrchapternumber>25. </yrchapternumber> scientific notation *~(abbridged version)~*</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000410-implicitAndExplicitConversions-v025.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title"><yrchapternumber>26. </yrchapternumber> implicit and explicit conversions</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000415-a-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title"><yrchapternumber>27. </yrchapternumber> intro to "lists" - i.e. collections of any R objects</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000415-c2-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title"><yrchapternumber>28. </yrchapternumber> [[double-brackets]]</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000415-d-lists-v036.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title"><yrchapternumber>29. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000415-e-lists-v035.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title"><yrchapternumber>30. </yrchapternumber> NAMED LISTS</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000430-lapply-v031-afterWilf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title"><yrchapternumber>31. </yrchapternumber> lapply ( SOME_LIST , SOME_FUNCTION )</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000495-attributres_attr_names_matrix_factor_dataframe-v010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title"><yrchapternumber>32. </yrchapternumber> attributes</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000700-matrices-v015.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title"><yrchapternumber>33. </yrchapternumber> matrices</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000800-factors-v010.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title"><yrchapternumber>34. </yrchapternumber> factors</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000850-introToDataframes-v0019-afterBeren.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title"><yrchapternumber>35. </yrchapternumber> dataframes</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000875-cbind_rbind-v002.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber>36. </yrchapternumber> cbind and rbind (to combine dataframes)</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./000900-if_ifElse_if_elseif_else_nestedStatements-v019.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber>37. </yrchapternumber> "if / else if / else"  constructs</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./001000-whileLoops-v027-afterWilfClass25.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title"><yrchapternumber>38. </yrchapternumber> while loops</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./001020-forLoops_sleep_strsplit-v017-maybeChanged.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title"><yrchapternumber>39. </yrchapternumber> for loops</span></span></a>
+  <a href="./profRosenthal-20251028-midterm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><yrchapternumber>0. </yrchapternumber> About the midterm</span></span></a>
   </div>
 </li>
       </ul>
@@ -417,7 +189,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Practice Questions</span></a>
+ <span class="menu-text">Chapters</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -425,62 +197,230 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000600-HW-vectorsFunctionsRecyclingrule-v004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title"><yrchapternumber>41. </yrchapternumber> Practice Questions - TOPIC: Vectors1</span></span></a>
+  <a href="./000100-a-installingAndUsingR-v011-afterClass.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><yrchapternumber>1. </yrchapternumber> Installing and using R</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./99900-qstns-10-vectors-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title"><yrchapternumber>42. </yrchapternumber> Practice Questions - TOPIC: Vectors2</span></span></a>
+  <a href="./000100-b-variables_intDivision_remainder_ls_rm-v011-afterClass.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title"><yrchapternumber>2. </yrchapternumber> variables, integer division and remainder operators</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./99900-qstns-40-assortedTopics-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title"><yrchapternumber>43. </yrchapternumber> Practice Questions - TOPIC: Assorted Topics</span></span></a>
+  <a href="./000150-orderOfOperationsInR-v002.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><yrchapternumber>3. </yrchapternumber> Order of Operations in R</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./99900-qstns-20-dataframes-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title"><yrchapternumber>44. </yrchapternumber> Practice Questions - TOPIC: Dataframes</span></span></a>
+  <a href="./000300-usingSomeBuiltinFunctions-v028-a.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>4. </yrchapternumber> Using some built-in functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./99900-qstns-30-userDefinedFunctions-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title"><yrchapternumber>45. </yrchapternumber> Practice Questions - TOPIC: User Defined Functions</span></span></a>
+  <a href="./000300-usingSomeBuiltinFunctions-v028-b.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> Intro to R vectors</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000450-additionalPracticeProblems-WITH_ANSWERS-v005.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title"><yrchapternumber>46. </yrchapternumber> Practice Questions - TOPICS: Parallel Vectors, &amp;, |, scientific notation, etc.</span></span></a>
+  <a href="./000300-usingSomeBuiltinFunctions-v028-c.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><yrchapternumber>6. </yrchapternumber> The recycling rule and more ...</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000460-listQuestions-WITH_ANSWERS-v004.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title"><yrchapternumber>47. </yrchapternumber> Practice Questions - TOPIC: Lists and Dataframes.</span></span></a>
+  <a href="./000300-usingSomeBuiltinFunctions-v028-d.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><yrchapternumber>7. </yrchapternumber> More function stuff - rep, sort, seq, colon operator</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./001100-assignment-loops-v001-SOLUTIONS-v002-ONLY_QUESTIONS_4-9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title"><yrchapternumber>48. </yrchapternumber> Practice Questions - TOPIC: loops (writing code)</span></span></a>
+  <a href="./000350-b_b-userDefinedFunctions-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><yrchapternumber>8. </yrchapternumber> User defined functions</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./99950-qstns-moreQuestions-v001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title"><yrchapternumber>49. </yrchapternumber> Practice Questions - TOPICS: Dataframes, &amp; | !</span></span></a>
+  <a href="./000350-c_h-introToTheDebugger-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><yrchapternumber>9. </yrchapternumber> debugger   (also known as the "browser")</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./001035-qstns-loopsReadcode-v001.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title"><yrchapternumber>50. </yrchapternumber> Practice Questions - TOPICS: cat, loops (reading code)</span></span></a>
+  <a href="./000350-d_d-modesOfData_numeric_logical_character-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><yrchapternumber>10. </yrchapternumber> modes of data: "numeric","logical","character",etc.</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-e_e-NA_is.na_na.rm-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><yrchapternumber>11. </yrchapternumber> NA &nbsp;&nbsp; is.na() &nbsp;&nbsp; na.rm argument</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-f_f-indexingWithPositiveNumbers-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title"><yrchapternumber>12. </yrchapternumber> Indexing with positive numbers</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-g_g-indexingWithNegativeNumbers-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title"><yrchapternumber>13. </yrchapternumber> Indexing with NEGATIVE numbers</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-h_c-IntroToLogicalVectorsAndOperators_ifelseFunction-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title"><yrchapternumber>14. </yrchapternumber> Logical vectors, relational (AKA logical) operators, ifelse</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-j_j-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title"><yrchapternumber>15. </yrchapternumber> Indexing with logicals, e.g. someVector [ c(TRUE, FALSE, TRUE) ]</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-j_j_b-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title"><yrchapternumber>16. </yrchapternumber> Automatic (or "implicit") conversions - numeric to logical - logical to numeric</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-j_j_c-indexingWithLogicalValues_notOperator-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title"><yrchapternumber>17. </yrchapternumber> (a) EXCLAMATION POINT (i.e the "not" operator)  (b) is.na( LOGICAL_VECTOR )</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-k_k-characterValues_cat_nchar_paste_paste0-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title"><yrchapternumber>18. </yrchapternumber> "character" values (also known as "strings"), cat(), nchar(), paste(), paste0()</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-l_i-usingCatToDebugYourCode-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title"><yrchapternumber>19. </yrchapternumber> Using cat to help debug your code.</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-m_l-parallelVectors-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title"><yrchapternumber>20. </yrchapternumber> Parallel vectors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-o-in_intersect_setdiff_usingNotIn-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title"><yrchapternumber>21. </yrchapternumber> %in%</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000350-p-localVariables_globalVariables-v060.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title"><yrchapternumber>22. </yrchapternumber> "LOCAL VARIABLES" vs "GLOBAL VARIABLES"</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000380-logicalOperators_and_or_not-v013-withAnswers-afterBerenClass.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title"><yrchapternumber>23. </yrchapternumber> logical operators &nbsp;&nbsp; ! (not) &nbsp;&nbsp; &amp; (and) &nbsp;&nbsp; | (or)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000400-sciNotation_roundoffError_accessingVectorPositions-v000.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title"><yrchapternumber>24. </yrchapternumber> scientific notation *~(abbridged version)~*</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000410-implicitAndExplicitConversions-v025.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title"><yrchapternumber>25. </yrchapternumber> implicit and explicit conversions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000415-a-lists-v035.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title"><yrchapternumber>26. </yrchapternumber> intro to "lists" - i.e. collections of any R objects</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000415-c2-lists-v035.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title"><yrchapternumber>27. </yrchapternumber> [[double-brackets]]</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000415-d-lists-v036.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title"><yrchapternumber>28. </yrchapternumber> Modifying Lists: (1) removing items (2) adding items (3) replacing items</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000415-e-lists-v035.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title"><yrchapternumber>29. </yrchapternumber> NAMED LISTS</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000430-lapply-v031-afterWilf.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title"><yrchapternumber>30. </yrchapternumber> lapply ( SOME_LIST , SOME_FUNCTION )</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000495-attributres_attr_names_matrix_factor_dataframe-v010.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title"><yrchapternumber>31. </yrchapternumber> attributes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000700-matrices-v015.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title"><yrchapternumber>32. </yrchapternumber> matrices</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000800-factors-v010.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title"><yrchapternumber>33. </yrchapternumber> factors</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000850-introToDataframes-v0019-afterBeren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title"><yrchapternumber>34. </yrchapternumber> dataframes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000875-cbind_rbind-v002.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber>35. </yrchapternumber> cbind and rbind (to combine dataframes)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000900-if_ifElse_if_elseif_else_nestedStatements-v019.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber>36. </yrchapternumber> "if / else if / else"  constructs</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./001000-whileLoops-v027-afterWilfClass25.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title"><yrchapternumber>37. </yrchapternumber> while loops</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./001020-forLoops_sleep_strsplit-v017-maybeChanged.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title"><yrchapternumber>38. </yrchapternumber> for loops</span></span></a>
   </div>
 </li>
       </ul>
@@ -488,12 +428,83 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">Practice Questions</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000600-HW-vectorsFunctionsRecyclingrule-v004.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title"><yrchapternumber>39. </yrchapternumber> Practice Questions - TOPIC: Vectors1</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99900-qstns-10-vectors-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title"><yrchapternumber>40. </yrchapternumber> Practice Questions - TOPIC: Vectors2</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99900-qstns-40-assortedTopics-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title"><yrchapternumber>41. </yrchapternumber> Practice Questions - TOPIC: Assorted Topics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99900-qstns-20-dataframes-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title"><yrchapternumber>42. </yrchapternumber> Practice Questions - TOPIC: Dataframes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99900-qstns-30-userDefinedFunctions-v035-ANSWERS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title"><yrchapternumber>43. </yrchapternumber> Practice Questions - TOPIC: User Defined Functions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000450-additionalPracticeProblems-WITH_ANSWERS-v005.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title"><yrchapternumber>44. </yrchapternumber> Practice Questions - TOPICS: Parallel Vectors, &amp;, |, scientific notation, etc.</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./000460-listQuestions-WITH_ANSWERS-v004.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title"><yrchapternumber>45. </yrchapternumber> Practice Questions - TOPIC: Lists and Dataframes.</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./001100-assignment-loops-v001-SOLUTIONS-v002-ONLY_QUESTIONS_4-9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title"><yrchapternumber>46. </yrchapternumber> Practice Questions - TOPIC: loops (writing code)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./99950-qstns-moreQuestions-v001.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title"><yrchapternumber>47. </yrchapternumber> Practice Questions - TOPICS: Dataframes, &amp; | !</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./001035-qstns-loopsReadcode-v001.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title"><yrchapternumber>48. </yrchapternumber> Practice Questions - TOPICS: cat, loops (reading code)</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./000110-RStudioHotkeys-v001.html" class="sidebar-item-text sidebar-link">
@@ -530,36 +541,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#whats-a-vector-the-is.vector-function." id="toc-whats-a-vector-the-is.vector-function." class="nav-link active" data-scroll-target="#whats-a-vector-the-is.vector-function."><span class="header-section-number">5.1</span> What’s a vector? &nbsp;&nbsp; The is.vector() function.</a></li>
-  <li><a href="#example---using-the-c-function-to-create-a-vector" id="toc-example---using-the-c-function-to-create-a-vector" class="nav-link" data-scroll-target="#example---using-the-c-function-to-create-a-vector"><span class="header-section-number">5.2</span> Example - using the c() function to create a vector</a></li>
-  <li><a href="#many-r-functions-can-be-used-to-create-vectors." id="toc-many-r-functions-can-be-used-to-create-vectors." class="nav-link" data-scroll-target="#many-r-functions-can-be-used-to-create-vectors."><span class="header-section-number">5.3</span> Many R functions can be used to create vectors.</a>
+  <li><a href="#whats-a-vector-the-is.vector-function." id="toc-whats-a-vector-the-is.vector-function." class="nav-link active" data-scroll-target="#whats-a-vector-the-is.vector-function."><span class="header-section-number">6.1</span> What’s a vector? &nbsp;&nbsp; The is.vector() function.</a></li>
+  <li><a href="#example---using-the-c-function-to-create-a-vector" id="toc-example---using-the-c-function-to-create-a-vector" class="nav-link" data-scroll-target="#example---using-the-c-function-to-create-a-vector"><span class="header-section-number">6.2</span> Example - using the c() function to create a vector</a></li>
+  <li><a href="#many-r-functions-can-be-used-to-create-vectors." id="toc-many-r-functions-can-be-used-to-create-vectors." class="nav-link" data-scroll-target="#many-r-functions-can-be-used-to-create-vectors."><span class="header-section-number">6.3</span> Many R functions can be used to create vectors.</a>
   <ul class="collapse">
-  <li><a href="#intro-to-seq-function" id="toc-intro-to-seq-function" class="nav-link" data-scroll-target="#intro-to-seq-function"><span class="header-section-number">5.3.1</span> Intro to seq() function</a></li>
-  <li><a href="#intro-to-rep-function" id="toc-intro-to-rep-function" class="nav-link" data-scroll-target="#intro-to-rep-function"><span class="header-section-number">5.3.2</span> Intro to rep() function</a></li>
+  <li><a href="#intro-to-seq-function" id="toc-intro-to-seq-function" class="nav-link" data-scroll-target="#intro-to-seq-function"><span class="header-section-number">6.3.1</span> Intro to seq() function</a></li>
+  <li><a href="#intro-to-rep-function" id="toc-intro-to-rep-function" class="nav-link" data-scroll-target="#intro-to-rep-function"><span class="header-section-number">6.3.2</span> Intro to rep() function</a></li>
   </ul></li>
-  <li><a href="#nesting-function-calls" id="toc-nesting-function-calls" class="nav-link" data-scroll-target="#nesting-function-calls"><span class="header-section-number">5.4</span> Nesting function calls</a></li>
-  <li><a href="#more-vector-arithmetic" id="toc-more-vector-arithmetic" class="nav-link" data-scroll-target="#more-vector-arithmetic"><span class="header-section-number">5.5</span> More vector arithmetic</a>
+  <li><a href="#nesting-function-calls" id="toc-nesting-function-calls" class="nav-link" data-scroll-target="#nesting-function-calls"><span class="header-section-number">6.4</span> Nesting function calls</a></li>
+  <li><a href="#more-vector-arithmetic" id="toc-more-vector-arithmetic" class="nav-link" data-scroll-target="#more-vector-arithmetic"><span class="header-section-number">6.5</span> More vector arithmetic</a>
   <ul class="collapse">
-  <li><a href="#the-seq-function" id="toc-the-seq-function" class="nav-link" data-scroll-target="#the-seq-function"><span class="header-section-number">5.5.1</span> The seq function</a></li>
+  <li><a href="#the-seq-function" id="toc-the-seq-function" class="nav-link" data-scroll-target="#the-seq-function"><span class="header-section-number">6.5.1</span> The seq function</a></li>
   </ul></li>
-  <li><a href="#order-of-operations-with-vectors-too" id="toc-order-of-operations-with-vectors-too" class="nav-link" data-scroll-target="#order-of-operations-with-vectors-too"><span class="header-section-number">5.6</span> order of operations with vectors too</a></li>
-  <li><a href="#parentheses-change-the-order-of-operations" id="toc-parentheses-change-the-order-of-operations" class="nav-link" data-scroll-target="#parentheses-change-the-order-of-operations"><span class="header-section-number">5.7</span> (parentheses) change the order of operations</a></li>
-  <li><a href="#you-may-assign-a-vector-to-a-variable" id="toc-you-may-assign-a-vector-to-a-variable" class="nav-link" data-scroll-target="#you-may-assign-a-vector-to-a-variable"><span class="header-section-number">5.8</span> You may assign a vector to a variable</a></li>
-  <li><a href="#is.vector-some_value" id="toc-is.vector-some_value" class="nav-link" data-scroll-target="#is.vector-some_value"><span class="header-section-number">5.9</span> is.vector( SOME_VALUE )</a></li>
-  <li><a href="#the-c-function" id="toc-the-c-function" class="nav-link" data-scroll-target="#the-c-function"><span class="header-section-number">5.10</span> The c() function</a></li>
-  <li><a href="#other-r-functions-return-vectors" id="toc-other-r-functions-return-vectors" class="nav-link" data-scroll-target="#other-r-functions-return-vectors"><span class="header-section-number">5.11</span> Other R functions return vectors</a></li>
-  <li><a href="#range-function" id="toc-range-function" class="nav-link" data-scroll-target="#range-function"><span class="header-section-number">5.12</span> range() function</a></li>
-  <li><a href="#seq-function" id="toc-seq-function" class="nav-link" data-scroll-target="#seq-function"><span class="header-section-number">5.13</span> seq() function</a></li>
-  <li><a href="#rep-function" id="toc-rep-function" class="nav-link" data-scroll-target="#rep-function"><span class="header-section-number">5.14</span> rep() function</a></li>
-  <li><a href="#use-c-to-combine-vectors" id="toc-use-c-to-combine-vectors" class="nav-link" data-scroll-target="#use-c-to-combine-vectors"><span class="header-section-number">5.15</span> Use c() to combine vectors</a></li>
-  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice"><span class="header-section-number">5.16</span> — Practice —</a></li>
-  <li><a href="#practice-1" id="toc-practice-1" class="nav-link" data-scroll-target="#practice-1"><span class="header-section-number">5.17</span> — Practice —</a></li>
-  <li><a href="#non-vectors-later-in-the-course." id="toc-non-vectors-later-in-the-course." class="nav-link" data-scroll-target="#non-vectors-later-in-the-course."><span class="header-section-number">5.18</span> non-vectors (later in the course).</a></li>
-  <li><a href="#length-some_vector" id="toc-length-some_vector" class="nav-link" data-scroll-target="#length-some_vector"><span class="header-section-number">5.19</span> length( SOME_VECTOR )</a></li>
-  <li><a href="#counting-arguments" id="toc-counting-arguments" class="nav-link" data-scroll-target="#counting-arguments"><span class="header-section-number">5.20</span> Counting arguments</a></li>
-  <li><a href="#to-get-an-average-use-the-mean-function" id="toc-to-get-an-average-use-the-mean-function" class="nav-link" data-scroll-target="#to-get-an-average-use-the-mean-function"><span class="header-section-number">5.21</span> To get an average use the mean function</a>
+  <li><a href="#order-of-operations-with-vectors-too" id="toc-order-of-operations-with-vectors-too" class="nav-link" data-scroll-target="#order-of-operations-with-vectors-too"><span class="header-section-number">6.6</span> order of operations with vectors too</a></li>
+  <li><a href="#parentheses-change-the-order-of-operations" id="toc-parentheses-change-the-order-of-operations" class="nav-link" data-scroll-target="#parentheses-change-the-order-of-operations"><span class="header-section-number">6.7</span> (parentheses) change the order of operations</a></li>
+  <li><a href="#you-may-assign-a-vector-to-a-variable" id="toc-you-may-assign-a-vector-to-a-variable" class="nav-link" data-scroll-target="#you-may-assign-a-vector-to-a-variable"><span class="header-section-number">6.8</span> You may assign a vector to a variable</a></li>
+  <li><a href="#is.vector-some_value" id="toc-is.vector-some_value" class="nav-link" data-scroll-target="#is.vector-some_value"><span class="header-section-number">6.9</span> is.vector( SOME_VALUE )</a></li>
+  <li><a href="#the-c-function" id="toc-the-c-function" class="nav-link" data-scroll-target="#the-c-function"><span class="header-section-number">6.10</span> The c() function</a></li>
+  <li><a href="#other-r-functions-return-vectors" id="toc-other-r-functions-return-vectors" class="nav-link" data-scroll-target="#other-r-functions-return-vectors"><span class="header-section-number">6.11</span> Other R functions return vectors</a></li>
+  <li><a href="#range-function" id="toc-range-function" class="nav-link" data-scroll-target="#range-function"><span class="header-section-number">6.12</span> range() function</a></li>
+  <li><a href="#seq-function" id="toc-seq-function" class="nav-link" data-scroll-target="#seq-function"><span class="header-section-number">6.13</span> seq() function</a></li>
+  <li><a href="#rep-function" id="toc-rep-function" class="nav-link" data-scroll-target="#rep-function"><span class="header-section-number">6.14</span> rep() function</a></li>
+  <li><a href="#use-c-to-combine-vectors" id="toc-use-c-to-combine-vectors" class="nav-link" data-scroll-target="#use-c-to-combine-vectors"><span class="header-section-number">6.15</span> Use c() to combine vectors</a></li>
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice"><span class="header-section-number">6.16</span> — Practice —</a></li>
+  <li><a href="#practice-1" id="toc-practice-1" class="nav-link" data-scroll-target="#practice-1"><span class="header-section-number">6.17</span> — Practice —</a></li>
+  <li><a href="#non-vectors-later-in-the-course." id="toc-non-vectors-later-in-the-course." class="nav-link" data-scroll-target="#non-vectors-later-in-the-course."><span class="header-section-number">6.18</span> non-vectors (later in the course).</a></li>
+  <li><a href="#length-some_vector" id="toc-length-some_vector" class="nav-link" data-scroll-target="#length-some_vector"><span class="header-section-number">6.19</span> length( SOME_VECTOR )</a></li>
+  <li><a href="#counting-arguments" id="toc-counting-arguments" class="nav-link" data-scroll-target="#counting-arguments"><span class="header-section-number">6.20</span> Counting arguments</a></li>
+  <li><a href="#to-get-an-average-use-the-mean-function" id="toc-to-get-an-average-use-the-mean-function" class="nav-link" data-scroll-target="#to-get-an-average-use-the-mean-function"><span class="header-section-number">6.21</span> To get an average use the mean function</a>
   <ul class="collapse">
-  <li><a href="#trim-argument-to-mean" id="toc-trim-argument-to-mean" class="nav-link" data-scroll-target="#trim-argument-to-mean"><span class="header-section-number">5.21.1</span> trim argument to mean</a></li>
+  <li><a href="#trim-argument-to-mean" id="toc-trim-argument-to-mean" class="nav-link" data-scroll-target="#trim-argument-to-mean"><span class="header-section-number">6.21.1</span> trim argument to mean</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -567,9 +578,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000100-a-installingAndUsingR-v011-afterClass.html">Chapters</a></li><li class="breadcrumb-item"><a href="./000300-usingSomeBuiltinFunctions-v028-b.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> Intro to R vectors</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000100-a-installingAndUsingR-v011-afterClass.html">Chapters</a></li><li class="breadcrumb-item"><a href="./000300-usingSomeBuiltinFunctions-v028-b.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> Intro to R vectors</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> Intro to R vectors</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>5. </yrchapternumber> Intro to R vectors</span></h1>
 </div>
 
 
@@ -586,12 +597,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="whats-a-vector-the-is.vector-function." class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="whats-a-vector-the-is.vector-function."><span class="header-section-number">5.1</span> What’s a vector? &nbsp;&nbsp; The is.vector() function.</h2>
+<section id="whats-a-vector-the-is.vector-function." class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="whats-a-vector-the-is.vector-function."><span class="header-section-number">6.1</span> What’s a vector? &nbsp;&nbsp; The is.vector() function.</h2>
 <p>A vector is a collection of several values. R streamlines processing of vector by working with all the values in a vector simultaneously. This is best explained with an example.</p>
 </section>
-<section id="example---using-the-c-function-to-create-a-vector" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="example---using-the-c-function-to-create-a-vector"><span class="header-section-number">5.2</span> Example - using the c() function to create a vector</h2>
+<section id="example---using-the-c-function-to-create-a-vector" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="example---using-the-c-function-to-create-a-vector"><span class="header-section-number">6.2</span> Example - using the c() function to create a vector</h2>
 <p>The c() function collects several values into a single “vector” of values. When you perform arithmetic with a vector each item in the vector is operated upon. In the following exmaple c(100,200,300) creates a single “vector” that includes the specified values. The number 5 is then added to each value in the vector. This produces a new vector that contains 105, 205 and 305.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">100</span>,<span class="dv">200</span>,<span class="dv">300</span>) <span class="sc">+</span> <span class="dv">5</span>    <span class="co"># return a vector that contains c(105, 205, 305)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -601,11 +612,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>The above demonstrates a simple example of “vector arithmetic”. Any arithmetic that is done with vectors operates on all values in the vector. We’ll explore this in more depth soon.</p>
 </section>
-<section id="many-r-functions-can-be-used-to-create-vectors." class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="many-r-functions-can-be-used-to-create-vectors."><span class="header-section-number">5.3</span> Many R functions can be used to create vectors.</h2>
+<section id="many-r-functions-can-be-used-to-create-vectors." class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="many-r-functions-can-be-used-to-create-vectors."><span class="header-section-number">6.3</span> Many R functions can be used to create vectors.</h2>
 <p>c() is NOT the only function that can create a vector. R has many, many functions that create vectors.</p>
-<section id="intro-to-seq-function" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="intro-to-seq-function"><span class="header-section-number">5.3.1</span> Intro to seq() function</h3>
+<section id="intro-to-seq-function" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="intro-to-seq-function"><span class="header-section-number">6.3.1</span> Intro to seq() function</h3>
 <p>For example, the seq function can create a vector of values that follow some sequence or pattern. The following uses the seq function to create a sequences with the numbers 11,12,13,14,15.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="dv">11</span>, <span class="dv">15</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -621,8 +632,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="intro-to-rep-function" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="intro-to-rep-function"><span class="header-section-number">5.3.2</span> Intro to rep() function</h3>
+<section id="intro-to-rep-function" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="intro-to-rep-function"><span class="header-section-number">6.3.2</span> Intro to rep() function</h3>
 <p>The rep() function returns a vector that contains repetitions of the specified values. For example</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rep</span>(<span class="st">"hello"</span>, <span class="dv">5</span>)  <span class="co"># repeat the word "hello" five times</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -636,8 +647,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 </section>
-<section id="nesting-function-calls" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="nesting-function-calls"><span class="header-section-number">5.4</span> Nesting function calls</h2>
+<section id="nesting-function-calls" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="nesting-function-calls"><span class="header-section-number">6.4</span> Nesting function calls</h2>
 <p>You can pass the return value of one function call into another function call.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">12</span>), <span class="dv">4</span>)   <span class="co"># repeat 10,11,12 four times</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -646,8 +657,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="more-vector-arithmetic" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="more-vector-arithmetic"><span class="header-section-number">5.5</span> More vector arithmetic</h2>
+<section id="more-vector-arithmetic" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="more-vector-arithmetic"><span class="header-section-number">6.5</span> More vector arithmetic</h2>
 <p>Each of the above examples returns a single vector. We can do vector arithmetic with the results.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># repeat the number 100 three times then add 5 to each number</span></span>
@@ -661,12 +672,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code> [1] 1003 1004 1005 1003 1004 1005 1003 1004 1005 1003 1004 1005</code></pre>
 </div>
 </div>
-<section id="the-seq-function" class="level3" data-number="5.5.1">
-<h3 data-number="5.5.1" class="anchored" data-anchor-id="the-seq-function"><span class="header-section-number">5.5.1</span> The seq function</h3>
+<section id="the-seq-function" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="the-seq-function"><span class="header-section-number">6.5.1</span> The seq function</h3>
 </section>
 </section>
-<section id="order-of-operations-with-vectors-too" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="order-of-operations-with-vectors-too"><span class="header-section-number">5.6</span> order of operations with vectors too</h2>
+<section id="order-of-operations-with-vectors-too" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="order-of-operations-with-vectors-too"><span class="header-section-number">6.6</span> order of operations with vectors too</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># vector arithmetic also respects the order of operations</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># In the following example the multiplication is done before the addition</span></span>
@@ -687,8 +698,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a><span class="co"># result is displayed as: 205 405 605</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="parentheses-change-the-order-of-operations" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="parentheses-change-the-order-of-operations"><span class="header-section-number">5.7</span> (parentheses) change the order of operations</h2>
+<section id="parentheses-change-the-order-of-operations" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="parentheses-change-the-order-of-operations"><span class="header-section-number">6.7</span> (parentheses) change the order of operations</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># we can change the order of operations with parentheses</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># This yields a different result. </span></span>
@@ -708,8 +719,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="co"># result is displayed as: 210 410 610</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="you-may-assign-a-vector-to-a-variable" class="level2" data-number="5.8">
-<h2 data-number="5.8" class="anchored" data-anchor-id="you-may-assign-a-vector-to-a-variable"><span class="header-section-number">5.8</span> You may assign a vector to a variable</h2>
+<section id="you-may-assign-a-vector-to-a-variable" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="you-may-assign-a-vector-to-a-variable"><span class="header-section-number">6.8</span> You may assign a vector to a variable</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>grades <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">72</span>,<span class="dv">95</span>,<span class="dv">79</span>,<span class="dv">85</span>)</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -737,8 +748,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">#---------------------------------------------------------------</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="is.vector-some_value" class="level2" data-number="5.9">
-<h2 data-number="5.9" class="anchored" data-anchor-id="is.vector-some_value"><span class="header-section-number">5.9</span> is.vector( SOME_VALUE )</h2>
+<section id="is.vector-some_value" class="level2" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="is.vector-some_value"><span class="header-section-number">6.9</span> is.vector( SOME_VALUE )</h2>
 <p>R has several YRTODO - FIX THIS The is.vector function returns TRUE if its argument is a vector #### and FALSE otherwise.</p>
 <p>As we said above, a vector is a “collection” of values. The simplest vector is just a single value. (it is technically a collection of just one value).</p>
 <div class="cell">
@@ -773,8 +784,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="the-c-function" class="level2" data-number="5.10">
-<h2 data-number="5.10" class="anchored" data-anchor-id="the-c-function"><span class="header-section-number">5.10</span> The c() function</h2>
+<section id="the-c-function" class="level2" data-number="6.10">
+<h2 data-number="6.10" class="anchored" data-anchor-id="the-c-function"><span class="header-section-number">6.10</span> The c() function</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The c() function is used to combine multiple values into a single vector. ####</span></span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
@@ -810,11 +821,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="other-r-functions-return-vectors" class="level2" data-number="5.11">
-<h2 data-number="5.11" class="anchored" data-anchor-id="other-r-functions-return-vectors"><span class="header-section-number">5.11</span> Other R functions return vectors</h2>
+<section id="other-r-functions-return-vectors" class="level2" data-number="6.11">
+<h2 data-number="6.11" class="anchored" data-anchor-id="other-r-functions-return-vectors"><span class="header-section-number">6.11</span> Other R functions return vectors</h2>
 </section>
-<section id="range-function" class="level2" data-number="5.12">
-<h2 data-number="5.12" class="anchored" data-anchor-id="range-function"><span class="header-section-number">5.12</span> range() function</h2>
+<section id="range-function" class="level2" data-number="6.12">
+<h2 data-number="6.12" class="anchored" data-anchor-id="range-function"><span class="header-section-number">6.12</span> range() function</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co">#-----------------------------------------------------.</span></span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Other functions can also create vectors.</span></span>
@@ -847,8 +858,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="seq-function" class="level2" data-number="5.13">
-<h2 data-number="5.13" class="anchored" data-anchor-id="seq-function"><span class="header-section-number">5.13</span> seq() function</h2>
+<section id="seq-function" class="level2" data-number="6.13">
+<h2 data-number="6.13" class="anchored" data-anchor-id="seq-function"><span class="header-section-number">6.13</span> seq() function</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co">#.............................................................................</span></span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The seq function returns a vector. In its simplest use, </span></span>
@@ -919,8 +930,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="rep-function" class="level2" data-number="5.14">
-<h2 data-number="5.14" class="anchored" data-anchor-id="rep-function"><span class="header-section-number">5.14</span> rep() function</h2>
+<section id="rep-function" class="level2" data-number="6.14">
+<h2 data-number="6.14" class="anchored" data-anchor-id="rep-function"><span class="header-section-number">6.14</span> rep() function</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co">#.............................................................................</span></span>
 <span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The rep function returns a vector   ####</span></span>
@@ -947,8 +958,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb83-5"><a href="#cb83-5" aria-hidden="true" tabindex="-1"></a>nums <span class="ot">=</span> <span class="fu">rep</span>( <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>) , <span class="dv">10</span>)   <span class="co"># ANSWER</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="use-c-to-combine-vectors" class="level2" data-number="5.15">
-<h2 data-number="5.15" class="anchored" data-anchor-id="use-c-to-combine-vectors"><span class="header-section-number">5.15</span> Use c() to combine vectors</h2>
+<section id="use-c-to-combine-vectors" class="level2" data-number="6.15">
+<h2 data-number="6.15" class="anchored" data-anchor-id="use-c-to-combine-vectors"><span class="header-section-number">6.15</span> Use c() to combine vectors</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="co">#-------------------------------------------------------------------------------------.</span></span>
 <span id="cb84-2"><a href="#cb84-2" aria-hidden="true" tabindex="-1"></a><span class="co"># DO NOT WRITE INDIVIDUAL VALUES WITHOUT COMBINING THEM TOGETHER WITH A FUNCTION CALL!</span></span>
@@ -1116,8 +1127,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="practice" class="level2" data-number="5.16">
-<h2 data-number="5.16" class="anchored" data-anchor-id="practice"><span class="header-section-number">5.16</span> — Practice —</h2>
+<section id="practice" class="level2" data-number="6.16">
+<h2 data-number="6.16" class="anchored" data-anchor-id="practice"><span class="header-section-number">6.16</span> — Practice —</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------.</span></span>
 <span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION</span></span>
@@ -1149,8 +1160,8 @@ Click here for the answer:
 </div>
 </div>
 </section>
-<section id="practice-1" class="level2" data-number="5.17">
-<h2 data-number="5.17" class="anchored" data-anchor-id="practice-1"><span class="header-section-number">5.17</span> — Practice —</h2>
+<section id="practice-1" class="level2" data-number="6.17">
+<h2 data-number="6.17" class="anchored" data-anchor-id="practice-1"><span class="header-section-number">6.17</span> — Practice —</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb111"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------.</span></span>
 <span id="cb111-2"><a href="#cb111-2" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION</span></span>
@@ -1180,8 +1191,8 @@ Click here for the answer:
 </div>
 </div>
 </section>
-<section id="non-vectors-later-in-the-course." class="level2" data-number="5.18">
-<h2 data-number="5.18" class="anchored" data-anchor-id="non-vectors-later-in-the-course."><span class="header-section-number">5.18</span> non-vectors (later in the course).</h2>
+<section id="non-vectors-later-in-the-course." class="level2" data-number="6.18">
+<h2 data-number="6.18" class="anchored" data-anchor-id="non-vectors-later-in-the-course."><span class="header-section-number">6.18</span> non-vectors (later in the course).</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------------------------------------------------------------------------.</span></span>
 <span id="cb114-2"><a href="#cb114-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Things that aren't vectors (e.g. dataframes, factors, matrices, etc)  ####</span></span>
@@ -1221,8 +1232,8 @@ Click here for the answer:
 </div>
 </div>
 </section>
-<section id="length-some_vector" class="level2" data-number="5.19">
-<h2 data-number="5.19" class="anchored" data-anchor-id="length-some_vector"><span class="header-section-number">5.19</span> length( SOME_VECTOR )</h2>
+<section id="length-some_vector" class="level2" data-number="6.19">
+<h2 data-number="6.19" class="anchored" data-anchor-id="length-some_vector"><span class="header-section-number">6.19</span> length( SOME_VECTOR )</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb120"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb120-1"><a href="#cb120-1" aria-hidden="true" tabindex="-1"></a><span class="co">#-----------------------------------------------------------------------.</span></span>
 <span id="cb120-2"><a href="#cb120-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
@@ -1295,8 +1306,8 @@ Click here for the answer:
 </div>
 </div>
 </section>
-<section id="counting-arguments" class="level2" data-number="5.20">
-<h2 data-number="5.20" class="anchored" data-anchor-id="counting-arguments"><span class="header-section-number">5.20</span> Counting arguments</h2>
+<section id="counting-arguments" class="level2" data-number="6.20">
+<h2 data-number="6.20" class="anchored" data-anchor-id="counting-arguments"><span class="header-section-number">6.20</span> Counting arguments</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb146"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb146-1"><a href="#cb146-1" aria-hidden="true" tabindex="-1"></a><span class="do">#############################################################.</span></span>
 <span id="cb146-2"><a href="#cb146-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
@@ -1366,8 +1377,8 @@ Click here for the answer:
 </div>
 </div>
 </section>
-<section id="to-get-an-average-use-the-mean-function" class="level2" data-number="5.21">
-<h2 data-number="5.21" class="anchored" data-anchor-id="to-get-an-average-use-the-mean-function"><span class="header-section-number">5.21</span> To get an average use the mean function</h2>
+<section id="to-get-an-average-use-the-mean-function" class="level2" data-number="6.21">
+<h2 data-number="6.21" class="anchored" data-anchor-id="to-get-an-average-use-the-mean-function"><span class="header-section-number">6.21</span> To get an average use the mean function</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb166"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb166-1"><a href="#cb166-1" aria-hidden="true" tabindex="-1"></a><span class="co"># IMPORTANT: the mean function works a little differently than the sum function.</span></span>
 <span id="cb166-2"><a href="#cb166-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
@@ -1461,8 +1472,8 @@ Click here for the answer:
 <pre><code>[1] 400</code></pre>
 </div>
 </div>
-<section id="trim-argument-to-mean" class="level3" data-number="5.21.1">
-<h3 data-number="5.21.1" class="anchored" data-anchor-id="trim-argument-to-mean"><span class="header-section-number">5.21.1</span> trim argument to mean</h3>
+<section id="trim-argument-to-mean" class="level3" data-number="6.21.1">
+<h3 data-number="6.21.1" class="anchored" data-anchor-id="trim-argument-to-mean"><span class="header-section-number">6.21.1</span> trim argument to mean</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb186"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb186-1"><a href="#cb186-1" aria-hidden="true" tabindex="-1"></a><span class="co"># the "trim" argument to mean   ####</span></span>
 <span id="cb186-2"><a href="#cb186-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
@@ -1995,12 +2006,12 @@ Click here for the answer
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./000300-usingSomeBuiltinFunctions-v028-a.html" class="pagination-link" aria-label="<yrChapterNumber>4. </yrChapterNumber> Using some built-in functions">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><yrchapternumber>4. </yrchapternumber> Using some built-in functions</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><yrchapternumber>4. </yrchapternumber> Using some built-in functions</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./000300-usingSomeBuiltinFunctions-v028-c.html" class="pagination-link" aria-label="<yrChapterNumber>6. </yrChapterNumber> The recycling rule and more ...">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><yrchapternumber>6. </yrchapternumber> The recycling rule and more …</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><yrchapternumber>6. </yrchapternumber> The recycling rule and more …</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -92,10 +92,11 @@ book:
         - 99900-qstns-20-dataframes-v035-ANSWERS.qmd # yrChapterNumber 42
         - 99900-qstns-30-userDefinedFunctions-v035-ANSWERS.qmd # yrChapterNumber 43
         - 000450-additionalPracticeProblems-WITH_ANSWERS-v005.qmd # yrChapterNumber 44
-        - 000460-listQuestions-WITH_ANSWERS-v004.qmd # yrChapterNumber 45
-        - 001100-assignment-loops-v001-SOLUTIONS-v002-ONLY_QUESTIONS_4-9.qmd # yrChapterNumber 46
-        - 99950-qstns-moreQuestions-v001.qmd # yrChapterNumber 47
-        - 001035-qstns-loopsReadcode-v001.qmd # yrChapterNumber 48
+        - 000456-introToListsQuestions-WITH_ANSWERS-v001.qmd # yrChapterNumber 45
+        - 000460-listQuestions-WITH_ANSWERS-v004.qmd # yrChapterNumber 46
+        - 001100-assignment-loops-v001-SOLUTIONS-v002-ONLY_QUESTIONS_4-9.qmd # yrChapterNumber 47
+        - 99950-qstns-moreQuestions-v001.qmd # yrChapterNumber 48
+        - 001035-qstns-loopsReadcode-v001.qmd # yrChapterNumber 49
   # TODO: fix these files
   #     - 000750-matrixQuestions-v002.qmd
   #     - 008888-additionalQuestions-v003.qmd

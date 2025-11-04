@@ -954,11 +954,7 @@ click here for answer
 <span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a>  y[positionOfTopValue] <span class="ot">&lt;-</span> <span class="fu">min</span>(x)</span>
 <span id="cb25-30"><a href="#cb25-30" aria-hidden="true" tabindex="-1"></a>  positionOf2ndValue <span class="ot">&lt;-</span> positions[ y <span class="sc">==</span>  <span class="fu">max</span>(y) ][<span class="dv">1</span>]</span>
 <span id="cb25-31"><a href="#cb25-31" aria-hidden="true" tabindex="-1"></a>  x[positions<span class="sc">==</span>positionOfTopValue <span class="sc">|</span> positions<span class="sc">==</span>positionOf2ndValue]</span>
-<span id="cb25-32"><a href="#cb25-32" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb25-33"><a href="#cb25-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-34"><a href="#cb25-34" aria-hidden="true" tabindex="-1"></a><span class="do">##############################################################################################.</span></span>
-<span id="cb25-35"><a href="#cb25-35" aria-hidden="true" tabindex="-1"></a><span class="co"># END_OF_QUESTION_GROUP: 68</span></span>
-<span id="cb25-36"><a href="#cb25-36" aria-hidden="true" tabindex="-1"></a><span class="do">##############################################################################################.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-32"><a href="#cb25-32" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1471,32 +1467,40 @@ click here for answer
 <span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
 <span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Modify the middle.values function from the previous question so that it takes </span></span>
 <span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a><span class="co"># an additional argument named "percent". "percent" specifies the percent of</span></span>
-<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a><span class="co"># values that should be returned as the middle values. The value of "percent" </span></span>
-<span id="cb56-9"><a href="#cb56-9" aria-hidden="true" tabindex="-1"></a><span class="co"># should only be used if "n" is not specified. If both "n" and "percent" are</span></span>
-<span id="cb56-10"><a href="#cb56-10" aria-hidden="true" tabindex="-1"></a><span class="co"># specified then the value of "n" should be used. If neither "n" nor "percent"</span></span>
-<span id="cb56-11"><a href="#cb56-11" aria-hidden="true" tabindex="-1"></a><span class="co"># are specified then return all of the values.</span></span>
-<span id="cb56-12"><a href="#cb56-12" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb56-13"><a href="#cb56-13" aria-hidden="true" tabindex="-1"></a><span class="co"># ARTUMENTS/PARAMETERS:</span></span>
-<span id="cb56-14"><a href="#cb56-14" aria-hidden="true" tabindex="-1"></a><span class="co">#    n       - the number of middle values to be returned</span></span>
-<span id="cb56-15"><a href="#cb56-15" aria-hidden="true" tabindex="-1"></a><span class="co">#    percent = a number between 0 and 1 (ie. 1 is 100 percent)</span></span>
-<span id="cb56-16"><a href="#cb56-16" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb56-17"><a href="#cb56-17" aria-hidden="true" tabindex="-1"></a><span class="co"># EXAMPLES:</span></span>
-<span id="cb56-18"><a href="#cb56-18" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; # return the middle 40% of the values</span></span>
-<span id="cb56-19"><a href="#cb56-19" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; middle.values( c(100,90,80,70,60,50,40,30,20,10),  percent=0.4)</span></span>
-<span id="cb56-20"><a href="#cb56-20" aria-hidden="true" tabindex="-1"></a><span class="co">#   70 60 50 40</span></span>
-<span id="cb56-21"><a href="#cb56-21" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb56-22"><a href="#cb56-22" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; # return the middle 6 values</span></span>
-<span id="cb56-23"><a href="#cb56-23" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; middle.values( c(100,90,80,70,60,50,40,30,20,10),  n=6)</span></span>
-<span id="cb56-24"><a href="#cb56-24" aria-hidden="true" tabindex="-1"></a><span class="co">#   80 70 60 50 40 30</span></span>
-<span id="cb56-25"><a href="#cb56-25" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb56-26"><a href="#cb56-26" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; # both n and percent are specified, so use "n" and NOT "percent"</span></span>
-<span id="cb56-27"><a href="#cb56-27" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; middle.values( c(100,90,80,70,60,50,40,30,20,10),  n=6, percent=0.4)</span></span>
-<span id="cb56-28"><a href="#cb56-28" aria-hidden="true" tabindex="-1"></a><span class="co">#   80 70 60 50 40 30</span></span>
+<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a><span class="co"># values that should be returned as the middle values. The intent is that </span></span>
+<span id="cb56-9"><a href="#cb56-9" aria-hidden="true" tabindex="-1"></a><span class="co"># the user would choose to call the function withe either "n" or "percent" </span></span>
+<span id="cb56-10"><a href="#cb56-10" aria-hidden="true" tabindex="-1"></a><span class="co"># or neither - but never both "n" and "percent". </span></span>
+<span id="cb56-11"><a href="#cb56-11" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb56-12"><a href="#cb56-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Use a default value of length(data) for n and</span></span>
+<span id="cb56-13"><a href="#cb56-13" aria-hidden="true" tabindex="-1"></a><span class="co"># a default value of 1 for percent (these mean the same thing - think about it).</span></span>
+<span id="cb56-14"><a href="#cb56-14" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb56-15"><a href="#cb56-15" aria-hidden="true" tabindex="-1"></a><span class="co"># If the value of "n" and "percent" are both specified and they </span></span>
+<span id="cb56-16"><a href="#cb56-16" aria-hidden="true" tabindex="-1"></a><span class="co"># conflict with each other (eg. there are 10 data values and</span></span>
+<span id="cb56-17"><a href="#cb56-17" aria-hidden="true" tabindex="-1"></a><span class="co"># "n" is 8 while "percent" is .6) then you should</span></span>
+<span id="cb56-18"><a href="#cb56-18" aria-hidden="true" tabindex="-1"></a><span class="co"># use the value of "n" and not the value of percent. This can be</span></span>
+<span id="cb56-19"><a href="#cb56-19" aria-hidden="true" tabindex="-1"></a><span class="co"># accomplished by always opting to use "n" unless n was not specified.</span></span>
+<span id="cb56-20"><a href="#cb56-20" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb56-21"><a href="#cb56-21" aria-hidden="true" tabindex="-1"></a><span class="co"># ARTUMENTS/PARAMETERS:</span></span>
+<span id="cb56-22"><a href="#cb56-22" aria-hidden="true" tabindex="-1"></a><span class="co">#    n       - the number of middle values to be returned</span></span>
+<span id="cb56-23"><a href="#cb56-23" aria-hidden="true" tabindex="-1"></a><span class="co">#    percent = a number between 0 and 1 (ie. 1 is 100 percent)</span></span>
+<span id="cb56-24"><a href="#cb56-24" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb56-25"><a href="#cb56-25" aria-hidden="true" tabindex="-1"></a><span class="co"># EXAMPLES:</span></span>
+<span id="cb56-26"><a href="#cb56-26" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; # return the middle 40% of the values</span></span>
+<span id="cb56-27"><a href="#cb56-27" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; middle.values( c(100,90,80,70,60,50,40,30,20,10),  percent=0.4)</span></span>
+<span id="cb56-28"><a href="#cb56-28" aria-hidden="true" tabindex="-1"></a><span class="co">#   70 60 50 40</span></span>
 <span id="cb56-29"><a href="#cb56-29" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb56-30"><a href="#cb56-30" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; # neither n nor percent are specified, so return ALL of the values.</span></span>
-<span id="cb56-31"><a href="#cb56-31" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; middle.values( c(100,90,80,70,60,50,40,30,20,10),  n=6, percent=0.4)</span></span>
-<span id="cb56-32"><a href="#cb56-32" aria-hidden="true" tabindex="-1"></a><span class="co">#   100 90 80 70 60 50 40 30 20 10 </span></span>
-<span id="cb56-33"><a href="#cb56-33" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb56-30"><a href="#cb56-30" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; # return the middle 6 values</span></span>
+<span id="cb56-31"><a href="#cb56-31" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; middle.values( c(100,90,80,70,60,50,40,30,20,10),  n=6)</span></span>
+<span id="cb56-32"><a href="#cb56-32" aria-hidden="true" tabindex="-1"></a><span class="co">#   80 70 60 50 40 30</span></span>
+<span id="cb56-33"><a href="#cb56-33" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb56-34"><a href="#cb56-34" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; # both n and percent are specified, so use "n" and NOT "percent"</span></span>
+<span id="cb56-35"><a href="#cb56-35" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; middle.values( c(100,90,80,70,60,50,40,30,20,10),  n=6, percent=0.4)</span></span>
+<span id="cb56-36"><a href="#cb56-36" aria-hidden="true" tabindex="-1"></a><span class="co">#   80 70 60 50 40 30</span></span>
+<span id="cb56-37"><a href="#cb56-37" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb56-38"><a href="#cb56-38" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; # neither n nor percent are specified, so return ALL of the values.</span></span>
+<span id="cb56-39"><a href="#cb56-39" aria-hidden="true" tabindex="-1"></a><span class="co">#   &gt; middle.values( c(100,90,80,70,60,50,40,30,20,10),  n=6, percent=0.4)</span></span>
+<span id="cb56-40"><a href="#cb56-40" aria-hidden="true" tabindex="-1"></a><span class="co">#   100 90 80 70 60 50 40 30 20 10 </span></span>
+<span id="cb56-41"><a href="#cb56-41" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
@@ -1511,14 +1515,64 @@ click here for answer
 <div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>middle.values <span class="ot">&lt;-</span> <span class="cf">function</span> ( data , <span class="at">n =</span> <span class="cn">NA</span>, <span class="at">percent =</span> <span class="cn">NA</span>) {</span>
-<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>   <span class="co"># </span><span class="al">TODO</span><span class="co"> - finish this</span></span>
-<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>middle.values <span class="ot">&lt;-</span> <span class="cf">function</span> ( data , <span class="at">n =</span> <span class="fu">length</span>(data), <span class="at">percent=</span><span class="dv">1</span>) {</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Changes from part A</span></span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># - specified percent=1 in the argument list and</span></span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># - added the following one line to the code from part a. Think about it ...</span></span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a>  n<span class="ot">=</span><span class="fu">ifelse</span>(n<span class="sc">==</span><span class="fu">length</span>(data),percent<span class="sc">*</span><span class="fu">length</span>(data),n)</span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># the rest is the same as from part A</span></span>
+<span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a>  middlePosition <span class="ot">=</span> <span class="fu">length</span>(data) <span class="sc">%/%</span> <span class="dv">2</span>  </span>
+<span id="cb57-10"><a href="#cb57-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb57-11"><a href="#cb57-11" aria-hidden="true" tabindex="-1"></a>  startOfMiddleValues <span class="ot">=</span> middlePosition <span class="sc">-</span> n <span class="sc">/</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb57-12"><a href="#cb57-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb57-13"><a href="#cb57-13" aria-hidden="true" tabindex="-1"></a>  endOfMiddleValues <span class="ot">=</span> startOfMiddleValues <span class="sc">+</span> n <span class="sc">-</span><span class="dv">1</span></span>
+<span id="cb57-14"><a href="#cb57-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb57-15"><a href="#cb57-15" aria-hidden="true" tabindex="-1"></a>  data[ startOfMiddleValues<span class="sc">:</span>endOfMiddleValues ]</span>
+<span id="cb57-16"><a href="#cb57-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb57-17"><a href="#cb57-17" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
+</div>
+<section id="click-here-for-an-audio-explanation-of-the-answer" class="level4 unnumbered">
+<h4 class="unnumbered anchored" data-anchor-id="click-here-for-an-audio-explanation-of-the-answer">click here for an audio explanation of the answer</h4>
+<p>
+NOTE: To hear these recordings, use a recently updated version of one of the following browsers: <strong>Chrome</strong>, <strong>Firefox</strong>, <strong>Edge</strong>, <strong>Opera</strong>. Safari might not work.
+</p>
+<div>
+<audio controls="">
+<source src="files/audio-userDefinedFunctions71b/audio-userDefinedFunctions71b-001.opus" type="audio/ogg">
+This is a .opus file. Your browser doesn’t support Opus audio.
+</audio>
+</div>
+<div>
+<audio controls="">
+<source src="files/audio-userDefinedFunctions71b/audio-userDefinedFunctions71b-002.opus" type="audio/ogg">
+This is a .opus file. Your browser doesn’t support Opus audio.
+</audio>
+</div>
+<div>
+<audio controls="">
+<source src="files/audio-userDefinedFunctions71b/audio-userDefinedFunctions71b-003.opus" type="audio/ogg">
+This is a .opus file. Your browser doesn’t support Opus audio.
+</audio>
+</div>
+<div>
+<audio controls="">
+<source src="files/audio-userDefinedFunctions71b/audio-userDefinedFunctions71b-004.opus" type="audio/ogg">
+This is a .opus file. Your browser doesn’t support Opus audio.
+</audio>
+</div>
+<div>
+<audio controls="">
+<source src="files/audio-userDefinedFunctions71b/audio-userDefinedFunctions71b-005.opus" type="audio/ogg">
+This is a .opus file. Your browser doesn’t support Opus audio.
+</audio>
 </div>
 <hr>
+</section>
 </section>
 <section id="question-71c.-topics-user-defined-functions-vectors-if_elseif_else" class="level3" data-number="44.1.13">
 <h3 data-number="44.1.13" class="anchored" data-anchor-id="question-71c.-topics-user-defined-functions-vectors-if_elseif_else"><span class="header-section-number">44.1.13</span> QUESTION 71c. TOPICS: user defined functions, vectors, if_elseif_else</h3>

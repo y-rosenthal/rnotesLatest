@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Y. Rosenthal">
 
-<title>r notes (latest version)</title>
+<title>36&nbsp;  Importing a CSV file into an R data.frame variable – r notes (latest version)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./profRosenthal-fall25-midterm.html" rel="next">
+<link href="./000854-dataframes-otherTopics-order-stringsasfactors.html" rel="next">
+<link href="./000850-introToDataframes-v0019-afterBeren.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -143,7 +143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">About This Website</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000100-a-installingAndUsingR-v011-afterClass.html">Chapters</a></li><li class="breadcrumb-item"><a href="./000852-csvFiles-v001.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber></yrchapternumber> Importing a CSV file into an R data.frame variable</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About This Website</span></a>
   </div>
 </li>
@@ -390,7 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000852-csvFiles-v001.html" class="sidebar-item-text sidebar-link">
+  <a href="./000852-csvFiles-v001.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber></yrchapternumber> Importing a CSV file into an R data.frame variable</span></span></a>
   </div>
 </li>
@@ -543,37 +543,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#about-this-website" id="toc-about-this-website" class="nav-link active" data-scroll-target="#about-this-website">About This Website</a>
-  <ul class="collapse">
-  <li><a href="#example---what-r-code-in-this-book-looks-like" id="toc-example---what-r-code-in-this-book-looks-like" class="nav-link" data-scroll-target="#example---what-r-code-in-this-book-looks-like">Example - what R code in this book looks like</a></li>
-  <li><a href="#the-r-prompt-symbol" id="toc-the-r-prompt-symbol" class="nav-link" data-scroll-target="#the-r-prompt-symbol">The R “&gt;” prompt symbol</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000100-a-installingAndUsingR-v011-afterClass.html">Chapters</a></li><li class="breadcrumb-item"><a href="./000852-csvFiles-v001.html"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber></yrchapternumber> Importing a CSV file into an R data.frame variable</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">r notes (latest version)</h1>
+<h1 class="title"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber></yrchapternumber> Importing a CSV file into an R data.frame variable</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Y. Rosenthal </p>
-          </div>
-  </div>
     
   
     
@@ -584,87 +568,95 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="about-this-website" class="level1 unnumbered">
-<h1 class="unnumbered">About This Website</h1>
-<p>This website is for the use of my students at YU.</p>
-<p>The menu on the left lists the “chapters” in the “book”. When you click on a “chapter” from the left hand menu, you should see another menu appear on the right hand side of the screen. The menu on the right side contains links to sections in that chapter. It’s not perfect, but I’m working on improving the links.</p>
-<p>One of the many nice things about this website is that the output of all R code is shown below the actual R code (see below for an example). The output is actually generated by R. Therefore, if there is a difference between my comments and the output shown below the code, then I must have made a typo in my comments (or in the code). You can trust the results displayed below the code more than the #comments that I wrote.</p>
-<p>FYI - I created this website by using “Quarto” which is the new version of what has for years been called “R Markdown”. Quarto simplifies the publishing this type of content online, or in a PDF, or an ebook, etc.</p>
-<p>-Prof.&nbsp;Rosenthal</p>
-<section id="example---what-r-code-in-this-book-looks-like" class="level2">
-<h2 class="anchored" data-anchor-id="example---what-r-code-in-this-book-looks-like">Example - what R code in this book looks like</h2>
-<p>The following shows R code that displays the results of doing some basic arithmetic. The grey boxes contain R code. The output of each line of code is shown below the corresponding grey box. Each output from R below starts with <strong>[1]</strong> followed by the result of the calculation. For now, you can safely ignore the <strong>[1]</strong>. Later in the book we explain what the <strong>[1]</strong> means.</p>
-<!-- YR-TODO - reference the section that speaks about long vectors and what 
-the [1] means -->
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Everything in the grey boxes is R code.</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The info that starts with a # is actually ignored by R and is known as a </span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># comment. You can write whatever you like in a comment.</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="sc">+</span><span class="dv">3</span>           <span class="co"># add two plus three</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">############################################################################</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">############################################################################</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="do">## importing a CSV file into an R data.frame variable</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="do">############################################################################</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="do">############################################################################</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># CSV stands for "comma separated values". </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># A CSV file contains data that is is intended to be arranged</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># in rows and columns (similar to an Excel file). Hoewver, in the </span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># CSV file itself, the data is not lined up in columns. Rather</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># commas separate the data that should go in different columns.</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Each row of the data is a line in the CSV file.</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Each value in a line is separated from the other values by commas. </span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># EXAMPLE: The following could be the contents of a CSV file.</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">#           student,year,gender,test1,test2,final,honors</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">#           joe,so,m,100,100,89,TRUE</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">#           sam,so,m,95,93,missing,FALSE</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">#           sue,fr,f,80,66,68,FALSE</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">#           al,fr,m,59,52,42.5,FALSE</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co">#           alice,fr,f,85,missing,missing,TRUE</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">#           anne,se,f,75,65,76,FALSE</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co">#           bertha,se,f,65,58,62.5,FALSE</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">#           charlie,so,m,86,84,93,FALSE</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co">#           david,so,m,78,82,88,TRUE</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co">#           edgar,fr,m,64,68,60,FALSE</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="co">#           lou,ju,m,83,78,92.5,FALSE</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">#           francine,ju,f,90,91,79.5,FALSE</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co">#           dan,ju,m,83,69,93,TRUE</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="co">#           daniella,se,f,96,100,100,FALSE</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="co">#           sarah,ju,f,80,68,78,FALSE</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="co">#           rebecca,so,f,77,83,75,FALSE</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="co">#           rachel,ju,f,80,82,86,TRUE</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="co">#           deborah,fr,f,95,100,100,FALSE</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co"># import the file grades.csv</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co"># - press "Import Dataset" button in Environment window</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co"># - choose "From Text (base)"</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="co"># - choose the file</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="co"># - fill in the following values:</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="co">#   o Name :    the name of the variable that will hold your data</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="co">#   o Heading:  choose "yes" if the data has column heading (otherwise, choose "no")</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co">#   o Separator: for csv files choose "comma" (you can choose other types of separators based on the data in the file)</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="co">#   o na.strings: choose the value in the file that indicates NA data</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="co">#   o Strings as factors:   for now make sure to UNcheck this - we will learn more about this later# - read.csv</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="co"># This will run the read.csv function and assign the result to the variable</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="co"># that you specified in the "Name" box. By default this will be the same name</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="co"># as the name of the file.</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="co"># RStudio will then run the View command to show the data in a tab in the </span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="co"># "source window" in RStudio.</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="co"># Result of following the instructions above is that the following two </span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="co"># commands will be excuted.</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="co"># - The 1st command creates a variable to hold the data.</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="co"># - The 2nd command displays the data in the source window.</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="co">#      grades &lt;- read.csv("C:/Users/Home/Desktop/grades.csv", header=FALSE, stringsAsFactors=FALSE)</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="co">#      View(grades2)</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="co"># You can type these commands yourself but the RStudio interface makes it</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="co"># easier to remember exactly how to type the commands.</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the information from the file into the variable, grades.</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="co">#grades &lt;- read.csv("C:/Users/Home/Desktop/grades.csv", header=TRUE, stringsAsFactors=FALSE)</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>grades</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error: object 'grades' not found</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">^</span> <span class="dv">3</span>         <span class="co"># two to the power of three (ie. 2*2*2)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 8</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dv">100</span> <span class="sc">-</span> <span class="dv">2</span> <span class="sc">*</span> <span class="dv">3</span>   <span class="co"># R knows PEMDAS - answer is 94, not 296</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 94</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">100</span> <span class="sc">-</span> <span class="dv">2</span>) <span class="sc">*</span> <span class="dv">3</span> <span class="co"># now the answer is 296</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 294</code></pre>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># To view the data in RStudio's source window use the View function</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># View(grades)</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># To view the data in the Console window, just type the name of the variable</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>grades</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error: object 'grades' not found</code></pre>
 </div>
 </div>
-</section>
-<section id="the-r-prompt-symbol" class="level2">
-<h2 class="anchored" data-anchor-id="the-r-prompt-symbol">The R “&gt;” prompt symbol</h2>
-<p>Note that the appearance of the code in this book is a little different than what you would see when you actually use R. The R environment displays a &gt; sign to indicate where to type a command. You don’t actually type in the initial “&gt;” sign. This is simply R’s way of expressing to you that it is expecting you to type in a command. This “&gt;” sign is known as R’s “prompt” symbol (i.e.&nbsp;it prompts you to enter a command). The above code would look as shown below when you actually type it into R. This book was created with the Quarto tool and by default Quarto does not show the “&gt;” propmts.</p>
-<pre><code>&gt; # Everything in the grey boxes is R code.
-&gt; # The info that starts with a # is actually ignored by R and is known as a 
-&gt; # comment. You can write whatever you like in a comment.
- 
-&gt; 2+3           # add two plus three
-[1] 5
- 
-&gt; 2 ^ 3         # two to the power of three (ie. 2*2*2)
-[1] 8
- 
-&gt; 100 - 2 * 3   # R knows PEMDAS - answer is 94, not 296
-[1] 94
- 
-&gt; (100 - 2) * 3 # now the answer is 296
-[1] 294</code></pre>
-<!--- COMMENTED OUT 
-# Updates to this website
-
-I'll be updating this and improving it on a regular basis. If you are interested. I will list the updates below.
-
--Prof. Rosenthal
-
-Added suggested answers to the Vectors1 practice problems.
-
-+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 11/05/2023  | Added suggested answers to the Vectors1 practice problems.                                                                                                                                 |
-|             |                                                                                                                                                                                            |
-|             | Added missing entry "Logical vectors, relational (AKA logical) operators, ifelse" We covered this in class and it was on Canvas but it had been inadvertantly not included on the website. |
-|             |                                                                                                                                                                                            |
-|             | Fixed a few typos.                                                                                                                                                                         |
-|             |                                                                                                                                                                                            |
-|             | Fixed PDF file.                                                                                                                                                                            |
-+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 10/31/2023  | Added more chapters to the website.                                                                                                                                                        |
-+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 10/26/2023  | Original website.                                                                                                                                                                          |
-+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-END COMMENTED OUT --->
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1068,10 +1060,13 @@ END COMMENTED OUT --->
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./000850-introToDataframes-v0019-afterBeren.html" class="pagination-link" aria-label="<yrChapterNumber>35. </yrChapterNumber> dataframes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title"><yrchapternumber>35. </yrchapternumber> dataframes</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./profRosenthal-fall25-midterm.html" class="pagination-link" aria-label="<yrChapterNumber>1. </yrChapterNumber> About the midterm (Prof. Rosenthal's class)">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><yrchapternumber>1. </yrchapternumber> About the midterm (Prof.&nbsp;Rosenthal’s class)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./000854-dataframes-otherTopics-order-stringsasfactors.html" class="pagination-link" aria-label="<yrChapterNumber></yrChapterNumber> dataframes - order - stringsAsFactors">
+        <span class="nav-page-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber></yrchapternumber> dataframes - order - stringsAsFactors</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

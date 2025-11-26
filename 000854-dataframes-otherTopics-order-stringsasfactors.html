@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Y. Rosenthal">
 
-<title>r notes (latest version)</title>
+<title>37&nbsp;  dataframes - order - stringsAsFactors – r notes (latest version)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./profRosenthal-fall25-midterm.html" rel="next">
+<link href="./000875-cbind_rbind-v002.html" rel="next">
+<link href="./000852-csvFiles-v001.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -143,7 +143,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">About This Website</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000100-a-installingAndUsingR-v011-afterClass.html">Chapters</a></li><li class="breadcrumb-item"><a href="./000854-dataframes-otherTopics-order-stringsasfactors.html"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber></yrchapternumber> dataframes - order - stringsAsFactors</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About This Website</span></a>
   </div>
 </li>
@@ -396,7 +396,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./000854-dataframes-otherTopics-order-stringsasfactors.html" class="sidebar-item-text sidebar-link">
+  <a href="./000854-dataframes-otherTopics-order-stringsasfactors.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber></yrchapternumber> dataframes - order - stringsAsFactors</span></span></a>
   </div>
 </li>
@@ -548,32 +548,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#about-this-website" id="toc-about-this-website" class="nav-link active" data-scroll-target="#about-this-website">About This Website</a>
-  <ul class="collapse">
-  <li><a href="#example---what-r-code-in-this-book-looks-like" id="toc-example---what-r-code-in-this-book-looks-like" class="nav-link" data-scroll-target="#example---what-r-code-in-this-book-looks-like">Example - what R code in this book looks like</a></li>
-  <li><a href="#the-r-prompt-symbol" id="toc-the-r-prompt-symbol" class="nav-link" data-scroll-target="#the-r-prompt-symbol">The R “&gt;” prompt symbol</a></li>
-  </ul></li>
+  <li><a href="#use-the-order-function-to-sort-the-rows-of-a-dataframe.-dont-use-the-sort-function" id="toc-use-the-order-function-to-sort-the-rows-of-a-dataframe.-dont-use-the-sort-function" class="nav-link active" data-scroll-target="#use-the-order-function-to-sort-the-rows-of-a-dataframe.-dont-use-the-sort-function"><span class="header-section-number">37.1</span> Use the <strong><em>order</em></strong> function to sort the rows of a dataframe. <strong><em>DON’T USE THE sort FUNCTION</em></strong></a></li>
+  <li><a href="#using-order-with-a-vector" id="toc-using-order-with-a-vector" class="nav-link" data-scroll-target="#using-order-with-a-vector"><span class="header-section-number">37.2</span> using order with a vector</a></li>
+  <li><a href="#stringsasfactorsfalse-or-stringsasfactorstrue" id="toc-stringsasfactorsfalse-or-stringsasfactorstrue" class="nav-link" data-scroll-target="#stringsasfactorsfalse-or-stringsasfactorstrue"><span class="header-section-number">37.3</span> stringsAsFactors=FALSE or stringsAsFactors=TRUE</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./000100-a-installingAndUsingR-v011-afterClass.html">Chapters</a></li><li class="breadcrumb-item"><a href="./000854-dataframes-otherTopics-order-stringsasfactors.html"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber></yrchapternumber> dataframes - order - stringsAsFactors</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">r notes (latest version)</h1>
+<h1 class="title"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title"><yrchapternumber></yrchapternumber> dataframes - order - stringsAsFactors</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Y. Rosenthal </p>
-          </div>
-  </div>
     
   
     
@@ -584,86 +576,336 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="about-this-website" class="level1 unnumbered">
-<h1 class="unnumbered">About This Website</h1>
-<p>This website is for the use of my students at YU.</p>
-<p>The menu on the left lists the “chapters” in the “book”. When you click on a “chapter” from the left hand menu, you should see another menu appear on the right hand side of the screen. The menu on the right side contains links to sections in that chapter. It’s not perfect, but I’m working on improving the links.</p>
-<p>One of the many nice things about this website is that the output of all R code is shown below the actual R code (see below for an example). The output is actually generated by R. Therefore, if there is a difference between my comments and the output shown below the code, then I must have made a typo in my comments (or in the code). You can trust the results displayed below the code more than the #comments that I wrote.</p>
-<p>FYI - I created this website by using “Quarto” which is the new version of what has for years been called “R Markdown”. Quarto simplifies the publishing this type of content online, or in a PDF, or an ebook, etc.</p>
-<p>-Prof.&nbsp;Rosenthal</p>
-<section id="example---what-r-code-in-this-book-looks-like" class="level2">
-<h2 class="anchored" data-anchor-id="example---what-r-code-in-this-book-looks-like">Example - what R code in this book looks like</h2>
-<p>The following shows R code that displays the results of doing some basic arithmetic. The grey boxes contain R code. The output of each line of code is shown below the corresponding grey box. Each output from R below starts with <strong>[1]</strong> followed by the result of the calculation. For now, you can safely ignore the <strong>[1]</strong>. Later in the book we explain what the <strong>[1]</strong> means.</p>
-<!-- YR-TODO - reference the section that speaks about long vectors and what 
-the [1] means -->
+<section id="use-the-order-function-to-sort-the-rows-of-a-dataframe.-dont-use-the-sort-function" class="level2" data-number="37.1">
+<h2 data-number="37.1" class="anchored" data-anchor-id="use-the-order-function-to-sort-the-rows-of-a-dataframe.-dont-use-the-sort-function"><span class="header-section-number">37.1</span> Use the <strong><em>order</em></strong> function to sort the rows of a dataframe. <strong><em>DON’T USE THE sort FUNCTION</em></strong></h2>
+<p>This page discusses two separate issues:</p>
+<ol type="1">
+<li><p>How to sort the rows of a dataframe using the order function.</p></li>
+<li><p>The stringsAsFactors argument to the data.frame function</p></li>
+</ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Everything in the grey boxes is R code.</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># The info that starts with a # is actually ignored by R and is known as a </span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># comment. You can write whatever you like in a comment.</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="sc">+</span><span class="dv">3</span>           <span class="co"># add two plus three</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#-----------------------------------------------------------------------------</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># order function</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># You can use the order function to put the rows of a dataframe in sorted </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># "order" based on the contents of one or more columns.</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">WARNING</span><span class="co">: DON'T USE sort</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># The sort function will NOT help you to do this at all!!!</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># sort only works for individual vectors!!!</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">#-----------------------------------------------------------------------------</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">^</span> <span class="dv">3</span>         <span class="co"># two to the power of three (ie. 2*2*2)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="using-order-with-a-vector" class="level2" data-number="37.2">
+<h2 data-number="37.2" class="anchored" data-anchor-id="using-order-with-a-vector"><span class="header-section-number">37.2</span> using order with a vector</h2>
+<p>The order function is not usually used with a vector. However, it is easier to understand the order function if we start by discussing how order works when used with a vector.</p>
+<p>The order function returns a numeric vector. This is best explained with an example.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">20</span>,<span class="dv">30</span>,<span class="dv">40</span>,<span class="dv">10</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">order</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 8</code></pre>
+<pre><code>[1] 4 1 2 3</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dv">100</span> <span class="sc">-</span> <span class="dv">2</span> <span class="sc">*</span> <span class="dv">3</span>   <span class="co"># R knows PEMDAS - answer is 94, not 296</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 94</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">100</span> <span class="sc">-</span> <span class="dv">2</span>) <span class="sc">*</span> <span class="dv">3</span> <span class="co"># now the answer is 296</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>The 1st entry in the returned value shows the position in x that contains the lowest value in x.</p></li>
+<li><p>The 2nd entry in the returned value shows the position in x that contains the 2nd lowest value in x.</p></li>
+<li><p>etc.</p></li>
+</ul>
+<p>This can then be used to sort x in the following way:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">20</span>,<span class="dv">30</span>,<span class="dv">40</span>,<span class="dv">10</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>x[<span class="fu">order</span>(x)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 294</code></pre>
+<pre><code>[1] 10 20 30 40</code></pre>
+</div>
+</div>
+<p>However this is never done because the sort function does the same thing.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">20</span>,<span class="dv">30</span>,<span class="dv">40</span>,<span class="dv">10</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10 20 30 40</code></pre>
+</div>
+</div>
+<p>Unfortunately the sort function does NOT work with dataframes. However, we can use the sort function to sort the rows of a dataframe.</p>
+<p>Let’s start with the following dataframe</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>gradebook <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">student =</span>      <span class="fu">c</span>(<span class="st">"joe"</span>, <span class="st">"sue"</span>, <span class="st">"sam"</span>, <span class="st">"anne"</span>, <span class="st">"bob"</span>, <span class="st">"carla"</span>, <span class="st">"dana"</span>, <span class="st">"david"</span>),</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">test1 =</span>        <span class="fu">c</span>(<span class="dv">90</span>,     <span class="dv">80</span>,    <span class="dv">90</span>,    <span class="dv">75</span>,    <span class="dv">80</span>,    <span class="dv">90</span>,      <span class="dv">100</span>,    <span class="dv">60</span>),</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">test2 =</span>        <span class="fu">c</span>(<span class="dv">95</span>,     <span class="dv">97</span>,    <span class="dv">88</span>,    <span class="dv">87</span>,    <span class="dv">81</span>,    <span class="dv">92</span>,      <span class="dv">99</span>,     <span class="dv">73</span>),</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">year  =</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"fr"</span>,   <span class="st">"fr"</span>,  <span class="st">"so"</span>,  <span class="st">"so"</span>,  <span class="st">"fr"</span>,  <span class="st">"se"</span>,    <span class="st">"so"</span>,   <span class="st">"so"</span>), </span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">ordered=</span><span class="cn">TRUE</span>, <span class="at">levels=</span><span class="fu">c</span>(<span class="st">"fr"</span>,<span class="st">"so"</span>,<span class="st">"ju"</span>,<span class="st">"se"</span>)),</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>                       <span class="at">honors =</span>       <span class="fu">c</span>(<span class="cn">FALSE</span>,  <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>,    <span class="cn">TRUE</span>,   <span class="cn">FALSE</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>                      )</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>                       </span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>gradebook</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  student test1 test2 year honors
+1     joe    90    95   fr  FALSE
+2     sue    80    97   fr  FALSE
+3     sam    90    88   so  FALSE
+4    anne    75    87   so  FALSE
+5     bob    80    81   fr  FALSE
+6   carla    90    92   se   TRUE
+7    dana   100    99   so   TRUE
+8   david    60    73   so  FALSE</code></pre>
+</div>
+</div>
+<p>sort doesn’t work with dataframes</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(gradebook)   <span class="co"># error</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in xtfrm.data.frame(x): cannot xtfrm data frames</code></pre>
+</div>
+</div>
+<p>However, the folloiwng shows which row should be 1st, 2nd, 3rd, etc if we would order the rdsults by the names of the students</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">order</span>(gradebook<span class="sc">$</span>student)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4 5 6 7 8 1 3 2</code></pre>
+</div>
+</div>
+<p>We can now use that to specify which rows we want 1st,2nd,3rd, etc.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>gradebook [ <span class="fu">order</span>(gradebook<span class="sc">$</span>student)  , ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  student test1 test2 year honors
+4    anne    75    87   so  FALSE
+5     bob    80    81   fr  FALSE
+6   carla    90    92   se   TRUE
+7    dana   100    99   so   TRUE
+8   david    60    73   so  FALSE
+1     joe    90    95   fr  FALSE
+3     sam    90    88   so  FALSE
+2     sue    80    97   fr  FALSE</code></pre>
+</div>
+</div>
+<p>We can order in reverse order by specifying decreasing=TRUE</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>gradebook [ <span class="fu">order</span>(gradebook<span class="sc">$</span>student, <span class="at">decreasing=</span><span class="cn">TRUE</span>)  , ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  student test1 test2 year honors
+2     sue    80    97   fr  FALSE
+3     sam    90    88   so  FALSE
+1     joe    90    95   fr  FALSE
+8   david    60    73   so  FALSE
+7    dana   100    99   so   TRUE
+6   carla    90    92   se   TRUE
+5     bob    80    81   fr  FALSE
+4    anne    75    87   so  FALSE</code></pre>
+</div>
+</div>
+<p>To order by the grades in test1 do this</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>gradebook [ <span class="fu">order</span>(gradebook<span class="sc">$</span>test1)  , ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  student test1 test2 year honors
+8   david    60    73   so  FALSE
+4    anne    75    87   so  FALSE
+2     sue    80    97   fr  FALSE
+5     bob    80    81   fr  FALSE
+1     joe    90    95   fr  FALSE
+3     sam    90    88   so  FALSE
+6   carla    90    92   se   TRUE
+7    dana   100    99   so   TRUE</code></pre>
+</div>
+</div>
+<p>Notice that some students have the same test1 grade. For example there are 3 students who all got in the 90s. However, notice that those 3 students are not in any particular order.</p>
+<p>It would be nice if for students who all got a 90 for test1 they would be listed in order of their test2 grades. (Similarly for students who all got 80 on test1, etc).</p>
+<p>This is done specifying more than one column in the call to the order function. The first column listed will be used to sort the data. If more than one row have the same value for that data then those rows will be sorted by the 2nd column specified. You can continue doing this for as many columns as you like.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>gradebook [ <span class="fu">order</span>(gradebook<span class="sc">$</span>test1, gradebook<span class="sc">$</span>test2)  , ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  student test1 test2 year honors
+8   david    60    73   so  FALSE
+4    anne    75    87   so  FALSE
+5     bob    80    81   fr  FALSE
+2     sue    80    97   fr  FALSE
+3     sam    90    88   so  FALSE
+6   carla    90    92   se   TRUE
+1     joe    90    95   fr  FALSE
+7    dana   100    99   so   TRUE</code></pre>
+</div>
+</div>
+<p>Another example - show honors students and non-honors students separately</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>gradebook [ <span class="fu">order</span>(gradebook<span class="sc">$</span>honors, gradebook<span class="sc">$</span>test1, gradebook<span class="sc">$</span>test2)  , ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  student test1 test2 year honors
+8   david    60    73   so  FALSE
+4    anne    75    87   so  FALSE
+5     bob    80    81   fr  FALSE
+2     sue    80    97   fr  FALSE
+3     sam    90    88   so  FALSE
+1     joe    90    95   fr  FALSE
+6   carla    90    92   se   TRUE
+7    dana   100    99   so   TRUE</code></pre>
+</div>
+</div>
+<p>This time sepcify decreasing=TRUE</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>gradebook [ <span class="fu">order</span>(gradebook<span class="sc">$</span>honors, gradebook<span class="sc">$</span>test1, gradebook<span class="sc">$</span>test2, <span class="at">decreasing=</span><span class="cn">TRUE</span>)  , ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  student test1 test2 year honors
+7    dana   100    99   so   TRUE
+6   carla    90    92   se   TRUE
+1     joe    90    95   fr  FALSE
+3     sam    90    88   so  FALSE
+2     sue    80    97   fr  FALSE
+5     bob    80    81   fr  FALSE
+4    anne    75    87   so  FALSE
+8   david    60    73   so  FALSE</code></pre>
 </div>
 </div>
 </section>
-<section id="the-r-prompt-symbol" class="level2">
-<h2 class="anchored" data-anchor-id="the-r-prompt-symbol">The R “&gt;” prompt symbol</h2>
-<p>Note that the appearance of the code in this book is a little different than what you would see when you actually use R. The R environment displays a &gt; sign to indicate where to type a command. You don’t actually type in the initial “&gt;” sign. This is simply R’s way of expressing to you that it is expecting you to type in a command. This “&gt;” sign is known as R’s “prompt” symbol (i.e.&nbsp;it prompts you to enter a command). The above code would look as shown below when you actually type it into R. This book was created with the Quarto tool and by default Quarto does not show the “&gt;” propmts.</p>
-<pre><code>&gt; # Everything in the grey boxes is R code.
-&gt; # The info that starts with a # is actually ignored by R and is known as a 
-&gt; # comment. You can write whatever you like in a comment.
- 
-&gt; 2+3           # add two plus three
-[1] 5
- 
-&gt; 2 ^ 3         # two to the power of three (ie. 2*2*2)
-[1] 8
- 
-&gt; 100 - 2 * 3   # R knows PEMDAS - answer is 94, not 296
-[1] 94
- 
-&gt; (100 - 2) * 3 # now the answer is 296
-[1] 294</code></pre>
-<!--- COMMENTED OUT 
-# Updates to this website
+<section id="stringsasfactorsfalse-or-stringsasfactorstrue" class="level2" data-number="37.3">
+<h2 data-number="37.3" class="anchored" data-anchor-id="stringsasfactorsfalse-or-stringsasfactorstrue"><span class="header-section-number">37.3</span> stringsAsFactors=FALSE or stringsAsFactors=TRUE</h2>
+<p>The data.frame function contains an argument named stringsAsFactors that is expected to be TRUE or FALSE. The default value is FALSE. (see the documentation for data.frame, i.e.&nbsp;?data.frame)</p>
+<p>IMPORTANT NOTE - the default value used to be TRUE but was changed approximately during the 2022’ish timeframe. Therefore you might see code that assumes stringsAsFactors=TRUE when it’s not explicitly specified. This caused a lot of confusion and R subsequently changed the default value.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list =</span> <span class="fu">ls</span>() )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># WHAT IS A STRING???</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Don't get confused by the word "string". The term "string" means the same</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># thing as "an element of a character vector". The term "string" is used a LOT</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="co"># in other languages, e.g. Java, Python, etc. instead</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># of what we call an element of a "character vector". The word seeped into</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="co"># R in a few places. One of them is in the name of the argument</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="co"># ?stringsAsFactors = FALSE. Perhaps a better name for this argument </span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="co"># could have been charactersAsFactors but that's not what it is.</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Are you curious about why an element of a character vector is known</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a><span class="co"># as a "string" in many other languages? The word string comes from</span></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a><span class="co"># "stringing together many individual 'characters', </span></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a><span class="co"># e.g. 'a' and 'p' and 'p' and 'p' and 'l' and 'e' can be strung together</span></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a><span class="co"># like a string of beads on a necklace to make a single</span></span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a><span class="co"># "string of characters" e.g. "apple".</span></span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a><span class="co"># WHAT DOES stringsAsFactors=FALSE DO ?</span></span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a><span class="co"># By default, if you create a dataframe using character vectors, the </span></span>
+<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a><span class="co"># character vectors will be converted into factors before they are stored in the</span></span>
+<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a><span class="co"># dataframe. If that is not what you want then you can specify</span></span>
+<span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a><span class="co"># stringsAsFactors = FALSE</span></span>
+<span id="cb27-26"><a href="#cb27-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-27"><a href="#cb27-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-28"><a href="#cb27-28" aria-hidden="true" tabindex="-1"></a><span class="co"># EXAMPLE : stringsAsFactors = TRUE </span></span>
+<span id="cb27-29"><a href="#cb27-29" aria-hidden="true" tabindex="-1"></a><span class="co">#           (this is the default if you don't specify anything for stringsAsFactors)</span></span>
+<span id="cb27-30"><a href="#cb27-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-31"><a href="#cb27-31" aria-hidden="true" tabindex="-1"></a>gradebook_fact <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">first =</span> <span class="fu">c</span>(<span class="st">"joe"</span>, <span class="st">"sue"</span>, <span class="st">"sam"</span>, <span class="st">"anne"</span>, <span class="st">"bob"</span>, <span class="st">"carla"</span>, <span class="st">"dana"</span>, <span class="st">"david"</span>),</span>
+<span id="cb27-32"><a href="#cb27-32" aria-hidden="true" tabindex="-1"></a>                       <span class="at">last =</span>  <span class="fu">c</span>(<span class="st">"baker"</span>, <span class="st">"jones"</span>, <span class="st">"smith"</span>, <span class="st">"fox"</span>, <span class="st">"cohen"</span>, <span class="st">"jones"</span>, <span class="st">"schwartz"</span>, <span class="st">"rosen"</span>),    </span>
+<span id="cb27-33"><a href="#cb27-33" aria-hidden="true" tabindex="-1"></a>                       <span class="at">test1 =</span> <span class="fu">c</span>(<span class="dv">70</span>,     <span class="dv">80</span>,    <span class="dv">90</span>,    <span class="dv">75</span>,    <span class="dv">85</span>,    <span class="dv">95</span>,      <span class="dv">100</span>,    <span class="dv">60</span>),</span>
+<span id="cb27-34"><a href="#cb27-34" aria-hidden="true" tabindex="-1"></a>                       <span class="at">test2 =</span> <span class="fu">c</span>(<span class="dv">81</span>,     <span class="dv">77</span>,    <span class="dv">88</span>,    <span class="dv">87</span>,    <span class="dv">91</span>,    <span class="dv">92</span>,      <span class="dv">99</span>,     <span class="dv">73</span>),</span>
+<span id="cb27-35"><a href="#cb27-35" aria-hidden="true" tabindex="-1"></a>                       <span class="at">year  =</span> <span class="fu">c</span>(<span class="st">"fr"</span>,   <span class="st">"fr"</span>,  <span class="st">"so"</span>,  <span class="st">"so"</span>,  <span class="st">"fr"</span>,  <span class="st">"se"</span>,    <span class="st">"so"</span>,   <span class="st">"se"</span>),</span>
+<span id="cb27-36"><a href="#cb27-36" aria-hidden="true" tabindex="-1"></a>                       <span class="at">honors =</span>       <span class="fu">c</span>(<span class="cn">FALSE</span>,  <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>,    <span class="cn">TRUE</span>,   <span class="cn">FALSE</span>),</span>
+<span id="cb27-37"><a href="#cb27-37" aria-hidden="true" tabindex="-1"></a>                <span class="at">stringsAsFactors =</span> <span class="cn">TRUE</span>)   <span class="co"># THIS IS THE DEFAULT IF YOU DONT SPECIFY ANYTHING </span></span>
+<span id="cb27-38"><a href="#cb27-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-39"><a href="#cb27-39" aria-hidden="true" tabindex="-1"></a>gradebook_fact</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  first     last test1 test2 year honors
+1   joe    baker    70    81   fr  FALSE
+2   sue    jones    80    77   fr  FALSE
+3   sam    smith    90    88   so  FALSE
+4  anne      fox    75    87   so  FALSE
+5   bob    cohen    85    91   fr  FALSE
+6 carla    jones    95    92   se   TRUE
+7  dana schwartz   100    99   so   TRUE
+8 david    rosen    60    73   se  FALSE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># character vectors were converted to factors in the dataframe</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(gradebook_fact<span class="sc">$</span>first)  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "factor"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(gradebook_fact<span class="sc">$</span>last)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "factor"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(gradebook_fact<span class="sc">$</span>year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "factor"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(gradebook_fact<span class="sc">$</span>first)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> anne   bob carla  dana david   joe   sam   sue 
+    1     1     1     1     1     1     1     1 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(gradebook_fact<span class="sc">$</span>last)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   baker    cohen      fox    jones    rosen schwartz    smith 
+       1        1        1        2        1        1        1 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(gradebook_fact<span class="sc">$</span>year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>fr se so 
+ 3  2  3 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># EXAMPLE : stringsAsFactors = FALSE</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>gradebook_char <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">first =</span> <span class="fu">c</span>(<span class="st">"joe"</span>, <span class="st">"sue"</span>, <span class="st">"sam"</span>, <span class="st">"anne"</span>, <span class="st">"bob"</span>, <span class="st">"carla"</span>, <span class="st">"dana"</span>, <span class="st">"david"</span>),</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">last =</span>  <span class="fu">c</span>(<span class="st">"baker"</span>, <span class="st">"jones"</span>, <span class="st">"smith"</span>, <span class="st">"fox"</span>, <span class="st">"cohen"</span>, <span class="st">"jones"</span>, <span class="st">"schwartz"</span>, <span class="st">"rosen"</span>),    </span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">test1 =</span> <span class="fu">c</span>(<span class="dv">70</span>,     <span class="dv">80</span>,    <span class="dv">90</span>,    <span class="dv">75</span>,    <span class="dv">85</span>,    <span class="dv">95</span>,      <span class="dv">100</span>,    <span class="dv">60</span>),</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>                       <span class="at">test2 =</span> <span class="fu">c</span>(<span class="dv">81</span>,     <span class="dv">77</span>,    <span class="dv">88</span>,    <span class="dv">87</span>,    <span class="dv">91</span>,    <span class="dv">92</span>,      <span class="dv">99</span>,     <span class="dv">73</span>),</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>                       <span class="at">year  =</span> <span class="fu">c</span>(<span class="st">"fr"</span>,   <span class="st">"fr"</span>,  <span class="st">"so"</span>,  <span class="st">"so"</span>,  <span class="st">"fr"</span>,  <span class="st">"se"</span>,    <span class="st">"so"</span>,   <span class="st">"se"</span>),</span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>                       <span class="at">honors =</span>       <span class="fu">c</span>(<span class="cn">FALSE</span>,  <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>,    <span class="cn">TRUE</span>,   <span class="cn">FALSE</span>),</span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a><span class="co"># character vectors were NOT converted to factors in the dataframe</span></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(gradebook_char<span class="sc">$</span>first)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(gradebook_char<span class="sc">$</span>last)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(gradebook_char<span class="sc">$</span>year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(gradebook_char<span class="sc">$</span>first)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Length     Class      Mode 
+        8 character character </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(gradebook_char<span class="sc">$</span>last)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Length     Class      Mode 
+        8 character character </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(gradebook_char<span class="sc">$</span>year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Length     Class      Mode 
+        8 character character </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="co"># In the gradebook_char variable we created above, the year is a character</span></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="co"># vector but it should be a factor. Create a new variable named </span></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a><span class="co"># gradebook, that changes the year column into a factor. You should</span></span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a><span class="co"># NOT use the data.frame function at all. Rather replace the year </span></span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a><span class="co"># column from gradebook_char with a factor that has the same data.</span></span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a><span class="co"># QUESTION</span></span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a><span class="co"># In the gradebook_fact variable we created above, the first and last</span></span>
+<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a><span class="co"># name columns are factor columns. However, they should NOT be factors. </span></span>
+<span id="cb53-14"><a href="#cb53-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new variable named  gradebook, that changes the</span></span>
+<span id="cb53-15"><a href="#cb53-15" aria-hidden="true" tabindex="-1"></a><span class="co"># first and last columns into character vectors. You should</span></span>
+<span id="cb53-16"><a href="#cb53-16" aria-hidden="true" tabindex="-1"></a><span class="co"># NOT use the data.frame function at all. Rather replace the</span></span>
+<span id="cb53-17"><a href="#cb53-17" aria-hidden="true" tabindex="-1"></a><span class="co"># first and last columns from gradebook_fact with a charcter vectors</span></span>
+<span id="cb53-18"><a href="#cb53-18" aria-hidden="true" tabindex="-1"></a><span class="co"># that have the same data.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
-I'll be updating this and improving it on a regular basis. If you are interested. I will list the updates below.
 
--Prof. Rosenthal
-
-Added suggested answers to the Vectors1 practice problems.
-
-+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 11/05/2023  | Added suggested answers to the Vectors1 practice problems.                                                                                                                                 |
-|             |                                                                                                                                                                                            |
-|             | Added missing entry "Logical vectors, relational (AKA logical) operators, ifelse" We covered this in class and it was on Canvas but it had been inadvertantly not included on the website. |
-|             |                                                                                                                                                                                            |
-|             | Fixed a few typos.                                                                                                                                                                         |
-|             |                                                                                                                                                                                            |
-|             | Fixed PDF file.                                                                                                                                                                            |
-+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 10/31/2023  | Added more chapters to the website.                                                                                                                                                        |
-+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 10/26/2023  | Original website.                                                                                                                                                                          |
-+-------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-END COMMENTED OUT --->
-
-
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1068,10 +1310,13 @@ END COMMENTED OUT --->
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./000852-csvFiles-v001.html" class="pagination-link" aria-label="<yrChapterNumber></yrChapterNumber> Importing a CSV file into an R data.frame variable">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title"><yrchapternumber></yrchapternumber> Importing a CSV file into an R data.frame variable</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./profRosenthal-fall25-midterm.html" class="pagination-link" aria-label="<yrChapterNumber>1. </yrChapterNumber> About the midterm (Prof. Rosenthal's class)">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><yrchapternumber>1. </yrchapternumber> About the midterm (Prof.&nbsp;Rosenthal’s class)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./000875-cbind_rbind-v002.html" class="pagination-link" aria-label="<yrChapterNumber>36. </yrChapterNumber> cbind and rbind (to combine dataframes)">
+        <span class="nav-page-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title"><yrchapternumber>36. </yrchapternumber> cbind and rbind (to combine dataframes)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
